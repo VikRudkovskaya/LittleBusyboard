@@ -20,6 +20,7 @@
 		F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */; };
 		F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026B121FC397F00DCA09A /* ProgressViewController.xib */; };
 		F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026B221FC397F00DCA09A /* ProgressViewController.swift */; };
+		F2D026C221FC476300DCA09A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C121FC476300DCA09A /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusyboardTableViewCell.xib; sourceTree = "<group>"; };
 		F2D026B121FC397F00DCA09A /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 		F2D026B221FC397F00DCA09A /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		F2D026C121FC476300DCA09A /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				F2D026A321FC397F00DCA09A /* Infrastructure */,
+				F2D026A021FC397F00DCA09A /* Models */,
 				F2D026A621FC397F00DCA09A /* Presentation */,
 				F2D0269D21FC397F00DCA09A /* Resources */,
-				F2D026A021FC397F00DCA09A /* Models */,
 			);
 			path = LittleBusyboard;
 			sourceTree = "<group>";
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
+				F2D026C121FC476300DCA09A /* Background.swift */,
 				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
 			);
 			path = Models;
@@ -108,8 +111,8 @@
 		F2D026A621FC397F00DCA09A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026A721FC397F00DCA09A /* Details */,
 				F2D026AA21FC397F00DCA09A /* List */,
+				F2D026A721FC397F00DCA09A /* Details */,
 				F2D026B021FC397F00DCA09A /* AdditionalUI */,
 			);
 			path = Presentation;
@@ -229,6 +232,7 @@
 				F2D026B721FC397F00DCA09A /* AppDelegate.swift in Sources */,
 				F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */,
 				F2D026B621FC397F00DCA09A /* Busyboard.swift in Sources */,
+				F2D026C221FC476300DCA09A /* Background.swift in Sources */,
 				F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */,
 				F2D026BD21FC397F00DCA09A /* BusyboardTableViewCell.swift in Sources */,
 				F2D026BA21FC397F00DCA09A /* BusyboardLevelViewController.swift in Sources */,
