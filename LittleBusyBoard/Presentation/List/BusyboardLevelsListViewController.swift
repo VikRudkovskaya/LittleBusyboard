@@ -60,9 +60,7 @@ extension BusyboardLevelsListViewController: UITableViewDataSource {
 extension BusyboardLevelsListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = BusyboardLevelViewController()
-        self.present(vc, animated: true) {
-            
-        }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

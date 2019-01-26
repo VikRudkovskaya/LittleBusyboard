@@ -20,27 +20,27 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="один" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muH-TU-PKV">
-                    <rect key="frame" x="87.5" y="253.5" width="200" height="17.5"/>
+                    <rect key="frame" x="87.5" y="254" width="200" height="17.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="0t7-4r-T5F"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.3106655794" green="0.38573554910000002" blue="0.44948186530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="бизиборд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAa-NZ-42p">
-                    <rect key="frame" x="117.5" y="283" width="140" height="34"/>
-                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="29"/>
-                    <nil key="textColor"/>
+                    <rect key="frame" x="120" y="283.5" width="135" height="33"/>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="28"/>
+                    <color key="textColor" red="0.31066557935827155" green="0.38573554911182489" blue="0.4494818652704663" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="заменит миллион других игрушек" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-fJ-jWo">
-                    <rect key="frame" x="115" y="325" width="145" height="35"/>
+                    <rect key="frame" x="115" y="324.5" width="145" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="145" id="qZu-ps-kBr"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.3106655794" green="0.38573554910000002" blue="0.44948186530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сделано мамой маленького человека" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-3q-cYa">
@@ -49,16 +49,16 @@
                         <constraint firstAttribute="width" constant="150" id="f24-VG-iOb"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.3106655794" green="0.38573554910000002" blue="0.44948186530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разработано с любовью" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-JR-D5f">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разработано с любовью ♥" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-JR-D5f">
                     <rect key="frame" x="16" y="36" width="120" height="30.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="txN-pa-eN1"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.5086018458549223" green="0.077853160131543031" blue="0.056568978318754584" alpha="0.7230688820690141" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>

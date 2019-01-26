@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         let service = BusyboardService()
-        window?.rootViewController = BusyboardLevelsListViewController(service: service)
+        let navigationController = UINavigationController(rootViewController: BusyboardLevelsListViewController(service: service))
+        navigationController.navigationBar.isHidden = true
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
         return true

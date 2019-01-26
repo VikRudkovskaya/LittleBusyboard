@@ -47,7 +47,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-er-dGC">
                     <rect key="frame" x="0.0" y="80" width="375" height="1"/>
-                    <color key="backgroundColor" red="0.46122815279863921" green="0.57268042102739902" blue="0.66732108160621761" alpha="0.53991527288732399" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.46122815279863921" green="0.57268042102739902" blue="0.66732108160621761" alpha="0.34922425176056338" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="O4m-Yb-KvV"/>
                     </constraints>

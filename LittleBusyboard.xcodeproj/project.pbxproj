@@ -23,6 +23,8 @@
 		F2D026C221FC476300DCA09A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C121FC476300DCA09A /* Background.swift */; };
 		F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */; };
 		F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C521FC686500DCA09A /* BusyboardService.swift */; };
+		F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */; };
+		F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		F2D026C121FC476300DCA09A /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		F2D026C521FC686500DCA09A /* BusyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardService.swift; sourceTree = "<group>"; };
+		F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Backgrounds.xcassets; sourceTree = "<group>"; };
+		F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Miniatures.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		F2D0269C21FC397F00DCA09A /* LittleBusyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F2D026CC21FCB3B600DCA09A /* Services */,
 				F2D026A321FC397F00DCA09A /* Infrastructure */,
 				F2D026A021FC397F00DCA09A /* Models */,
 				F2D026A621FC397F00DCA09A /* Presentation */,
@@ -89,6 +94,8 @@
 			children = (
 				F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */,
 				F2D0269F21FC397F00DCA09A /* Assets.xcassets */,
+				F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */,
+				F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -99,7 +106,6 @@
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
 				F2D026C121FC476300DCA09A /* Background.swift */,
 				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
-				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 		F2D026A621FC397F00DCA09A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F2D026CB21FCB38600DCA09A /* UIInfrastructure */,
 				F2D026AA21FC397F00DCA09A /* List */,
 				F2D026A721FC397F00DCA09A /* Details */,
 				F2D026B021FC397F00DCA09A /* AdditionalUI */,
@@ -126,8 +133,8 @@
 		F2D026A721FC397F00DCA09A /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026A821FC397F00DCA09A /* BusyboardLevelViewController.xib */,
 				F2D026A921FC397F00DCA09A /* BusyboardLevelViewController.swift */,
+				F2D026A821FC397F00DCA09A /* BusyboardLevelViewController.xib */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -145,7 +152,6 @@
 		F2D026AD21FC397F00DCA09A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */,
 				F2D026AE21FC397F00DCA09A /* BusyboardTableViewCell.swift */,
 				F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */,
 			);
@@ -155,10 +161,26 @@
 		F2D026B021FC397F00DCA09A /* AdditionalUI */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026B121FC397F00DCA09A /* ProgressViewController.xib */,
 				F2D026B221FC397F00DCA09A /* ProgressViewController.swift */,
+				F2D026B121FC397F00DCA09A /* ProgressViewController.xib */,
 			);
 			path = AdditionalUI;
+			sourceTree = "<group>";
+		};
+		F2D026CB21FCB38600DCA09A /* UIInfrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */,
+			);
+			path = UIInfrastructure;
+			sourceTree = "<group>";
+		};
+		F2D026CC21FCB3B600DCA09A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */,
+				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
 				F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */,
 				F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,

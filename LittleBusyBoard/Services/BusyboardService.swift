@@ -21,11 +21,15 @@ class BusyboardService: NSObject {
     private func localBusyboards() -> [Busyboard] {
         let board1 = Busyboard()
         board1.name = "Однокнопочный"
-        board1.boardDescription = "Самый простой, но не менее эффективный, бизиборб"
+        board1.boardDescription = "Самый простой, но не менее эффективный, бизиборд"
+        board1.miniatureName = "miniature_v1"
         
         let board2 = Busyboard()
         board2.name = "Тестовый"
         board2.boardDescription = "Просто тестовый, здесь, возможно, еще ничего нет"
+        
+        let board3 = Busyboard()
+        board3.name = "Звездный"
         
         return [board1, board2]
     }

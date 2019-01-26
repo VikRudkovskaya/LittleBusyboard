@@ -14,6 +14,8 @@ class Busyboard: NSObject {
     
     var boardDescription = "Этот потрясающий бизиборд"
     
+    var miniatureName: String?
+    
     var background: Background?
     
     // Набор компонентов борды
