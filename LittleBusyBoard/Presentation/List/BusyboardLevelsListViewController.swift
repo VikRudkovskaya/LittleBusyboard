@@ -12,34 +12,58 @@ class BusyboardLevelsListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var busyboardService: BusyboardService!
+    
+    convenience init(service: BusyboardService) {
+        
+        self.init(nibName: nil, bundle: nil)
+        self.busyboardService = service
+
+        modalTransitionStyle = .crossDissolve
+        modalPresentationStyle = .overCurrentContext
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let nib = UINib(nibName: "BusyboardTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: BusyboardTableViewCell.reuseID())
+        
+        busyboardService.busyboards{ boards in
+            self.tableView.reloadData()
+        }
     }
 
 }
 
 extension BusyboardLevelsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return busyboardService.busyboards?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "123") else {
-            return UITableViewCell()
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: BusyboardTableViewCell.reuseID(), for: indexPath) as! BusyboardTableViewCell
+
+        let board = busyboardService.busyboards![indexPath.row]
+        cell.setup(board: board)
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 66
+        return 70
     }
     
 }
 
 extension BusyboardLevelsListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = BusyboardLevelViewController()
+        self.present(vc, animated: true) {
+            
+        }
+    }
 }
 
 

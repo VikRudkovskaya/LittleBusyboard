@@ -12,15 +12,17 @@
 		F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A121FC397F00DCA09A /* BoardComponent.swift */; };
 		F2D026B621FC397F00DCA09A /* Busyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A221FC397F00DCA09A /* Busyboard.swift */; };
 		F2D026B721FC397F00DCA09A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A421FC397F00DCA09A /* AppDelegate.swift */; };
-		F2D026B921FC397F00DCA09A /* BusyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026A821FC397F00DCA09A /* BusyboardViewController.xib */; };
+		F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026A821FC397F00DCA09A /* BusyboardLevelViewController.xib */; };
 		F2D026BA21FC397F00DCA09A /* BusyboardLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A921FC397F00DCA09A /* BusyboardLevelViewController.swift */; };
-		F2D026BB21FC397F00DCA09A /* BusyBoardsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026AB21FC397F00DCA09A /* BusyBoardsListViewController.xib */; };
+		F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026AB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib */; };
 		F2D026BC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026AC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift */; };
 		F2D026BD21FC397F00DCA09A /* BusyboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026AE21FC397F00DCA09A /* BusyboardTableViewCell.swift */; };
 		F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */; };
 		F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026B121FC397F00DCA09A /* ProgressViewController.xib */; };
 		F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026B221FC397F00DCA09A /* ProgressViewController.swift */; };
 		F2D026C221FC476300DCA09A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C121FC476300DCA09A /* Background.swift */; };
+		F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */; };
+		F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C521FC686500DCA09A /* BusyboardService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,15 +33,17 @@
 		F2D026A221FC397F00DCA09A /* Busyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Busyboard.swift; sourceTree = "<group>"; };
 		F2D026A421FC397F00DCA09A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D026A521FC397F00DCA09A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2D026A821FC397F00DCA09A /* BusyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusyboardViewController.xib; sourceTree = "<group>"; };
+		F2D026A821FC397F00DCA09A /* BusyboardLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusyboardLevelViewController.xib; sourceTree = "<group>"; };
 		F2D026A921FC397F00DCA09A /* BusyboardLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusyboardLevelViewController.swift; sourceTree = "<group>"; };
-		F2D026AB21FC397F00DCA09A /* BusyBoardsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusyBoardsListViewController.xib; sourceTree = "<group>"; };
+		F2D026AB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusyboardLevelsListViewController.xib; sourceTree = "<group>"; };
 		F2D026AC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusyboardLevelsListViewController.swift; sourceTree = "<group>"; };
 		F2D026AE21FC397F00DCA09A /* BusyboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusyboardTableViewCell.swift; sourceTree = "<group>"; };
 		F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusyboardTableViewCell.xib; sourceTree = "<group>"; };
 		F2D026B121FC397F00DCA09A /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 		F2D026B221FC397F00DCA09A /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		F2D026C121FC476300DCA09A /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		F2D026C521FC686500DCA09A /* BusyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
 				F2D026C121FC476300DCA09A /* Background.swift */,
 				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
+				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,7 +126,7 @@
 		F2D026A721FC397F00DCA09A /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026A821FC397F00DCA09A /* BusyboardViewController.xib */,
+				F2D026A821FC397F00DCA09A /* BusyboardLevelViewController.xib */,
 				F2D026A921FC397F00DCA09A /* BusyboardLevelViewController.swift */,
 			);
 			path = Details;
@@ -130,8 +135,8 @@
 		F2D026AA21FC397F00DCA09A /* List */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026AB21FC397F00DCA09A /* BusyBoardsListViewController.xib */,
 				F2D026AC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift */,
+				F2D026AB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib */,
 				F2D026AD21FC397F00DCA09A /* Cell */,
 			);
 			path = List;
@@ -140,6 +145,7 @@
 		F2D026AD21FC397F00DCA09A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */,
 				F2D026AE21FC397F00DCA09A /* BusyboardTableViewCell.swift */,
 				F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */,
 			);
@@ -217,8 +223,8 @@
 				F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
-				F2D026B921FC397F00DCA09A /* BusyboardViewController.xib in Resources */,
-				F2D026BB21FC397F00DCA09A /* BusyBoardsListViewController.xib in Resources */,
+				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
+				F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +239,8 @@
 				F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */,
 				F2D026B621FC397F00DCA09A /* Busyboard.swift in Sources */,
 				F2D026C221FC476300DCA09A /* Background.swift in Sources */,
+				F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */,
+				F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */,
 				F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */,
 				F2D026BD21FC397F00DCA09A /* BusyboardTableViewCell.swift in Sources */,
 				F2D026BA21FC397F00DCA09A /* BusyboardLevelViewController.swift in Sources */,

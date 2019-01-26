@@ -8,17 +8,23 @@
 
 import UIKit
 
-class BusyboardTableViewCell: UITableViewCell {
-
+class BusyboardTableViewCell: BaseTableViewCell {
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var boardDescription: UILabel!
+    @IBOutlet weak var boardImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func setup(board: Busyboard) -> () {
+        name.text = board.name
+        boardDescription.text = board.boardDescription
     }
     
 }

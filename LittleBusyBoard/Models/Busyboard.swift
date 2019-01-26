@@ -10,8 +10,13 @@ import UIKit
 
 class Busyboard: NSObject {
     
-    // Набор компонентов
-    var boardComponents: [BoardComponent]?
+    var name: String = "Бизиборд"
     
+    var boardDescription = "Этот потрясающий бизиборд"
+    
+    var background: Background?
+    
+    // Набор компонентов борды
+    var boardComponents: [BoardComponent]?
     
 }
