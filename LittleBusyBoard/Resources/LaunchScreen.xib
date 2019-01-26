@@ -16,11 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z3s-RA-ECn">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_rounds" translatesAutoresizingMaskIntoConstraints="NO" id="z3s-RA-ECn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="один" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muH-TU-PKV">
-                    <rect key="frame" x="87.5" y="254" width="200" height="17.5"/>
+                    <rect key="frame" x="87.5" y="253.5" width="200" height="17.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="0t7-4r-T5F"/>
                     </constraints>
@@ -29,24 +29,24 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="бизиборд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAa-NZ-42p">
-                    <rect key="frame" x="120" y="283.5" width="135" height="33"/>
-                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="28"/>
+                    <rect key="frame" x="117.5" y="283" width="140" height="34"/>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="29"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="заменит миллион других игрушек" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-fJ-jWo">
-                    <rect key="frame" x="117.5" y="324.5" width="140" height="35"/>
+                    <rect key="frame" x="115" y="325" width="145" height="35"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="140" id="qZu-ps-kBr"/>
+                        <constraint firstAttribute="width" constant="145" id="qZu-ps-kBr"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сделано мамой маленькой девочки" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-3q-cYa">
-                    <rect key="frame" x="219" y="620.5" width="140" height="30.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сделано мамой маленького человека" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-3q-cYa">
+                    <rect key="frame" x="209" y="620.5" width="150" height="30.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="140" id="f24-VG-iOb"/>
+                        <constraint firstAttribute="width" constant="150" id="f24-VG-iOb"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                     <nil key="textColor"/>
@@ -80,7 +80,10 @@
                 <constraint firstAttribute="bottom" secondItem="z3s-RA-ECn" secondAttribute="bottom" id="ztj-mv-hyy"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="AOu-dx-VnW"/>
-            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+            <point key="canvasLocation" x="-51" y="142"/>
         </view>
     </objects>
+    <resources>
+        <image name="bg_tiny_rounds" width="400" height="700"/>
+    </resources>
 </document>
