@@ -27,6 +27,10 @@ class BusyboardTableViewCell: BaseTableViewCell {
     func setup(board: Busyboard) -> () {
         name.text = board.name
         boardDescription.text = board.boardDescription
+        guard let image = UIImage(named: board.miniatureName) else {
+            return
+        }
+        boardImageView.image = image
     }
     
 }

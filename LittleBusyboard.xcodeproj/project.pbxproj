@@ -25,6 +25,17 @@
 		F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C521FC686500DCA09A /* BusyboardService.swift */; };
 		F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */; };
 		F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */; };
+		F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026CD21FCC98200DCA09A /* BoardComponents.xcassets */; };
+		F2D026D021FCD1C300DCA09A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026CF21FCD1C300DCA09A /* Colors.swift */; };
+		F2D026D421FDA2C200DCA09A /* ComponentProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026D321FDA2C200DCA09A /* ComponentProperty.swift */; };
+		F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026D521FDAD8F00DCA09A /* InfoPopUpViewController.swift */; };
+		F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026D621FDAD8F00DCA09A /* InfoPopUpViewController.xib */; };
+		F2D026DB21FDB49700DCA09A /* ButtonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */; };
+		F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */; };
+		F2D026DF21FDD42C00DCA09A /* ComponentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */; };
+		F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E021FDD5F300DCA09A /* Utils.swift */; };
+		F2D026E321FDE99600DCA09A /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E221FDE99600DCA09A /* ButtonComponent.swift */; };
+		F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +59,17 @@
 		F2D026C521FC686500DCA09A /* BusyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardService.swift; sourceTree = "<group>"; };
 		F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Backgrounds.xcassets; sourceTree = "<group>"; };
 		F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Miniatures.xcassets; sourceTree = "<group>"; };
+		F2D026CD21FCC98200DCA09A /* BoardComponents.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BoardComponents.xcassets; sourceTree = "<group>"; };
+		F2D026CF21FCD1C300DCA09A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F2D026D321FDA2C200DCA09A /* ComponentProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentProperty.swift; sourceTree = "<group>"; };
+		F2D026D521FDAD8F00DCA09A /* InfoPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopUpViewController.swift; sourceTree = "<group>"; };
+		F2D026D621FDAD8F00DCA09A /* InfoPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoPopUpViewController.xib; sourceTree = "<group>"; };
+		F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfigurator.swift; sourceTree = "<group>"; };
+		F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponetsLayouter.swift; sourceTree = "<group>"; };
+		F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentAction.swift; sourceTree = "<group>"; };
+		F2D026E021FDD5F300DCA09A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F2D026E221FDE99600DCA09A /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
+		F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +102,8 @@
 		F2D0269C21FC397F00DCA09A /* LittleBusyboard */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026CC21FCB3B600DCA09A /* Services */,
 				F2D026A321FC397F00DCA09A /* Infrastructure */,
+				F2D026CC21FCB3B600DCA09A /* Services */,
 				F2D026A021FC397F00DCA09A /* Models */,
 				F2D026A621FC397F00DCA09A /* Presentation */,
 				F2D0269D21FC397F00DCA09A /* Resources */,
@@ -94,6 +116,7 @@
 			children = (
 				F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */,
 				F2D0269F21FC397F00DCA09A /* Assets.xcassets */,
+				F2D026CD21FCC98200DCA09A /* BoardComponents.xcassets */,
 				F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */,
 				F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */,
 			);
@@ -103,9 +126,9 @@
 		F2D026A021FC397F00DCA09A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
-				F2D026C121FC476300DCA09A /* Background.swift */,
 				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
+				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
+				F2D026C121FC476300DCA09A /* Background.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,10 +145,11 @@
 		F2D026A621FC397F00DCA09A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F2D026B021FC397F00DCA09A /* AdditionalUI */,
 				F2D026CB21FCB38600DCA09A /* UIInfrastructure */,
 				F2D026AA21FC397F00DCA09A /* List */,
 				F2D026A721FC397F00DCA09A /* Details */,
-				F2D026B021FC397F00DCA09A /* AdditionalUI */,
+				F2D026D921FDAD9900DCA09A /* Info */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -171,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */,
+				F2D026CF21FCD1C300DCA09A /* Colors.swift */,
 			);
 			path = UIInfrastructure;
 			sourceTree = "<group>";
@@ -179,8 +204,40 @@
 			isa = PBXGroup;
 			children = (
 				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
+				F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */,
+				F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */,
+				F2D026E021FDD5F300DCA09A /* Utils.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F2D026D921FDAD9900DCA09A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026D521FDAD8F00DCA09A /* InfoPopUpViewController.swift */,
+				F2D026D621FDAD8F00DCA09A /* InfoPopUpViewController.xib */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		F2D026E621FDEB9A00DCA09A /* BoardComponets */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
+				F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */,
+				F2D026D321FDA2C200DCA09A /* ComponentProperty.swift */,
+				F2D026E721FDEBC900DCA09A /* CustomComponents */,
+			);
+			path = BoardComponets;
+			sourceTree = "<group>";
+		};
+		F2D026E721FDEBC900DCA09A /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026E221FDE99600DCA09A /* ButtonComponent.swift */,
+				F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */,
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +300,8 @@
 			files = (
 				F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */,
 				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
+				F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */,
+				F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */,
 				F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */,
 				F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,
@@ -259,11 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */,
+				F2D026DF21FDD42C00DCA09A /* ComponentAction.swift in Sources */,
 				F2D026B721FC397F00DCA09A /* AppDelegate.swift in Sources */,
+				F2D026D021FCD1C300DCA09A /* Colors.swift in Sources */,
 				F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */,
 				F2D026B621FC397F00DCA09A /* Busyboard.swift in Sources */,
 				F2D026C221FC476300DCA09A /* Background.swift in Sources */,
+				F2D026E321FDE99600DCA09A /* ButtonComponent.swift in Sources */,
+				F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */,
 				F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */,
+				F2D026D421FDA2C200DCA09A /* ComponentProperty.swift in Sources */,
+				F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */,
+				F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */,
+				F2D026DB21FDB49700DCA09A /* ButtonConfigurator.swift in Sources */,
 				F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */,
 				F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */,
 				F2D026BD21FC397F00DCA09A /* BusyboardTableViewCell.swift in Sources */,

@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="332" height="65.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_rounds" translatesAutoresizingMaskIntoConstraints="NO" id="JHB-pA-BuK">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniature_unknown" translatesAutoresizingMaskIntoConstraints="NO" id="JHB-pA-BuK">
                         <rect key="frame" x="16" y="8" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="84c-rz-nCS"/>
@@ -92,7 +92,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="bg_tiny_rounds" width="400" height="700"/>
+        <image name="miniature_unknown" width="128" height="128"/>
         <image name="triangle_arrow_right" width="30" height="56"/>
     </resources>
 </document>

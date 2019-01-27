@@ -19,5 +19,4 @@ class Background: NSObject {
     var fileName: String?
     
     var url: String?
-    
 }
