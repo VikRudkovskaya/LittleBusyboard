@@ -8,6 +8,6 @@
 
 import UIKit
 
-class LightbulbComponent: BoardComponent {
+class LightbulbComponent: SwitchComponent {
 
 }

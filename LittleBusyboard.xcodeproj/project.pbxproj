@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
+		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
+		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
 		F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */; };
 		F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269F21FC397F00DCA09A /* Assets.xcassets */; };
 		F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A121FC397F00DCA09A /* BoardComponent.swift */; };
@@ -27,7 +30,6 @@
 		F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */; };
 		F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026CD21FCC98200DCA09A /* BoardComponents.xcassets */; };
 		F2D026D021FCD1C300DCA09A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026CF21FCD1C300DCA09A /* Colors.swift */; };
-		F2D026D421FDA2C200DCA09A /* ComponentProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026D321FDA2C200DCA09A /* ComponentProperty.swift */; };
 		F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026D521FDAD8F00DCA09A /* InfoPopUpViewController.swift */; };
 		F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026D621FDAD8F00DCA09A /* InfoPopUpViewController.xib */; };
 		F2D026DB21FDB49700DCA09A /* ButtonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */; };
@@ -36,9 +38,14 @@
 		F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E021FDD5F300DCA09A /* Utils.swift */; };
 		F2D026E321FDE99600DCA09A /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E221FDE99600DCA09A /* ButtonComponent.swift */; };
 		F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */; };
+		F2D026E921FDEE5A00DCA09A /* SwitchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E821FDEE5A00DCA09A /* SwitchComponent.swift */; };
+		F2D026EC21FE26B400DCA09A /* SwitchLightAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026EB21FE26B400DCA09A /* SwitchLightAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
+		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
+		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
 		F2D0264321FC335000DCA09A /* LittleBusyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBusyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F2D0269F21FC397F00DCA09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +68,6 @@
 		F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Miniatures.xcassets; sourceTree = "<group>"; };
 		F2D026CD21FCC98200DCA09A /* BoardComponents.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BoardComponents.xcassets; sourceTree = "<group>"; };
 		F2D026CF21FCD1C300DCA09A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		F2D026D321FDA2C200DCA09A /* ComponentProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentProperty.swift; sourceTree = "<group>"; };
 		F2D026D521FDAD8F00DCA09A /* InfoPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopUpViewController.swift; sourceTree = "<group>"; };
 		F2D026D621FDAD8F00DCA09A /* InfoPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoPopUpViewController.xib; sourceTree = "<group>"; };
 		F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfigurator.swift; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 		F2D026E021FDD5F300DCA09A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F2D026E221FDE99600DCA09A /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbComponent.swift; sourceTree = "<group>"; };
+		F2D026E821FDEE5A00DCA09A /* SwitchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchComponent.swift; sourceTree = "<group>"; };
+		F2D026EB21FE26B400DCA09A /* SwitchLightAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLightAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2B1A12F220479F4007952CC /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026AA21FC397F00DCA09A /* List */,
+				F2D026A721FC397F00DCA09A /* Details */,
+				F2D026D921FDAD9900DCA09A /* Info */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
 		F2D0263A21FC335000DCA09A = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +165,7 @@
 			children = (
 				F2D026B021FC397F00DCA09A /* AdditionalUI */,
 				F2D026CB21FCB38600DCA09A /* UIInfrastructure */,
-				F2D026AA21FC397F00DCA09A /* List */,
-				F2D026A721FC397F00DCA09A /* Details */,
-				F2D026D921FDAD9900DCA09A /* Info */,
+				F2B1A12F220479F4007952CC /* Stories */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -224,9 +240,9 @@
 			isa = PBXGroup;
 			children = (
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
-				F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */,
-				F2D026D321FDA2C200DCA09A /* ComponentProperty.swift */,
 				F2D026E721FDEBC900DCA09A /* CustomComponents */,
+				F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */,
+				F2D026EA21FE268300DCA09A /* CustomActions */,
 			);
 			path = BoardComponets;
 			sourceTree = "<group>";
@@ -235,9 +251,21 @@
 			isa = PBXGroup;
 			children = (
 				F2D026E221FDE99600DCA09A /* ButtonComponent.swift */,
+				F2D026E821FDEE5A00DCA09A /* SwitchComponent.swift */,
 				F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */,
 			);
 			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		F2D026EA21FE268300DCA09A /* CustomActions */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026EB21FE26B400DCA09A /* SwitchLightAction.swift */,
+				F2B1A12922035CE8007952CC /* PlaySoundAction.swift */,
+				F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */,
+				F2B1A12D22035D72007952CC /* ResizeElementAction.swift */,
+			);
+			path = CustomActions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,20 +351,24 @@
 				F2D026B721FC397F00DCA09A /* AppDelegate.swift in Sources */,
 				F2D026D021FCD1C300DCA09A /* Colors.swift in Sources */,
 				F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */,
+				F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */,
 				F2D026B621FC397F00DCA09A /* Busyboard.swift in Sources */,
+				F2D026EC21FE26B400DCA09A /* SwitchLightAction.swift in Sources */,
 				F2D026C221FC476300DCA09A /* Background.swift in Sources */,
 				F2D026E321FDE99600DCA09A /* ButtonComponent.swift in Sources */,
 				F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */,
+				F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */,
 				F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */,
-				F2D026D421FDA2C200DCA09A /* ComponentProperty.swift in Sources */,
 				F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */,
 				F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */,
 				F2D026DB21FDB49700DCA09A /* ButtonConfigurator.swift in Sources */,
 				F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */,
 				F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */,
 				F2D026BD21FC397F00DCA09A /* BusyboardTableViewCell.swift in Sources */,
+				F2D026E921FDEE5A00DCA09A /* SwitchComponent.swift in Sources */,
 				F2D026BA21FC397F00DCA09A /* BusyboardLevelViewController.swift in Sources */,
 				F2D026BC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift in Sources */,
+				F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

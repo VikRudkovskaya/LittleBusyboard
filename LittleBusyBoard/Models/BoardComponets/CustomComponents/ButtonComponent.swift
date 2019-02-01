@@ -9,5 +9,7 @@
 import UIKit
 
 class ButtonComponent: BoardComponent {
-
+    
+    var textureName: String = "button_red"
+    
 }
