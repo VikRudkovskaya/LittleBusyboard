@@ -8,6 +8,28 @@
 
 import UIKit
 
-class LightbulbComponent: SwitchComponent {
+class LightbulbComponent: NSObject, BoardComponent  {
+    func view() -> UIView {
+        return UIView()
+    }
+    
+    var coordinates: CGPoint = CGPoint(x: 0, y: 0)
+    
+    var affectZone: CGRect?
+    
+    var actions: [ComponentAction]?
+    
+    var onTextureName: String = "button_bulb_1"
+    
+    var offTextureName: String = "button_bulb_1"
+    
+    var currentTextureName: String {
+        if on {
+            return onTextureName
+        }
+        return offTextureName
+    }
+    
+    var on: Bool = false
 
 }

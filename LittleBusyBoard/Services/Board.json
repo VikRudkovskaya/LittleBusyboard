@@ -1,0 +1,20 @@
+{
+    "name": "Бизиборд",
+    "description": "Потрясающий бизиборд",
+    "background": {
+        "identifier": 1,
+        "name": 12,
+        "description": "Металлическая панель",
+        "fileName": "bg_metal_slab_v1",
+    }
+    "components": [
+        {
+            
+        },
+        {
+            
+        }
+    ]
+}
+
+

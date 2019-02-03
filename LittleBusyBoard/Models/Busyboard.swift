@@ -33,7 +33,6 @@ class Busyboard: NSObject {
     
     // Размер доски
     var size: CGSize {
-        // CGSize(width: 200, height: 200)
         return UIScreen.main.bounds.size
     }
     

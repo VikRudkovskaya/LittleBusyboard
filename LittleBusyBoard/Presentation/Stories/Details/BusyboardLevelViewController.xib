@@ -23,28 +23,9 @@
                 <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_rounds_central" translatesAutoresizingMaskIntoConstraints="NO" id="icz-IO-rJn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-sy-4xP">
-                    <rect key="frame" x="87.5" y="243.5" width="200" height="200"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="200" id="8d0-m0-wFQ"/>
-                        <constraint firstAttribute="height" constant="200" id="ILs-6h-ZHc"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
-                    <state key="normal" title="PUSH" backgroundImage="button_red">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <integer key="value" value="80"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="PQ1-sy-4xP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1Iq-5Y-pQO"/>
-                <constraint firstItem="PQ1-sy-4xP" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Nxn-X1-8ng"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="icz-IO-rJn" secondAttribute="bottom" id="XbG-ZJ-Qxq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="icz-IO-rJn" secondAttribute="trailing" id="hP5-6c-p3v"/>
                 <constraint firstItem="icz-IO-rJn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nqQ-Sn-rHC"/>
@@ -56,6 +37,5 @@
     </objects>
     <resources>
         <image name="bg_tiny_rounds_central" width="400" height="700"/>
-        <image name="button_red" width="106" height="106"/>
     </resources>
 </document>

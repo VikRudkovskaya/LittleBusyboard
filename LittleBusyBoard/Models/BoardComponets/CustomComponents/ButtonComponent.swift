@@ -8,7 +8,17 @@
 
 import UIKit
 
-class ButtonComponent: BoardComponent {
+class ButtonComponent: NSObject, BoardComponent {
+    func view() -> UIView {
+        return UIButton()
+    }
+    
+    var coordinates: CGPoint = CGPoint(x: 0, y: 0)
+    
+    var affectZone: CGRect?
+    
+    var actions: [ComponentAction]?
+    
     
     var textureName: String = "button_red"
     

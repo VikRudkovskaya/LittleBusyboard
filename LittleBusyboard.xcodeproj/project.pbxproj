@@ -10,6 +10,8 @@
 		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
 		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
 		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
+		F2B1A1332205F2E9007952CC /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B1A1322205F2E9007952CC /* Board.json */; };
+		F2B1A1352206BC1A007952CC /* Backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B1A1342206BC1A007952CC /* Backgrounds.json */; };
 		F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */; };
 		F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269F21FC397F00DCA09A /* Assets.xcassets */; };
 		F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A121FC397F00DCA09A /* BoardComponent.swift */; };
@@ -46,6 +48,8 @@
 		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
 		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
 		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
+		F2B1A1322205F2E9007952CC /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
+		F2B1A1342206BC1A007952CC /* Backgrounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Backgrounds.json; sourceTree = "<group>"; };
 		F2D0264321FC335000DCA09A /* LittleBusyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBusyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F2D0269F21FC397F00DCA09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 		F2D026CC21FCB3B600DCA09A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F2B1A1342206BC1A007952CC /* Backgrounds.json */,
+				F2B1A1322205F2E9007952CC /* Board.json */,
 				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
 				F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */,
 				F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */,
@@ -329,11 +335,13 @@
 				F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */,
 				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
 				F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */,
+				F2B1A1352206BC1A007952CC /* Backgrounds.json in Resources */,
 				F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */,
 				F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */,
 				F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
+				F2B1A1332205F2E9007952CC /* Board.json in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
 				F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */,
 			);

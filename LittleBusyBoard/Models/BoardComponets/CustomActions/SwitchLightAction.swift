@@ -15,6 +15,11 @@ class SwitchLightAction: ComponentAction {
         self.lightBubles = lightBubles
     }
     
+    override func perform() {
+        super.perform()
+        self.bulbsON()
+    }
+    
     func bulbsON() {
         for bulb in lightBubles {
             bulb.on = true

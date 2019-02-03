@@ -8,8 +8,18 @@
 
 import UIKit
 
-class SwitchComponent: BoardComponent {
+class SwitchComponent: NSObject, BoardComponent {
     
+    func view() -> UIView {
+        return UIButton()
+    }
+    
+    var coordinates: CGPoint = CGPoint(x: 0, y: 0)
+    
+    var affectZone: CGRect?
+    
+    var actions: [ComponentAction]?
+        
     var onTextureName: String = "button_red"
     
     var offTextureName: String = "button_red"
@@ -22,4 +32,5 @@ class SwitchComponent: BoardComponent {
     }
     
     var on: Bool = false
+
 }

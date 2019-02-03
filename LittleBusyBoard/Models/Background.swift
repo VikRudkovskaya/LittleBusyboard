@@ -6,9 +6,9 @@
 //  Copyright © 2019 VR/RN. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Background: NSObject {
+struct Background: Decodable {
     
     var identifire: String?
     
@@ -19,4 +19,12 @@ class Background: NSObject {
     var fileName: String?
     
     var url: String?
+    
+    enum CodingKeys : String, CodingKey {
+        case identifire
+        case name
+        case bgDescription = "description"
+        case fileName
+        case url
+    }
 }
