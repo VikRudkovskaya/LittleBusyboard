@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F22F320E2208497700AA0848 /* BoardComponents.json in Resources */ = {isa = PBXBuildFile; fileRef = F22F320D2208497700AA0848 /* BoardComponents.json */; };
 		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
 		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
 		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
 		F2B1A1332205F2E9007952CC /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B1A1322205F2E9007952CC /* Board.json */; };
 		F2B1A1352206BC1A007952CC /* Backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B1A1342206BC1A007952CC /* Backgrounds.json */; };
+		F2B1A13822082C4E007952CC /* ButtonTextures.json in Resources */ = {isa = PBXBuildFile; fileRef = F2B1A13722082C4E007952CC /* ButtonTextures.json */; };
 		F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */; };
 		F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269F21FC397F00DCA09A /* Assets.xcassets */; };
 		F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A121FC397F00DCA09A /* BoardComponent.swift */; };
@@ -45,11 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F22F320D2208497700AA0848 /* BoardComponents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardComponents.json; sourceTree = "<group>"; };
 		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
 		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
 		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
 		F2B1A1322205F2E9007952CC /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
 		F2B1A1342206BC1A007952CC /* Backgrounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Backgrounds.json; sourceTree = "<group>"; };
+		F2B1A13722082C4E007952CC /* ButtonTextures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ButtonTextures.json; sourceTree = "<group>"; };
 		F2D0264321FC335000DCA09A /* LittleBusyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBusyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F2D0269F21FC397F00DCA09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +109,26 @@
 			path = Stories;
 			sourceTree = "<group>";
 		};
+		F2B1A13622073D17007952CC /* ComponentActions */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */,
+				F2D026EA21FE268300DCA09A /* CustomActions */,
+			);
+			path = ComponentActions;
+			sourceTree = "<group>";
+		};
+		F2B1A139220840A3007952CC /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				F22F320D2208497700AA0848 /* BoardComponents.json */,
+				F2B1A13722082C4E007952CC /* ButtonTextures.json */,
+				F2B1A1342206BC1A007952CC /* Backgrounds.json */,
+				F2B1A1322205F2E9007952CC /* Board.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		F2D0263A21FC335000DCA09A = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
-				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
 				F2D026C121FC476300DCA09A /* Background.swift */,
+				F2B1A13622073D17007952CC /* ComponentActions */,
+				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,8 +248,7 @@
 		F2D026CC21FCB3B600DCA09A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F2B1A1342206BC1A007952CC /* Backgrounds.json */,
-				F2B1A1322205F2E9007952CC /* Board.json */,
+				F2B1A139220840A3007952CC /* Stubs */,
 				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
 				F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */,
 				F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */,
@@ -247,8 +271,6 @@
 			children = (
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
 				F2D026E721FDEBC900DCA09A /* CustomComponents */,
-				F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */,
-				F2D026EA21FE268300DCA09A /* CustomActions */,
 			);
 			path = BoardComponets;
 			sourceTree = "<group>";
@@ -335,8 +357,10 @@
 				F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */,
 				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
 				F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */,
+				F2B1A13822082C4E007952CC /* ButtonTextures.json in Resources */,
 				F2B1A1352206BC1A007952CC /* Backgrounds.json in Resources */,
 				F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */,
+				F22F320E2208497700AA0848 /* BoardComponents.json in Resources */,
 				F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */,
 				F2D026B421FC397F00DCA09A /* Assets.xcassets in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,
@@ -506,6 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZHS7Z7G7D;
 				INFOPLIST_FILE = "$(SRCROOT)/LittleBusyboard/Infrastructure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZHS7Z7G7D;
 				INFOPLIST_FILE = "$(SRCROOT)/LittleBusyboard/Infrastructure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -26,43 +26,18 @@ class BusyboardLevelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let bgFileName = board.background.fileName {
+            background.image = UIImage(named: bgFileName)
+        }
+        
         guard let components = board.boardComponents else {
             return
         }
-        
         for component in components {
-            var view: UIView?
-            switch component {
-            case is ButtonComponent:
-                let buttonComponent = component as! ButtonComponent
-                let button = UIButton()
-                
-                button.frame.size = CGSize(width: 200, height: 200)
-                let bgImage = UIImage(named: buttonComponent.textureName)
-                button.setBackgroundImage(bgImage, for: .normal)
-                view = button
-                
-                guard let actions = component.actions else {
-                    continue
-                }
-                for action in actions {
-                    switch action {
-                    case is PlaySoundAction:
-                        button.addTarget(self, action: Selector("playSound:"), for: UIControl.Event.touchUpInside)
-                    case is BackgroundChangeAction:
-                        self.view.backgroundColor = UIColor.white
-                    default:
-                        continue
-                    }
-                }
-            default:
-                continue
-            }
-            guard let v = view else {
-                return
-            }
-            self.view.addSubview(v)
-            uiComponents.append(v)
+            let view = component.view()
+            self.view.addSubview(view)
+            uiComponents.append(view)
         }
         
     }
@@ -75,8 +50,6 @@ class BusyboardLevelViewController: UIViewController {
         }
     }
     
-    func playSound(soundID: Int) {
-        AudioServicesPlaySystemSound(SystemSoundID(soundID))
-    }
+
         
 }

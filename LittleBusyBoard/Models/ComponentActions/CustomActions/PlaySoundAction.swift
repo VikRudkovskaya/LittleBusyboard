@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundAction: ComponentAction {
     
@@ -14,5 +15,15 @@ class PlaySoundAction: ComponentAction {
     
     init(soundID: Int) {
         self.systemSoundID = soundID
+    }
+    
+    override func perform() {
+        super.perform()
+        
+        self.playSound(soundID: self.systemSoundID)
+    }
+    
+    func playSound(soundID: Int) {
+        AudioServicesPlaySystemSound(SystemSoundID(soundID))
     }
 }

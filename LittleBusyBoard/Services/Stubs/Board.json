@@ -1,0 +1,32 @@
+{
+    "identifier": 1
+    "name": "Бизиборд",
+    "description": "Потрясающий бизиборд",
+    "miniatureName": "miniature_v1"
+    "background": {
+        "identifier": 1,
+        "name": "Металлическая пластина",
+        "description": "Оттенки алюминия. Цвет дедушкиного советского проигрывателя RADIOTEHNIKA M-201",
+        "fileName": "bg_metal_slab_v1",
+    },
+    "components": [
+        {
+            "identifier": 1,
+            "type": "Button",
+            "textureName": "",
+            "actions": []
+        },
+        
+        {
+            "identifier": 2,
+            "type": "Switch",
+            "actions": []
+        },
+        
+        {
+            "identifier": 3,
+            "type": "LightBulb",
+        }]
+}
+
+

@@ -29,7 +29,7 @@ class Busyboard: NSObject {
         }
     }
     
-    var background: Background?
+    var background: Background
     
     // Размер доски
     var size: CGSize {
@@ -40,5 +40,9 @@ class Busyboard: NSObject {
     var boardComponents: [BoardComponent]?
     
     // перемещение компонента с заданным id -> вызов лэйаутера
+    
+    init(background: Background) {
+        self.background = background
+    }
     
 }

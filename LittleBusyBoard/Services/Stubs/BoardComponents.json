@@ -1,0 +1,25 @@
+[
+    {
+        "identifier": 1,
+        "type": "Button",
+        "textureName": "",
+        "actions": []
+    },
+    
+    {
+        "identifier": 2,
+        "type": "Switch",
+        "onTextureName": "",
+        "offTextureName": "",
+        "actions": []
+    },
+    
+    {
+        "identifier": 3,
+        "type": "LightBulb",
+        "onTextureName": "",
+        "offTextureName": "",
+    }
+]
+
+

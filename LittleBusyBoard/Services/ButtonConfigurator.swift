@@ -9,23 +9,7 @@
 import UIKit
 
 
-class ButtonConfigurator: NSObject {
+class ButtonConfigurator {
     
-    var avaliableBackgrouns: [Background]? {
-        get {
-            guard let json = Utils.unarchiveJSON(from: "Backgrounds") else {
-                fatalError()
-            }
-            
-            let backgrounds = try? JSONDecoder().decode([Background].self, from: json)
-            return backgrounds
-        }
-    }
-    
-    func randomSingleButton() -> UIButton {
-        let button = UIButton()
-        
-        
-        return button
-    }
+
 }

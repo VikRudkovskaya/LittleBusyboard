@@ -10,7 +10,7 @@ import Foundation
 
 struct Background: Decodable {
     
-    var identifire: String?
+    var identifier: Int?
     
     var name: String?
     
@@ -21,7 +21,7 @@ struct Background: Decodable {
     var url: String?
     
     enum CodingKeys : String, CodingKey {
-        case identifire
+        case identifier
         case name
         case bgDescription = "description"
         case fileName

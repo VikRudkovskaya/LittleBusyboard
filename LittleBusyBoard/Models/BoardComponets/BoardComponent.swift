@@ -9,6 +9,7 @@
 import UIKit
 
 protocol BoardComponent: class {
+    
     func view() -> UIView
     
     // Каждый компонент должен знать координаты, где он находится на борде
@@ -22,9 +23,7 @@ protocol BoardComponent: class {
     
     // У элемента может быть последовательность действий
     var actions: [ComponentAction]? {get set}
+    
+    // Одновременно или последовательно воспроизводить действия
 }
-
-//extension BoardComponent {
-//    var coordinates: CGPoint = CGPoint(x: 0, y: 0)
-//}
 
