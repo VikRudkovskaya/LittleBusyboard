@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F22F320E2208497700AA0848 /* BoardComponents.json in Resources */ = {isa = PBXBuildFile; fileRef = F22F320D2208497700AA0848 /* BoardComponents.json */; };
+		F22F321022085FB000AA0848 /* SystemSounds.json in Resources */ = {isa = PBXBuildFile; fileRef = F22F320F22085FB000AA0848 /* SystemSounds.json */; };
+		F272D97322087BAC0067B7DD /* SystemSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D97222087BAC0067B7DD /* SystemSound.swift */; };
 		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
 		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
 		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
@@ -36,7 +38,6 @@
 		F2D026D021FCD1C300DCA09A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026CF21FCD1C300DCA09A /* Colors.swift */; };
 		F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026D521FDAD8F00DCA09A /* InfoPopUpViewController.swift */; };
 		F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026D621FDAD8F00DCA09A /* InfoPopUpViewController.xib */; };
-		F2D026DB21FDB49700DCA09A /* ButtonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */; };
 		F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */; };
 		F2D026DF21FDD42C00DCA09A /* ComponentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */; };
 		F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E021FDD5F300DCA09A /* Utils.swift */; };
@@ -48,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		F22F320D2208497700AA0848 /* BoardComponents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardComponents.json; sourceTree = "<group>"; };
+		F22F320F22085FB000AA0848 /* SystemSounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemSounds.json; sourceTree = "<group>"; };
+		F272D97222087BAC0067B7DD /* SystemSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSound.swift; sourceTree = "<group>"; };
 		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
 		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
 		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
@@ -78,7 +81,6 @@
 		F2D026CF21FCD1C300DCA09A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F2D026D521FDAD8F00DCA09A /* InfoPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopUpViewController.swift; sourceTree = "<group>"; };
 		F2D026D621FDAD8F00DCA09A /* InfoPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoPopUpViewController.xib; sourceTree = "<group>"; };
-		F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfigurator.swift; sourceTree = "<group>"; };
 		F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponetsLayouter.swift; sourceTree = "<group>"; };
 		F2D026DE21FDD42C00DCA09A /* ComponentAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentAction.swift; sourceTree = "<group>"; };
 		F2D026E021FDD5F300DCA09A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		F2B1A139220840A3007952CC /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				F22F320F22085FB000AA0848 /* SystemSounds.json */,
 				F22F320D2208497700AA0848 /* BoardComponents.json */,
 				F2B1A13722082C4E007952CC /* ButtonTextures.json */,
 				F2B1A1342206BC1A007952CC /* Backgrounds.json */,
@@ -174,6 +177,7 @@
 			children = (
 				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
 				F2D026C121FC476300DCA09A /* Background.swift */,
+				F272D97222087BAC0067B7DD /* SystemSound.swift */,
 				F2B1A13622073D17007952CC /* ComponentActions */,
 				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
 			);
@@ -251,7 +255,6 @@
 				F2B1A139220840A3007952CC /* Stubs */,
 				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
 				F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */,
-				F2D026DA21FDB49700DCA09A /* ButtonConfigurator.swift */,
 				F2D026E021FDD5F300DCA09A /* Utils.swift */,
 			);
 			path = Services;
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */,
+				F22F321022085FB000AA0848 /* SystemSounds.json in Resources */,
 				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
 				F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */,
 				F2B1A13822082C4E007952CC /* ButtonTextures.json in Resources */,
@@ -393,13 +397,13 @@
 				F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */,
 				F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */,
 				F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */,
-				F2D026DB21FDB49700DCA09A /* ButtonConfigurator.swift in Sources */,
 				F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */,
 				F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */,
 				F2D026BD21FC397F00DCA09A /* BusyboardTableViewCell.swift in Sources */,
 				F2D026E921FDEE5A00DCA09A /* SwitchComponent.swift in Sources */,
 				F2D026BA21FC397F00DCA09A /* BusyboardLevelViewController.swift in Sources */,
 				F2D026BC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift in Sources */,
+				F272D97322087BAC0067B7DD /* SystemSound.swift in Sources */,
 				F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

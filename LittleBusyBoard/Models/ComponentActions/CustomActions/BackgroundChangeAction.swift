@@ -9,5 +9,18 @@
 import UIKit
 
 class BackgroundChangeAction: ComponentAction {
+    
+    // Бэкграунд, на который нужно поменять
+    let newBackground: Background
+    
+    init(newBackground: Background) {
+        self.newBackground = newBackground
+    }
+    
+    override func perform() {
+        super.perform()
+        
+        
+    }
 
 }

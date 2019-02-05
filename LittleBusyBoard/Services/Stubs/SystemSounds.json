@@ -1,0 +1,616 @@
+[
+    {   "systemSoundID": 1000,
+        "fileName": "new-mail.caf",
+        "category": "MailReceived"
+    },
+    
+    {   "systemSoundID": 1001,
+        "fileName": "mail-sent.caf",
+        "category": "MailSent"
+    },
+    
+    {   "systemSoundID": 1002,
+        "fileName": "Voicemail.caf",
+        "category": "VoicemailReceived"
+    },
+    
+    {   "systemSoundID": 1003,
+        "fileName": "ReceivedMessage.caf",
+        "category": "SMSReceived"
+    },
+    
+    {   "systemSoundID": 1004,
+        "fileName": "SentMessage.caf",
+        "category": "SMSSent"
+    },
+    
+    {   "systemSoundID": 1005,
+        "fileName": "alarm.caf",
+        "category": "CalendarAlert"
+    },
+    
+    {   "systemSoundID": 1006,
+        "fileName": "low_power.caf",
+        "category": "LowPower"
+    },
+    
+    {   "systemSoundID": 1007,
+        "fileName": "sms-received1.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1008,
+        "fileName": "sms-received2.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1009,
+        "fileName": "sms-received3.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1010,
+        "fileName": "sms-received4.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1011,
+        "category": "SMSReceived_Vibrate"
+    },
+    
+    {   "systemSoundID": 1013,
+        "fileName": "sms-received5.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1014,
+        "fileName": "sms-received6.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1015,
+        "fileName": "sVoicemail.caf",
+    },
+    
+    {   "systemSoundID": 1016,
+        "fileName": "tweet_sent.caf",
+        "category": "SMSSent"
+    },
+    
+    {   "systemSoundID": 1020,
+        "fileName": "Anticipate.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1021,
+        "fileName": "Bloom.caf ",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1022,
+        "fileName": "Calypso.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1023,
+        "fileName": "Choo_Choo.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1024,
+        "fileName": "Descent.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1025,
+        "fileName": "Fanfare.ca",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1026,
+        "fileName": "Ladder.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1027,
+        "fileName": "Minuet.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1028,
+        "fileName": "News_Flash.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1029,
+        "fileName": "Noir.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1030,
+        "fileName": "Sherwood_Forest.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1031,
+        "fileName": "Spell.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1032,
+        "fileName": "Suspense.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1033,
+        "fileName": "Telegraph.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1034,
+        "fileName": "Tiptoes.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1035,
+        "fileName": "Typewriters.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1036,
+        "fileName": "Update.caf",
+        "category": "SMSReceived_Alert"
+    },
+    
+    {   "systemSoundID": 1050,
+        "fileName": "ussd.caf",
+        "category": "USSDAlert"
+    },
+    
+    {   "systemSoundID": 1051,
+        "fileName": "SIMToolkitCallDropped.caf",
+        "category": "SIMToolkitTone"
+    },
+    
+    {   "systemSoundID": 1052,
+        "fileName": "SIMToolkitGeneralBeep.caf",
+        "category": "SIMToolkitTone"
+    },
+    
+    {   "systemSoundID": 1053,
+        "fileName": "SIMToolkitNegativeACK.caf",
+        "category": "SIMToolkitTone"
+    },
+    
+    {   "systemSoundID": 1054,
+        "fileName": "SIMToolkitPositiveACK.caf",
+        "category": "SIMToolkitTone"
+    },
+    
+    {   "systemSoundID": 1055,
+        "fileName": "SIMToolkitSMS.caf",
+        "category": "SIMToolkitTone"
+    },
+    
+    {   "systemSoundID": 1057,
+        "fileName": "Tink.caf",
+        "category": "PINKeyPressed"
+    },
+    
+    {   "systemSoundID": 1070,
+        "fileName": "ct-busy.caf",
+        "category": "AudioToneBusy"
+    },
+    
+    {   "systemSoundID": 1071,
+        "fileName": "ct-congestion.caf",
+        "category": "AudioToneCongestion"
+    },
+    
+    {   "systemSoundID": 1072,
+        "fileName": "ct-path-ack.caf",
+        "category": "AudioTonePathAcknowledge"
+    },
+    
+    {   "systemSoundID": 1073,
+        "fileName": "ct-error.caf",
+        "category": "AudioToneError"
+    },
+    
+    {   "systemSoundID": 1074,
+        "fileName": "ct-call-waiting.caf",
+        "category": "AudioToneCallWaiting"
+    },
+    
+    {   "systemSoundID": 1075,
+        "fileName": "ct-keytone2.caf",
+        "category": "AudioToneKey2"
+    },
+    
+    {   "systemSoundID": 1100,
+        "fileName": "lock.caf",
+        "category": "ScreenLocked"
+    },
+    
+    {   "systemSoundID": 1101,
+        "fileName": "unlock.caf",
+        "category": "ScreenUnlocked"
+    },
+    
+    {   "systemSoundID": 1102,
+        "category": "FailedUnlock"
+    },
+    
+    {   "systemSoundID": 1103,
+        "fileName": "Tink.caf",
+        "category": "KeyPressed"
+    },
+    
+    {   "systemSoundID": 1104,
+        "fileName": "Tock.caf",
+        "category": "KeyPressed"
+    },
+    
+    {   "systemSoundID": 1105,
+        "fileName": "Tock.caf",
+        "category": "KeyPressed"
+    },
+    
+    {   "systemSoundID": 1106,
+        "fileName": "beep-beep.caf",
+        "category": "ConnectedToPower"
+    },
+    
+    {   "systemSoundID": 1107,
+        "fileName": "RingerChanged.caf",
+        "category": "RingerSwitchIndication"
+    },
+    
+    {   "systemSoundID": 1108,
+        "fileName": "photoShutter.caf",
+        "category": "CameraShutter"
+    },
+    
+    {   "systemSoundID": 1109,
+        "fileName": "shake.caf",
+        "category": "ShakeToShuffle"
+    },
+    
+    {   "systemSoundID": 1110,
+        "fileName": "jbl_begin.caf",
+        "category": "JBL_Begin"
+    },
+    
+    {   "systemSoundID": 1111,
+        "fileName": "jbl_confirm.caf",
+        "category": "JBL_Confirm"
+    },
+    
+    {   "systemSoundID": 1112,
+        "fileName": "jbl_cancel.caf",
+        "category": "JBL_Cancel"
+    },
+    
+    {   "systemSoundID": 1113,
+        "fileName": "begin_record.caf",
+        "category": "BeginRecording"
+    },
+    
+    {   "systemSoundID": 1114,
+        "fileName": "end_record.caf",
+        "category": "EndRecording"
+    },
+    
+    {   "systemSoundID": 1115,
+        "fileName": "jbl_ambiguous.caf",
+        "category": "JBL_Ambiguous"
+    },
+    
+    {   "systemSoundID": 1116,
+        "fileName": "jbl_no_match.caf",
+        "category": "JBL_NoMatch"
+    },
+    
+    {   "systemSoundID": 1117,
+        "fileName": "begin_video_record.caf",
+        "category": "BeginVideoRecording"
+    },
+    
+    {   "systemSoundID": 1118,
+        "fileName": "end_video_record.caf",
+        "category": "EndVideoRecording"
+    },
+    
+    {   "systemSoundID": 1150,
+        "fileName": "vc~invitation-accepted.caf",
+        "category": "VCInvitationAccepted"
+    },
+    
+    {   "systemSoundID": 1151,
+        "fileName": "vc~ringing.caf",
+        "category": "VCRinging"
+    },
+    
+    {   "systemSoundID": 1152,
+        "fileName": "vc~ended.caf",
+        "category": "VCEnded"
+    },
+    
+    {   "systemSoundID": 1153,
+        "fileName": "ct-call-waiting.caf",
+        "category": "VCCallWaiting"
+    },
+    
+    {   "systemSoundID": 1154,
+        "fileName": "vc~ringing.caf",
+        "category": "VCCallUpgrade"
+    },
+    
+    {   "systemSoundID": 1200,
+        "fileName": "dtmf-0.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1201,
+        "fileName": "dtmf-1.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1202,
+        "fileName": "dtmf-2.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1203,
+        "fileName": "dtmf-3.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1204,
+        "fileName": "dtmf-4.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1205,
+        "fileName": "dtmf-5.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1206,
+        "fileName": "dtmf-6.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1207,
+        "fileName": "dtmf-7.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1208,
+        "fileName": "dtmf-8.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1209,
+        "fileName": "dtmf-9.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1210,
+        "fileName": "dtmf-star.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1211,
+        "fileName": "dtmf-pound.caf",
+        "category": "TouchTone"
+    },
+    
+    {   "systemSoundID": 1254,
+        "fileName": "long_low_short_high.caf",
+        "category": "Headset_StartCall"
+    },
+    
+    {   "systemSoundID": 1255,
+        "fileName": "short_double_high.caf",
+        "category": "Headset_Redial"
+    },
+
+    {   "systemSoundID": 1256,
+        "fileName": "short_low_high.caf",
+        "category": "Headset_AnswerCall"
+    },
+    
+    {   "systemSoundID": 1257,
+        "fileName": "short_double_low.caf",
+        "category": "Headset_EndCall"
+    },
+    
+    {   "systemSoundID": 1258,
+        "fileName": "short_double_low.caf",
+        "category": "Headset_CallWaitingActions"
+    },
+    
+    {   "systemSoundID": 1259,
+        "fileName": "middle_9_short_double_low.caf",
+        "category": "Headset_TransitionEnd"
+    },
+    
+    {   "systemSoundID": 1300,
+        "fileName": "Voicemail.caf",
+        "category": "SystemSoundPreview"
+    },
+    
+    {   "systemSoundID": 1301,
+        "fileName": "ReceivedMessage.caf",
+        "category": "SystemSoundPreview"
+    },
+    
+    {   "systemSoundID": 1302,
+        "fileName": "new-mail.caf",
+        "category": "SystemSoundPreview"
+    },
+    
+    {   "systemSoundID": 1303,
+        "fileName": "mail-sent.caf",
+        "category": "SystemSoundPreview"
+    },
+    
+    {   "systemSoundID": 1304,
+        "fileName": "alarm.caf",
+        "category": "SystemSoundPreview"
+    },
+    
+    {   "systemSoundID": 1305,
+        "fileName": "lock.caf",
+        "category": "SystemSoundPreview"
+    },
+    
+    {   "systemSoundID": 1306,
+        "fileName": "Tock.caf",
+        "category": "KeyPressClickPreview"
+    },
+    
+    {   "systemSoundID": 1307,
+        "fileName": "sms-received1.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1308,
+        "fileName": "sms-received2.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1309,
+        "fileName": "sms-received3.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1310,
+        "fileName": "sms-received4.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1311,
+        "category": "SMSReceived_Vibrate"
+    },
+    
+    {   "systemSoundID": 1312,
+        "fileName": "sms-received1.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1313,
+        "fileName": "sms-received5.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1314,
+        "fileName": "sms-received6.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1315,
+        "fileName": "Voicemail.caf",
+        "category": "SystemSoundPreview"
+    },
+    
+    {   "systemSoundID": 1320,
+        "fileName": "Anticipate.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1321,
+        "fileName": "Bloom.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1322,
+        "fileName": "Calypso.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1323,
+        "fileName": "Choo_Choo.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1324,
+        "fileName": "Descent.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1325,
+        "fileName": "Fanfare.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1326,
+        "fileName": "Ladder.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1327,
+        "fileName": "Minuet.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1328,
+        "fileName": "News_Flash.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1329,
+        "fileName": "Noir.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1330,
+        "fileName": "Sherwood_Forest.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1331,
+        "fileName": "Spell.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1332,
+        "fileName": "Suspense.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1333,
+        "fileName": "Telegraph.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1334,
+        "fileName": "Tiptoes.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1335,
+        "fileName": "Typewriters.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1336,
+        "fileName": "Update.caf",
+        "category": "SMSReceived_Selection"
+    },
+    
+    {   "systemSoundID": 1350,
+        "category": "RingerVibeChanged"
+    },
+    
+    {   "systemSoundID": 1351,
+        "category": "SilentVibeChanged"
+    },
+    
+    {   "systemSoundID": 4095,
+        "category": "Vibrate"
+    }
+]
+
+

@@ -11,16 +11,16 @@ import AVFoundation
 
 class PlaySoundAction: ComponentAction {
     
-    let systemSoundID: Int
+    let systemSound: SystemSound
     
-    init(soundID: Int) {
-        self.systemSoundID = soundID
+    init(systemSound: SystemSound) {
+        self.systemSound = systemSound
     }
     
     override func perform() {
         super.perform()
         
-        self.playSound(soundID: self.systemSoundID)
+        self.playSound(soundID: self.systemSound.soundID)
     }
     
     func playSound(soundID: Int) {

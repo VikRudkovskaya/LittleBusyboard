@@ -30,6 +30,24 @@ class BusyboardService: NSObject {
         }
     }
     
+    var availableSystemSounds: [SystemSound] {
+        get {
+            guard let json = Utils.unarchiveJSON(from: "SystemSounds") else {
+                fatalError()
+            }
+            
+            do {
+                let sysSounds = try JSONDecoder().decode([SystemSound].self, from: json)
+                return sysSounds
+            } catch  {
+                print("Decode Error: ", error)
+                let defaultSysSound = SystemSound(soundID: 1000, fileName: nil, category: nil)
+                
+                return [defaultSysSound]
+            }
+        }
+    }
+    
     // Получить доступные доски
     func busyboards(completion:@escaping ([Busyboard]?) -> () ) -> () {
         busyboards = localBusyboards()
@@ -46,8 +64,11 @@ class BusyboardService: NSObject {
         
         let button1 = ButtonComponent()
         button1.textureName = "button_green-blue"
-        let soundAction = PlaySoundAction(soundID: 1025)
-        button1.actions = [soundAction]
+        let sysSound1 = availableSystemSounds[Utils.random(availableSystemSounds.count)]
+        let sysSound2 = availableSystemSounds[Utils.random(availableSystemSounds.count)]
+        let soundAction1 = PlaySoundAction(systemSound: sysSound1)
+        let soundAction2 = PlaySoundAction(systemSound: sysSound2)
+        button1.actions = [soundAction1]
         
         board1.boardComponents = [button1]
         
@@ -60,7 +81,7 @@ class BusyboardService: NSObject {
         let board3 = Busyboard(background: background)
         board3.name = "Звездный"
         
-        // Лес, единороги, замки
+        // Лес, единороги, замки, облака, квадраты, рубчик
         
         return [board1]
     }
