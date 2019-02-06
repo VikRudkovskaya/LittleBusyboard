@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ButtonComponent: NSObject, BoardComponent {
+class ButtonComponent: BoardComponent {
     
     var perfomMode: ActionPerformMode = .oneByOne
     
@@ -23,6 +23,11 @@ class ButtonComponent: NSObject, BoardComponent {
     var actions: [ComponentAction]?
     
     var textureName: String = "button_red"
+    
+    private enum CodingKeys: String, CodingKey {
+        case textureName
+    }
+    
     
     var availableTextures: [String] {
         get {

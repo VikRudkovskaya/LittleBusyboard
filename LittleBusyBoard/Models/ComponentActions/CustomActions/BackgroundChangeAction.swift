@@ -15,6 +15,17 @@ class BackgroundChangeAction: ComponentAction {
     
     init(newBackground: Background) {
         self.newBackground = newBackground
+        super.init()
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case newBackground
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.newBackground = try container.decode(Background.self, forKey: .newBackground)
+        try super.init(from: decoder)
     }
     
     override func perform() {

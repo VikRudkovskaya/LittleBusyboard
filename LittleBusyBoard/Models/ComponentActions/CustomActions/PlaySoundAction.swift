@@ -15,6 +15,17 @@ class PlaySoundAction: ComponentAction {
     
     init(systemSound: SystemSound) {
         self.systemSound = systemSound
+        super.init()
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case systemSound
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.systemSound = try container.decode(SystemSound.self, forKey: .systemSound)
+        try super.init(from: decoder)
     }
     
     override func perform() {

@@ -8,27 +8,25 @@
 
 import UIKit
 
-class BusyboardsGroup: NSObject {
+class BusyboardsGroup: Decodable {
     
     var identifier: String
     
     var header: String?
     
     var headerBgName: String?
-//    {
-//        get {
-//            switch identifier {
-//            case "OneButton":
-//                return "Однокнопочный"
-//                case "Button"
-//            default:
-//                return ""
-//            }
-//        }
-//    }
+    
+    var boards: [Busyboard]?
     
     init(identifier: String) {
         self.identifier = identifier
+    }
+    
+    enum CodingKeys : String, CodingKey {
+        case identifier
+        case header
+        case headerBgName
+        case boards
     }
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComponentAction: NSObject {
+class ComponentAction: Decodable {
     // Исполнить
     func perform() {
         

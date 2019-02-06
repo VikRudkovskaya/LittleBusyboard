@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwitchComponent: NSObject, BoardComponent {
+class SwitchComponent: BoardComponent {
     var perfomMode: ActionPerformMode = .simultaneously
     
     
@@ -25,6 +25,12 @@ class SwitchComponent: NSObject, BoardComponent {
     var onTextureName: String = "button_red"
     
     var offTextureName: String = "button_red"
+    
+    private enum CodingKeys: String, CodingKey {
+        case onTextureName
+        case offTextureName
+        case on
+    }
     
     var currentTextureName: String {
         if on {

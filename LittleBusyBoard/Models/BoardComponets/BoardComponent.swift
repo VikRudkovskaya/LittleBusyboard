@@ -8,13 +8,13 @@
 
 import UIKit
 
-enum ActionPerformMode {
+enum ActionPerformMode: String, Decodable {
     case oneByOne // оно за другим при каждом нажатии
     case inSeries // друг за другом за одно нажатие. Наприемер, сначала проиграть один звук, затем включить лампочки,
     case simultaneously // Все одновременно сразу. Например, воспроизвести одновременно несколько звуков, включить лампочки и переместиться в пространстве
 }
 
-protocol BoardComponent: class {
+protocol BoardComponent: Decodable {
     
     func view() -> UIView
     
@@ -33,6 +33,5 @@ protocol BoardComponent: class {
     // Одновременно или последовательно сразу воспроизводить действия, или последовательно при каждом нажатии
     // Компонент должен знать в каком моде ему воспроизводить action'ы
     var perfomMode: ActionPerformMode {get set}
-    
 }
 

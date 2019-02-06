@@ -1,0 +1,41 @@
+{
+    "identifier": "OneButtonBoards",
+    "haederName": "Однокнопочные",
+    "headerBgName": "",
+    "boards": [ {
+        "identifier": 1
+        "name": "Бизиборд",
+        "description": "Однокнопочный",
+        "miniatureName": "miniature_v1"
+        "background": {
+            "identifier": 1,
+            "name": "Металлическая пластина",
+            "description": "Оттенки алюминия. Цвет дедушкиного советского проигрывателя RADIOTEHNIKA M-201",
+            "fileName": "bg_metal_slab_v1",
+        },
+        "components": [
+            {
+                "identifier": 1,
+                "type": "Button",
+                "textureName": "button_red",
+                "openSoundID": 1000,
+                "closeSoundID": 1200,
+                "actionMode": "OneByOne",
+                "actions": [
+                    {
+                        "identifier": 1,
+                        "type": "PlaySound",
+                        "soundID": 1000
+                    },
+                    
+                    {
+                        "identifier": 6,
+                        "type": "PlaySound",
+                        "soundID": 1254
+                    },
+                ]
+            }]
+    }]
+}
+
+

@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		F272D97322087BAC0067B7DD /* SystemSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D97222087BAC0067B7DD /* SystemSound.swift */; };
 		F272D97A220996650067B7DD /* ButtonTextures.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D976220996650067B7DD /* ButtonTextures.json */; };
-		F272D97B220996650067B7DD /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D977220996650067B7DD /* Board.json */; };
+		F272D97B220996650067B7DD /* BoardsGroup_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D977220996650067B7DD /* BoardsGroup_1.json */; };
 		F272D97C220996650067B7DD /* BoardComponents.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D978220996650067B7DD /* BoardComponents.json */; };
 		F272D97D220996650067B7DD /* Backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D979220996650067B7DD /* Backgrounds.json */; };
 		F272D98122099BC00067B7DD /* SystemSoundsIDs.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D98022099BC00067B7DD /* SystemSoundsIDs.json */; };
 		F272D98422099BF90067B7DD /* Actions.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D98322099BF90067B7DD /* Actions.json */; };
 		F272D988220AA84B0067B7DD /* BusyboardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D987220AA84B0067B7DD /* BusyboardGroup.swift */; };
+		F272D98A220AD1F30067B7DD /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D989220AD1F30067B7DD /* Board.json */; };
+		F272D98C220AF0760067B7DD /* BoardComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D98B220AF0760067B7DD /* BoardComponents.swift */; };
 		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
 		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
 		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
@@ -52,12 +54,14 @@
 /* Begin PBXFileReference section */
 		F272D97222087BAC0067B7DD /* SystemSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSound.swift; sourceTree = "<group>"; };
 		F272D976220996650067B7DD /* ButtonTextures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ButtonTextures.json; sourceTree = "<group>"; };
-		F272D977220996650067B7DD /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
+		F272D977220996650067B7DD /* BoardsGroup_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_1.json; sourceTree = "<group>"; };
 		F272D978220996650067B7DD /* BoardComponents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardComponents.json; sourceTree = "<group>"; };
 		F272D979220996650067B7DD /* Backgrounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Backgrounds.json; sourceTree = "<group>"; };
 		F272D98022099BC00067B7DD /* SystemSoundsIDs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemSoundsIDs.json; sourceTree = "<group>"; };
 		F272D98322099BF90067B7DD /* Actions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Actions.json; sourceTree = "<group>"; };
 		F272D987220AA84B0067B7DD /* BusyboardGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusyboardGroup.swift; sourceTree = "<group>"; };
+		F272D989220AD1F30067B7DD /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
+		F272D98B220AF0760067B7DD /* BoardComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardComponents.swift; sourceTree = "<group>"; };
 		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
 		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
 		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
@@ -110,7 +114,8 @@
 			children = (
 				F272D98322099BF90067B7DD /* Actions.json */,
 				F272D976220996650067B7DD /* ButtonTextures.json */,
-				F272D977220996650067B7DD /* Board.json */,
+				F272D989220AD1F30067B7DD /* Board.json */,
+				F272D977220996650067B7DD /* BoardsGroup_1.json */,
 				F272D978220996650067B7DD /* BoardComponents.json */,
 				F272D979220996650067B7DD /* Backgrounds.json */,
 			);
@@ -303,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
+				F272D98B220AF0760067B7DD /* BoardComponents.swift */,
 				F2D026E721FDEBC900DCA09A /* CustomComponents */,
 			);
 			path = BoardComponets;
@@ -398,10 +404,11 @@
 				F2D026B421FC397F00DCA09A /* Other.xcassets in Resources */,
 				F272D97D220996650067B7DD /* Backgrounds.json in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,
+				F272D98A220AD1F30067B7DD /* Board.json in Resources */,
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
 				F272D97A220996650067B7DD /* ButtonTextures.json in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
-				F272D97B220996650067B7DD /* Board.json in Resources */,
+				F272D97B220996650067B7DD /* BoardsGroup_1.json in Resources */,
 				F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */,
+				F272D98C220AF0760067B7DD /* BoardComponents.swift in Sources */,
 				F2D026DF21FDD42C00DCA09A /* ComponentAction.swift in Sources */,
 				F2D026B721FC397F00DCA09A /* AppDelegate.swift in Sources */,
 				F2D026D021FCD1C300DCA09A /* Colors.swift in Sources */,

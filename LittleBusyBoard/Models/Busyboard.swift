@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Busyboard: NSObject {
+class Busyboard: Decodable {
     
     var name: String = "Бизиборд"
     
@@ -47,4 +47,25 @@ class Busyboard: NSObject {
         self.background = background
     }
     
+    enum CodingKeys : String, CodingKey {
+        case name
+        case boardDescription
+        case isRandom
+        case _miniatureName = "miniatureName"
+        case background
+        case boardComponents
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.name = try container.decode(String.self, forKey: .name)
+        self.boardDescription = try container.decode(String.self, forKey: .boardDescription)
+        self.isRandom = try container.decode(Bool.self, forKey: .isRandom)
+        self._miniatureName = try container.decode(String.self, forKey: ._miniatureName)
+        self.background = try container.decode(Background.self, forKey: .background)
+        
+        let components = try container.decode(BoardComponents.self, forKey: .boardComponents)
+        self.boardComponents = components.components
+    }
 }

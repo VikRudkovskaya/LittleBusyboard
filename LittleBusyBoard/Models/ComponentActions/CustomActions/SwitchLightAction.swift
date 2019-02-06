@@ -13,6 +13,17 @@ class SwitchLightAction: ComponentAction {
     
     init(lightBubles: [LightbulbComponent]) {
         self.lightBubles = lightBubles
+        super.init()
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case lightBubles
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.lightBubles = try container.decode([LightbulbComponent].self, forKey: .lightBubles)
+        try super.init(from: decoder)
     }
     
     override func perform() {
