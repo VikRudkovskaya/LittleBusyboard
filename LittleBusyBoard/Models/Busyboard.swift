@@ -14,6 +14,8 @@ class Busyboard: NSObject {
     
     var boardDescription = "Этот потрясающий бизиборд"
     
+    var isRandom: Bool = false // какие именно парам рандомизируются
+    
     private var _miniatureName: String?
     var miniatureName: String {
         get {

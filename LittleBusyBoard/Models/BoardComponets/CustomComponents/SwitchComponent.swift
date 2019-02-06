@@ -9,6 +9,8 @@
 import UIKit
 
 class SwitchComponent: NSObject, BoardComponent {
+    var perfomMode: ActionPerformMode = .simultaneously
+    
     
     func view() -> UIView {
         return UIButton()

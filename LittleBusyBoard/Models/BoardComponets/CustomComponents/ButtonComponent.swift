@@ -10,6 +10,8 @@ import UIKit
 
 class ButtonComponent: NSObject, BoardComponent {
     
+    var perfomMode: ActionPerformMode = .oneByOne
+    
     func view() -> UIView {
         return self.randomSingleButton()
     }

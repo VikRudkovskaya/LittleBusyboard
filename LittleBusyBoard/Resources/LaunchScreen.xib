@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_rounds" translatesAutoresizingMaskIntoConstraints="NO" id="z3s-RA-ECn">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_rounds_v1" translatesAutoresizingMaskIntoConstraints="NO" id="z3s-RA-ECn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="один" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muH-TU-PKV">
@@ -84,6 +84,6 @@
         </view>
     </objects>
     <resources>
-        <image name="bg_tiny_rounds" width="400" height="700"/>
+        <image name="bg_tiny_rounds_v1" width="400" height="700"/>
     </resources>
 </document>

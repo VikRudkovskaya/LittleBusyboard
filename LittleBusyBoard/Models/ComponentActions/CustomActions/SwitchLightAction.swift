@@ -9,7 +9,7 @@
 import UIKit
 
 class SwitchLightAction: ComponentAction {
-    var lightBubles: [LightbulbComponent] // лампочки, которые включаются по этому действи
+    var lightBubles: [LightbulbComponent] // лампочки, которые включаются по этому действию
     
     init(lightBubles: [LightbulbComponent]) {
         self.lightBubles = lightBubles

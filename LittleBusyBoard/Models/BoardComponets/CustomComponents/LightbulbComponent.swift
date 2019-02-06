@@ -9,6 +9,8 @@
 import UIKit
 
 class LightbulbComponent: NSObject, BoardComponent  {
+    var perfomMode: ActionPerformMode = .inSeries
+    
     func view() -> UIView {
         return UIView()
     }

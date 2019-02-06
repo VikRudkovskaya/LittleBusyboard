@@ -32,18 +32,18 @@ class BusyboardService: NSObject {
     
     var availableSystemSounds: [SystemSound] {
         get {
-            guard let json = Utils.unarchiveJSON(from: "SystemSounds") else {
-                fatalError()
+            guard let json = Utils.unarchiveJSON(from: "SystemSoundsIDs") else {
+                fatalError("Файл с указанным именем не найден")
             }
             
             do {
-                let sysSounds = try JSONDecoder().decode([SystemSound].self, from: json)
-                return sysSounds
+                let systemSounds = try JSONDecoder().decode([SystemSound].self, from: json)
+                return systemSounds
             } catch  {
                 print("Decode Error: ", error)
-                let defaultSysSound = SystemSound(soundID: 1000, fileName: nil, category: nil)
+                let defaultSystemSound = SystemSound(soundID: 1000, fileName: nil, category: nil)
                 
-                return [defaultSysSound]
+                return [defaultSystemSound]
             }
         }
     }

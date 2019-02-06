@@ -1,0 +1,32 @@
+[
+    {
+        "identifier": 1,
+        "type": "PlaySound",
+        "soundID": 1000
+    },
+    
+    {
+        "identifier": 2,
+        "type": "SetupBackgropund",
+        "backgrounsName": ""
+    },
+    
+    {
+        "identifier": 3,
+        "type": "ResizeElement",
+        "newWidth": 100,
+        "newHeight": 100
+    },
+    
+    {
+        "identifier": 4,
+        "type": "TransitionElement"
+    },
+    
+    {
+        "identifier": 5,
+        "type": "SwitchLight",
+        "lightsIds": [1, 2, 3]
+    }
+
+]

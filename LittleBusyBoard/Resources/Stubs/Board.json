@@ -1,7 +1,7 @@
 {
     "identifier": 1
     "name": "Бизиборд",
-    "description": "Потрясающий бизиборд",
+    "description": "Однокнопочный",
     "miniatureName": "miniature_v1"
     "background": {
         "identifier": 1,
@@ -13,8 +13,23 @@
         {
             "identifier": 1,
             "type": "Button",
-            "textureName": "",
-            "actions": []
+            "textureName": "button_red",
+            "openSoundID": 1000,
+            "closeSoundID": 1200,
+            "actionMode": "OneByOne",
+            "actions": [
+                {
+                    "identifier": 1,
+                    "type": "PlaySound",
+                    "soundID": 1000
+                },
+                
+                {
+                    "identifier": 6,
+                    "type": "PlaySound",
+                    "soundID": 1254
+                },
+            ]
         },
         
         {

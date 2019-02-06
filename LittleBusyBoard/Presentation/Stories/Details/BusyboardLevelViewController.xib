@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_rounds_central" translatesAutoresizingMaskIntoConstraints="NO" id="icz-IO-rJn">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_donuts_v2" translatesAutoresizingMaskIntoConstraints="NO" id="icz-IO-rJn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
             </subviews>
@@ -37,6 +37,6 @@
         </view>
     </objects>
     <resources>
-        <image name="bg_tiny_rounds_central" width="400" height="700"/>
+        <image name="bg_tiny_donuts_v2" width="400" height="700"/>
     </resources>
 </document>
