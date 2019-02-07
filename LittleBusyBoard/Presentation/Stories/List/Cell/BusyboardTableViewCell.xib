@@ -88,7 +88,7 @@
                 <outlet property="boardImageView" destination="JHB-pA-BuK" id="5m5-uo-PoB"/>
                 <outlet property="name" destination="IWg-3c-2q9" id="tk3-T9-AQF"/>
             </connections>
-            <point key="canvasLocation" x="368" y="113.3433283358321"/>
+            <point key="canvasLocation" x="326" y="101"/>
         </tableViewCell>
     </objects>
     <resources>

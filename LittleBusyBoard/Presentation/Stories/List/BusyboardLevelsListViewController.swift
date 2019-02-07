@@ -33,6 +33,16 @@ class BusyboardLevelsListViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    
+    @IBAction func infoTouchUpInside(sender: UIButton) {
+        let infoPopUp = InfoPopUpViewController()
+        self.present(infoPopUp, animated: true, completion: nil)
+    }
+    
+    @IBAction func settingsTouchUpInside(sender: UIButton) {
+    
+    }
+    
 
 }
 
