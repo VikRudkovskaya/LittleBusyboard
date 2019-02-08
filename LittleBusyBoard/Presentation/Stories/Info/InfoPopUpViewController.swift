@@ -13,4 +13,8 @@ class InfoPopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func closeTouchUpInside(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
