@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoPopUpViewController" customModule="LittleBusyboard" customModuleProvider="target">
             <connections>
+                <outlet property="containerView" destination="2ex-6a-mXI" id="cya-B8-VWF"/>
                 <outlet property="scrollView" destination="HIB-9o-WLO" id="N9I-89-SnY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

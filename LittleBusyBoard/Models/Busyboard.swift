@@ -12,7 +12,7 @@ class Busyboard: Decodable {
     
     var name: String = "Бизиборд"
     
-    var boardDescription = "Этот потрясающий бизиборд"
+    var boardDescription: String?
     
     var isRandom: Bool = false // какие именно парам рандомизируются
     
@@ -53,7 +53,7 @@ class Busyboard: Decodable {
         case isRandom
         case _miniatureName = "miniatureName"
         case background
-        case boardComponents
+        case boardComponents = "components"
     }
     
     required init(from decoder: Decoder) throws {
@@ -65,7 +65,7 @@ class Busyboard: Decodable {
         self._miniatureName = try container.decode(String.self, forKey: ._miniatureName)
         self.background = try container.decode(Background.self, forKey: .background)
         
-        let components = try container.decode(BoardComponents.self, forKey: .boardComponents)
+        let components = try BoardComponents(from: decoder)
         self.boardComponents = components.components
     }
 }

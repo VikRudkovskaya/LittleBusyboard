@@ -7,7 +7,10 @@
 //
 
 import UIKit
-// Промежуточный компонент для декода массива, содержащего объекты разного типа
+/*
+ * Промежуточный компонент для декода массива,
+ * содержащего объекты разного типа (разные типы компонентов доски)
+ */
 struct BoardComponents: Decodable {
     
     let components: [BoardComponent]
@@ -32,9 +35,13 @@ struct BoardComponents: Decodable {
         var components = [BoardComponent]()
         var componetsForData = componentsForType // список из которого парсится объект
         while(!componentsForType.isAtEnd) {
-            // nestedContainer и decode сдвигают текущий индекс списка на котором они были вызваны
-            // поэтому если вызывать их на одном и том же списке, то возвращаться будут разные объекты (сначала по индексу i, затем по индексу i+1)
+            /*
+             * nestedContainer и decode сдвигают текущий индекс списка на котором они были вызваны
+             * поэтому если вызывать их на одном и том же списке, то возвращаться будут
+             * разные объекты (сначала по индексу i, затем по индексу i+1)
+             */
             let component = try componentsForType.nestedContainer(keyedBy: ComponentTypeKey.self)
+
             let type = try component.decode(ComponentType.self, forKey: ComponentTypeKey.type)
             switch type {
             case .buttonType:

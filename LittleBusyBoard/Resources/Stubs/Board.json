@@ -1,7 +1,7 @@
 {
     "identifier": 1
     "name": "Бизиборд",
-    "description": "Однокнопочный",
+    "boardDescription": "Однокнопочный",
     "miniatureName": "miniature_v1"
     "background": {
         "identifier": 1,

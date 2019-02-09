@@ -9,19 +9,26 @@
 import UIKit
 
 class InfoPopUpViewController: UIViewController {
-    @IBOutlet var scrollView: UIScrollView!
+    
+    /**
+     * Использование такого типа верстки оправдано только в pet-projects
+     */
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var containerView: UIView!
     
     convenience init() {
         self.init(nibName: nil, bundle: nil)
         
         modalTransitionStyle = .crossDissolve
-        modalPresentationStyle = .overCurrentContext
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.scrollView.delegate = self
-
+        
+        scrollView.delegate = self
+        
+        containerView.layer.cornerRadius = 7
     }
     
     @IBAction func closeTouchUpInside(_ sender: Any) {
@@ -33,7 +40,7 @@ class InfoPopUpViewController: UIViewController {
 extension InfoPopUpViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y < -150 {
+        if scrollView.contentOffset.y < -200 {
             self.dismiss(animated: true, completion: nil)
         }
     }

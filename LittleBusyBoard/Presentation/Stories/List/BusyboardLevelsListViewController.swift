@@ -26,12 +26,18 @@ class BusyboardLevelsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerCells()
+
+        busyboardService.busyboards{ boardsGroups in
+            self.tableView.reloadData()
+        }
+    }
+    
+    private func registerCells() {
+        
         let nib = UINib(nibName: "BusyboardTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: BusyboardTableViewCell.reuseID())
         
-        busyboardService.busyboards{ boards in
-            self.tableView.reloadData()
-        }
     }
     
     @IBAction func infoTouchUpInside(sender: UIButton) {
@@ -42,20 +48,24 @@ class BusyboardLevelsListViewController: UIViewController {
     @IBAction func settingsTouchUpInside(sender: UIButton) {
     
     }
-    
 
 }
 
 extension BusyboardLevelsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return busyboardService.busyboards?.count ?? 0
+        return busyboardService.busyboardsGroups?[section].boards?.count ?? 0 //boards.count
+    }
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return busyboardService.busyboardsGroups?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: BusyboardTableViewCell.reuseID(), for: indexPath) as! BusyboardTableViewCell
 
-        let board = busyboardService.busyboards![indexPath.row]
+        let board = busyboardService.busyboardsGroups![indexPath.section].boards![indexPath.row]
         cell.setup(board: board)
         
         return cell
@@ -69,13 +79,10 @@ extension BusyboardLevelsListViewController: UITableViewDataSource {
 
 extension BusyboardLevelsListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let boards = busyboardService.busyboards else {
+        guard let groups = busyboardService.busyboardsGroups, let board = groups[indexPath.section].boards?[indexPath.row] else {
             return
         }
-        let board = boards[indexPath.row]
         let vc = BusyboardLevelViewController(board: board)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
-
-

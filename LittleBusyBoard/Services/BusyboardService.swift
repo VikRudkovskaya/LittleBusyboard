@@ -10,7 +10,7 @@ import UIKit
 
 class BusyboardService: NSObject {
     
-    var busyboards: [Busyboard]?
+    var busyboardsGroups: [BusyboardsGroup]?
     
     var availableBackgrouns: [Background] {
         get {
@@ -49,9 +49,20 @@ class BusyboardService: NSObject {
     }
     
     // Получить доступные доски
-    func busyboards(completion:@escaping ([Busyboard]?) -> () ) -> () {
-        busyboards = localBusyboards()
-        completion(busyboards)
+    func busyboards(completion:@escaping ([BusyboardsGroup]?) -> () ) -> () {
+        
+        guard let jsonData = Utils.unarchiveJSON(from: "BoardsGroup_1") else {
+            fatalError("Файл с указанным именем не найден")
+        }
+        var boardsGroups: [BusyboardsGroup]? = nil
+        do {
+            let busyboardsGroup = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData)
+            boardsGroups = [busyboardsGroup]
+        } catch  {
+            print("Decode Error: ", error)
+        }
+        self.busyboardsGroups = boardsGroups
+        completion(boardsGroups)
     }
 
     private func localBusyboards() -> [Busyboard] {
@@ -65,9 +76,7 @@ class BusyboardService: NSObject {
         let button1 = ButtonComponent()
         button1.textureName = "button_green-blue"
         let sysSound1 = availableSystemSounds[Utils.random(availableSystemSounds.count)]
-        let sysSound2 = availableSystemSounds[Utils.random(availableSystemSounds.count)]
         let soundAction1 = PlaySoundAction(systemSound: sysSound1)
-        let soundAction2 = PlaySoundAction(systemSound: sysSound2)
         button1.actions = [soundAction1]
         
         board1.boardComponents = [button1]

@@ -12,7 +12,7 @@ class BusyboardsGroup: Decodable {
     
     var identifier: String
     
-    var header: String?
+    var headerName: String?
     
     var headerBgName: String?
     
@@ -24,7 +24,7 @@ class BusyboardsGroup: Decodable {
     
     enum CodingKeys : String, CodingKey {
         case identifier
-        case header
+        case headerName
         case headerBgName
         case boards
     }

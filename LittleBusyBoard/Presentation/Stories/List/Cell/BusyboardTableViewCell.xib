@@ -38,7 +38,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Однокнопочный" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWg-3c-2q9">
-                        <rect key="frame" x="78" y="8" width="216" height="17.5"/>
+                        <rect key="frame" x="78" y="8" width="212" height="17.5"/>
                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -50,15 +50,15 @@
                             <constraint firstAttribute="height" constant="1" id="Tt3-EI-KtO"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="Rl9-UZ-Czr">
-                        <rect key="frame" x="306" y="5" width="14" height="56"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="Rl9-UZ-Czr">
+                        <rect key="frame" x="302" y="20" width="14" height="26"/>
                         <color key="tintColor" red="0.40020162729999997" green="0.4913655442" blue="0.56749919039999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="KVC-D2-s7V"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Самый простой, но не менее эффективный, бизиборд" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-vb-52A">
-                        <rect key="frame" x="78" y="27.5" width="216" height="30.5"/>
+                        <rect key="frame" x="78" y="27.5" width="212" height="30.5"/>
                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -78,7 +78,7 @@
                     <constraint firstItem="JHB-pA-BuK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="d0I-vM-q0A"/>
                     <constraint firstItem="yxT-vb-52A" firstAttribute="leading" secondItem="JHB-pA-BuK" secondAttribute="trailing" constant="12" id="eb4-Qe-I7Z"/>
                     <constraint firstItem="Ntg-lI-AQh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i7I-jh-THZ"/>
-                    <constraint firstAttribute="trailing" secondItem="Rl9-UZ-Czr" secondAttribute="trailing" constant="12" id="qfY-RY-mlH"/>
+                    <constraint firstAttribute="trailing" secondItem="Rl9-UZ-Czr" secondAttribute="trailing" constant="16" id="qfY-RY-mlH"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -92,7 +92,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="double_arrow_right" width="20" height="26"/>
         <image name="miniature_unknown" width="128" height="128"/>
-        <image name="triangle_arrow_right" width="30" height="56"/>
     </resources>
 </document>
