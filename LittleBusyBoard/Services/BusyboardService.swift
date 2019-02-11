@@ -63,35 +63,7 @@ class BusyboardService: NSObject {
         }
         self.busyboardsGroups = boardsGroups
         completion(boardsGroups)
-    }
-
-    private func localBusyboards() -> [Busyboard] {
         
-        let background = availableBackgrouns[Utils.random(availableBackgrouns.count)]
-        let board1 = Busyboard(background: background)
-        board1.name = "Однокнопочный"
-        board1.boardDescription = "Самый простой, но не менее эффективный, бизиборд"
-        board1.miniatureName = "miniature_v1"
-        
-        let button1 = ButtonComponent()
-        button1.textureName = "button_green-blue"
-        let sysSound1 = availableSystemSounds[Utils.random(availableSystemSounds.count)]
-        let soundAction1 = PlaySoundAction(systemSound: sysSound1)
-        button1.actions = [soundAction1]
-        
-        board1.boardComponents = [button1]
-        
-        
-        
-        let board2 = Busyboard(background: background)
-        board2.name = "Тестовый"
-        board2.boardDescription = "Просто тестовый, здесь, возможно, еще ничего нет"
-        
-        let board3 = Busyboard(background: background)
-        board3.name = "Звездный"
-        
-        // Лес, единороги, замки, облака, квадраты, рубчик
-        
-        return [board1]
+        // Лес, единороги, замки, облака, квадраты, рубчик, звезды
     }
 }

@@ -12,12 +12,14 @@ class BusyboardTableViewCell: BaseTableViewCell {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var boardDescription: UILabel!
-    @IBOutlet weak var boardImageView: UIImageView!
+    @IBOutlet weak var boardMiniatureImageView: UIImageView!
     @IBOutlet weak var arrowImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        arrowImageView.tintColor = UIColor.init(red:102 / 255.0, green:125  / 255.0, blue:145 / 255.0, alpha: 1)
+        
+        arrowImageView.tintColor = UIColor.darkGrayBlue
+//        boardMiniatureImageView.layer.cornerRadius = 25
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,7 +32,7 @@ class BusyboardTableViewCell: BaseTableViewCell {
         guard let image = UIImage(named: board.miniatureName) else {
             return
         }
-        boardImageView.image = image
+        boardMiniatureImageView.image = image
     }
     
 }

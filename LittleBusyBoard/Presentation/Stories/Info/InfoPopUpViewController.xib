@@ -248,11 +248,6 @@
                                 <constraint firstItem="0MG-NU-6x0" firstAttribute="trailing" secondItem="iDa-L8-pFq" secondAttribute="trailing" id="wnY-Kf-MXb"/>
                             </constraints>
                             <viewLayoutGuide key="safeArea" id="0MG-NU-6x0"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <integer key="value" value="8"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
                     <constraints>

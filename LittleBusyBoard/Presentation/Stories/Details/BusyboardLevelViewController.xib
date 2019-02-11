@@ -24,11 +24,26 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_donuts_v2" translatesAutoresizingMaskIntoConstraints="NO" id="icz-IO-rJn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTv-Va-wDn">
+                    <rect key="frame" x="0.0" y="20" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Wzc-mK-TLN"/>
+                        <constraint firstAttribute="width" constant="100" id="ql8-oI-JUr"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backTpuchUpInsideSender:" destination="-1" eventType="touchUpInside" id="DBf-y1-xPG"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="TTv-Va-wDn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TDu-7c-DzT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="icz-IO-rJn" secondAttribute="bottom" id="XbG-ZJ-Qxq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="icz-IO-rJn" secondAttribute="trailing" id="hP5-6c-p3v"/>
+                <constraint firstItem="TTv-Va-wDn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jvG-o0-QCt"/>
                 <constraint firstItem="icz-IO-rJn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nqQ-Sn-rHC"/>
                 <constraint firstItem="icz-IO-rJn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tQg-pr-ApS"/>
             </constraints>
@@ -37,6 +52,7 @@
         </view>
     </objects>
     <resources>
+        <image name="back" width="10" height="16"/>
         <image name="bg_tiny_donuts_v2" width="400" height="700"/>
     </resources>
 </document>

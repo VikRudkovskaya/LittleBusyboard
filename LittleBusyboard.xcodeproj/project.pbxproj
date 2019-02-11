@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21F2D562210546F000B1EB1 /* BusyboardsGroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D542210546F000B1EB1 /* BusyboardsGroupHeader.swift */; };
+		F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */; };
+		F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D582210586A000B1EB1 /* UIUtils.swift */; };
+		F21F2D5B2210BB04000B1EB1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D5A2210BB04000B1EB1 /* Fonts.swift */; };
 		F272D97322087BAC0067B7DD /* SystemSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D97222087BAC0067B7DD /* SystemSound.swift */; };
 		F272D97A220996650067B7DD /* ButtonTextures.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D976220996650067B7DD /* ButtonTextures.json */; };
 		F272D97B220996650067B7DD /* BoardsGroup_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D977220996650067B7DD /* BoardsGroup_1.json */; };
@@ -57,6 +61,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21F2D542210546F000B1EB1 /* BusyboardsGroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardsGroupHeader.swift; sourceTree = "<group>"; };
+		F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyboardsGroupHeader.xib; sourceTree = "<group>"; };
+		F21F2D582210586A000B1EB1 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		F21F2D5A2210BB04000B1EB1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F272D97222087BAC0067B7DD /* SystemSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSound.swift; sourceTree = "<group>"; };
 		F272D976220996650067B7DD /* ButtonTextures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ButtonTextures.json; sourceTree = "<group>"; };
 		F272D977220996650067B7DD /* BoardsGroup_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_1.json; sourceTree = "<group>"; };
@@ -119,6 +127,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F21F2D5C2210BD36000B1EB1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2D026AE21FC397F00DCA09A /* BusyboardTableViewCell.swift */,
+				F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F21F2D5D2210BD3E000B1EB1 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F21F2D542210546F000B1EB1 /* BusyboardsGroupHeader.swift */,
+				F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		F272D975220996650067B7DD /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,18 +302,18 @@
 			children = (
 				F2D026AC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift */,
 				F2D026AB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib */,
-				F2D026AD21FC397F00DCA09A /* Cell */,
+				F2D026AD21FC397F00DCA09A /* UIComponents */,
 			);
 			path = List;
 			sourceTree = "<group>";
 		};
-		F2D026AD21FC397F00DCA09A /* Cell */ = {
+		F2D026AD21FC397F00DCA09A /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026AE21FC397F00DCA09A /* BusyboardTableViewCell.swift */,
-				F2D026AF21FC397F00DCA09A /* BusyboardTableViewCell.xib */,
+				F21F2D5C2210BD36000B1EB1 /* Cell */,
+				F21F2D5D2210BD3E000B1EB1 /* Header */,
 			);
-			path = Cell;
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		F2D026B021FC397F00DCA09A /* AdditionalUI */ = {
@@ -304,6 +330,8 @@
 			children = (
 				F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */,
 				F2D026CF21FCD1C300DCA09A /* Colors.swift */,
+				F21F2D5A2210BB04000B1EB1 /* Fonts.swift */,
+				F21F2D582210586A000B1EB1 /* UIUtils.swift */,
 			);
 			path = UIInfrastructure;
 			sourceTree = "<group>";
@@ -434,6 +462,7 @@
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
 				F272D97A220996650067B7DD /* ButtonTextures.json in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
+				F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */,
 				F272D97B220996650067B7DD /* BoardsGroup_1.json in Resources */,
 				F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */,
 			);
@@ -446,6 +475,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */,
+				F21F2D562210546F000B1EB1 /* BusyboardsGroupHeader.swift in Sources */,
 				F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */,
 				F272D98C220AF0760067B7DD /* BoardComponents.swift in Sources */,
 				F272D98E220B10590067B7DD /* Settings.swift in Sources */,
@@ -460,6 +491,7 @@
 				F2D026E321FDE99600DCA09A /* ButtonComponent.swift in Sources */,
 				F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */,
 				F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */,
+				F21F2D5B2210BB04000B1EB1 /* Fonts.swift in Sources */,
 				F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */,
 				F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */,
 				F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */,

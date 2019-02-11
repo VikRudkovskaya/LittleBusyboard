@@ -50,6 +50,10 @@ class BusyboardLevelViewController: UIViewController {
         }
     }
     
+    @IBAction func backTpuchUpInside(sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 
         
 }

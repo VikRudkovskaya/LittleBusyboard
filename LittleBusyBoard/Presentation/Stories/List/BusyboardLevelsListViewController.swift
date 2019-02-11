@@ -53,7 +53,7 @@ class BusyboardLevelsListViewController: UIViewController {
 
 extension BusyboardLevelsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return busyboardService.busyboardsGroups?[section].boards?.count ?? 0 //boards.count
+        return busyboardService.busyboardsGroups?[section].boards?.count ?? 0
     }
     
     
@@ -73,6 +73,17 @@ extension BusyboardLevelsListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return busyboardService.busyboardsGroups![section].headerHeight
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view: BusyboardsGroupHeader = .fromNib()
+        let group = busyboardService.busyboardsGroups![section]
+        view.setup(with: group)
+        return view
     }
     
 }

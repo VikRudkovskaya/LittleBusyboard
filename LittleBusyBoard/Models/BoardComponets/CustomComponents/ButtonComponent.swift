@@ -13,7 +13,11 @@ class ButtonComponent: BoardComponent {
     var perfomMode: ActionPerformMode = .oneByOne
     
     func view() -> UIView {
-        return self.randomSingleButton()
+        
+        let size = CGSize(width: 200, height: 200)
+        let button = self.button(size: size, textureName: textureName, text: "")
+        
+        return button
     }
     
     var coordinates: CGPoint = CGPoint(x: 0, y: 0)
@@ -54,7 +58,18 @@ class ButtonComponent: BoardComponent {
         return button
     }
     
+    func button(size: CGSize, textureName: String, text: String) -> UIButton {
+        let button = UIButton()
+        button.frame.size = size
+        let bgImage = UIImage(named: textureName)
+        button.setBackgroundImage(bgImage, for: .normal)
+        button.setTitle(text, for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        return button
+    }
+    
     @objc func buttonAction() -> Void {
+        
         actions?.forEach({ (action) in
             action.perform()
         })

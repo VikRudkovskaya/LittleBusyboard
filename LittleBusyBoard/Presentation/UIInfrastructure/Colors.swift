@@ -12,6 +12,8 @@ extension UIColor {
     
     static let coolPurpleRed = UIColor(red:188 / 255, green:39 / 255, blue:70 / 255, alpha: 1)
     
+    static let darkGrayBlue = UIColor(red:102 / 255.0, green:125  / 255.0, blue:145 / 255.0, alpha: 1)
+    
     convenience init(hex3: UInt16, alpha: CGFloat = 1) {
         let red     = CGFloat((hex3 & 0xF00) >> 8) / 0xF
         let green   = CGFloat((hex3 & 0x0F0) >> 4) / 0xF

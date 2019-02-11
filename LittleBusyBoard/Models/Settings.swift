@@ -12,4 +12,5 @@ struct Settings {
     
     var gravityOn: Bool = true
     var playBackgroundSound = false
+    
 }

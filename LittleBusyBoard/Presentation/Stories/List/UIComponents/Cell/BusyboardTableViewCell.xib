@@ -31,11 +31,6 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <integer key="value" value="25"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Однокнопочный" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWg-3c-2q9">
                         <rect key="frame" x="78" y="8" width="212" height="17.5"/>
@@ -85,7 +80,7 @@
             <connections>
                 <outlet property="arrowImageView" destination="Rl9-UZ-Czr" id="xbn-PU-swx"/>
                 <outlet property="boardDescription" destination="yxT-vb-52A" id="b6Y-T1-cC0"/>
-                <outlet property="boardImageView" destination="JHB-pA-BuK" id="5m5-uo-PoB"/>
+                <outlet property="boardMiniatureImageView" destination="JHB-pA-BuK" id="OSX-d0-I1S"/>
                 <outlet property="name" destination="IWg-3c-2q9" id="tk3-T9-AQF"/>
             </connections>
             <point key="canvasLocation" x="326" y="101"/>

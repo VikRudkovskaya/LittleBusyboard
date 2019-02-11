@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EE5-AA-euy" customClass="BusyboardsGroupHeader" customModule="LittleBusyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_narrow_tiny_rounds" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-da-fG1">
+                    <rect key="frame" x="0.0" y="0.0" width="427" height="95"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бизиборды" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-4e-3Ih">
+                    <rect key="frame" x="16" y="29.5" width="395" height="15.5"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.14705925919999999" blue="0.24208788910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xc7-jy-gFq">
+                    <rect key="frame" x="0.0" y="94" width="427" height="1"/>
+                    <color key="backgroundColor" red="0.46122815280000001" green="0.57268042100000005" blue="0.66732108160000003" alpha="0.3492242518" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ItT-vG-BEK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-QI-rqb">
+                    <rect key="frame" x="0.0" y="0.0" width="427" height="1"/>
+                    <color key="backgroundColor" red="0.46122815280000001" green="0.57268042100000005" blue="0.66732108160000003" alpha="0.3492242518" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rRL-3p-1ki"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Однокнопочные - однозадачные" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaM-YL-vvo">
+                    <rect key="frame" x="16" y="8" width="395" height="17.5"/>
+                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.14705925919999999" blue="0.24208788910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xc7-jy-gFq" secondAttribute="bottom" id="1Ti-OU-hpc"/>
+                <constraint firstAttribute="trailing" secondItem="Bm3-QI-rqb" secondAttribute="trailing" id="1XO-2F-d6k"/>
+                <constraint firstItem="bl2-4e-3Ih" firstAttribute="top" secondItem="UaM-YL-vvo" secondAttribute="bottom" constant="4" id="21k-c3-594"/>
+                <constraint firstItem="vb7-w1-069" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bl2-4e-3Ih" secondAttribute="bottom" constant="4" id="2nz-CU-xD9"/>
+                <constraint firstItem="Bm3-QI-rqb" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" id="Aq1-GD-fAt"/>
+                <constraint firstItem="Bm3-QI-rqb" firstAttribute="top" secondItem="vb7-w1-069" secondAttribute="top" id="B47-WK-fyF"/>
+                <constraint firstItem="vb7-w1-069" firstAttribute="trailing" secondItem="bl2-4e-3Ih" secondAttribute="trailing" constant="16" id="E5z-J7-xiU"/>
+                <constraint firstItem="MBu-da-fG1" firstAttribute="top" secondItem="vb7-w1-069" secondAttribute="top" id="Emt-Cx-J6V"/>
+                <constraint firstAttribute="trailing" secondItem="Xc7-jy-gFq" secondAttribute="trailing" id="GnS-sZ-FAG"/>
+                <constraint firstItem="bl2-4e-3Ih" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" constant="16" id="Has-dJ-j4F"/>
+                <constraint firstItem="vb7-w1-069" firstAttribute="trailing" secondItem="UaM-YL-vvo" secondAttribute="trailing" constant="16" id="Y7e-uu-83v"/>
+                <constraint firstItem="UaM-YL-vvo" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" constant="16" id="c4x-Ea-6NP"/>
+                <constraint firstItem="vb7-w1-069" firstAttribute="trailing" secondItem="MBu-da-fG1" secondAttribute="trailing" id="gv6-2C-Lnj"/>
+                <constraint firstItem="Xc7-jy-gFq" firstAttribute="leading" secondItem="vb7-w1-069" secondAttribute="leading" id="nHe-x6-CWO"/>
+                <constraint firstItem="vb7-w1-069" firstAttribute="bottom" secondItem="MBu-da-fG1" secondAttribute="bottom" id="okl-wr-O8P"/>
+                <constraint firstItem="MBu-da-fG1" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" id="zVX-Rw-grF"/>
+                <constraint firstItem="UaM-YL-vvo" firstAttribute="top" secondItem="vb7-w1-069" secondAttribute="top" constant="8" id="zsh-PE-dDJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vb7-w1-069"/>
+            <connections>
+                <outlet property="backgorundImageView" destination="MBu-da-fG1" id="MHf-Ce-hOa"/>
+                <outlet property="descriptionLabel" destination="bl2-4e-3Ih" id="AH1-hm-HyD"/>
+                <outlet property="headerLabel" destination="UaM-YL-vvo" id="DLu-Nl-G61"/>
+            </connections>
+            <point key="canvasLocation" x="-458.39999999999998" y="-286.50674662668666"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_narrow_tiny_rounds" width="400" height="80"/>
+    </resources>
+</document>

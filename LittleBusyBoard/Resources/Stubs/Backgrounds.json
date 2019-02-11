@@ -2,7 +2,7 @@
     {
         "identifier": 1,
         "name": "Металлическая пластина",
-        "description": "Оттенки алюминия. Цвет дедушкиного советского проигрывателя RADIOTEHNIKA M-201",
+        "description": "Тонкий металлический срез. Цвет дедушкиного советского проигрывателя RADIOTEHNIKA M-201",
         "fileName": "bg_metal_slab_v1",
     },
     
@@ -10,29 +10,93 @@
         "identifier": 2,
         "name": "Пастельные круги V1",
         "description": "Нежные пастельные круги, напоминающие шарики мороженого 🍨",
-        "fileName": "bg_tiny_rounds",
+        "fileName": "bg_tiny_rounds_v1",
     },
     
     {
         "identifier": 3,
         "name": "Пастельные круги V2",
         "description": "Мягкие и нежные круги, вызывающие ассоциации с шариками мороженого 🍧",
-        "fileName": "bg_tiny_rounds_central",
+        "fileName": "bg_tiny_rounds_v2",
     },
     
     {
         "identifier": 4,
         "name": "Пастельные круги V3",
         "description": "Нежные пастельные круги, как шарики мороженого 🍨",
-        "fileName": "bg_tiny_rounds_v2",
+        "fileName": "bg_tiny_rounds_v3",
     },
     
     {
         "identifier": 5,
+        "name": "Нежные пончики V1",
+        "description": "Расскажите ребенку, что такое тор",
+        "fileName": "bg_tiny_donuts_v1",
+    },
+    
+    {
+        "identifier": 6,
+        "name": "Нежные пончики V2",
+        "description": "Разнообразные торические формы",
+        "fileName": "bg_tiny_donuts_v2",
+    },
+    
+    {
+        "identifier": 7,
+        "name": "Маленькие солнца",
+        "description": "Яркие и теплые маленькие солнца",
+        "fileName": "bg_little_suns",
+    },
+    
+    {
+        "identifier": 8,
+        "name": "Решетка off",
+        "description": "",
+        "fileName": "bg_grid_off",
+    },
+    
+    {
+        "identifier": 9,
+        "name": "Решетка on v1",
+        "description": "Синий",
+        "fileName": "bg_grid_b_on",
+    },
+    
+    {
+        "identifier": 10,
+        "name": "Решетка on v2",
+        "description": "Красный",
+        "fileName": "bg_grid_p_on",
+    },
+    
+    {
+        "identifier": 11,
+        "name": "Решетка on v3",
+        "description": "",
+        "fileName": "",
+    },
+    
+    {
+        "identifier": 12,
+        "name": "Голубое небо v1",
+        "description": "",
+        "fileName": "bg_sky_v1",
+    },
+    
+    {
+        "identifier": 13,
+        "name": "Болото",
+        "description": "",
+        "fileName": "bg_swamp_v1",
+    },
+    
+    {
+        "identifier": 14,
         "name": "Лес",
-        "description": "Темные зеленые хвойные оттенки",
-        "fileName": "bg_tiny_rounds_central",
+        "description": "🌲🌳🌲🌲",
+        "fileName": "",
     }
+    
 ]
 
 
