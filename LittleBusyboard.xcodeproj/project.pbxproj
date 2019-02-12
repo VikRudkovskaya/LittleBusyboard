@@ -145,6 +145,17 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		F21F2D5E22116DD9000B1EB1 /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				F2B1A13622073D17007952CC /* ComponentActions */,
+				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
+				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
+				F272D987220AA84B0067B7DD /* BusyboardGroup.swift */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
 		F272D975220996650067B7DD /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,13 +269,10 @@
 		F2D026A021FC397F00DCA09A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F272D987220AA84B0067B7DD /* BusyboardGroup.swift */,
-				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
+				F21F2D5E22116DD9000B1EB1 /* Boards */,
 				F2D026C121FC476300DCA09A /* Background.swift */,
 				F272D97222087BAC0067B7DD /* SystemSound.swift */,
 				F272D98D220B10590067B7DD /* Settings.swift */,
-				F2B1A13622073D17007952CC /* ComponentActions */,
-				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
 			);
 			path = Models;
 			sourceTree = "<group>";

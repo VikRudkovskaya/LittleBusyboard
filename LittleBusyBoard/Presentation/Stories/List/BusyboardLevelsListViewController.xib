@@ -26,6 +26,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invader" translatesAutoresizingMaskIntoConstraints="NO" id="LKK-7m-nic">
+                    <rect key="frame" x="155.5" y="97" width="64" height="52"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjH-2e-4z4">
                     <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                     <subviews>
@@ -101,7 +104,9 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="qMt-MO-Abs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="56K-uZ-Fnh"/>
+                <constraint firstItem="LKK-7m-nic" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5j4-3o-ETM"/>
                 <constraint firstItem="3BJ-er-dGC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6Fr-mf-7q8"/>
+                <constraint firstItem="LKK-7m-nic" firstAttribute="top" secondItem="3BJ-er-dGC" secondAttribute="bottom" constant="16" id="8YL-yO-dK9"/>
                 <constraint firstItem="mjH-2e-4z4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BTW-c5-kIW"/>
                 <constraint firstItem="mjH-2e-4z4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GYT-kf-gtl"/>
                 <constraint firstItem="qMt-MO-Abs" firstAttribute="top" secondItem="3BJ-er-dGC" secondAttribute="bottom" id="JEJ-W5-MeH"/>
@@ -112,12 +117,13 @@
                 <constraint firstItem="3BJ-er-dGC" firstAttribute="top" secondItem="mjH-2e-4z4" secondAttribute="bottom" id="s19-0d-3Sn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="50" y="45"/>
+            <point key="canvasLocation" x="48.799999999999997" y="44.527736131934034"/>
         </view>
     </objects>
     <resources>
         <image name="bg_narrow_donuts" width="400" height="80"/>
         <image name="information" width="25" height="25"/>
+        <image name="invader" width="64" height="52"/>
         <image name="settings" width="25" height="25"/>
     </resources>
 </document>

@@ -11,6 +11,7 @@ import UIKit
 class BusyboardLevelsListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var funImageView: UIImageView?
     
     var busyboardService: BusyboardService!
     
@@ -26,11 +27,23 @@ class BusyboardLevelsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        funImageView = UIImageView()
+        funImageView?.center = CGPoint(x: self.view.center.x, y: 0)
+        funImageView?.frame.size = CGSize(width: 32, height: 32)
+        funImageView?.image = UIImage(named: "invader")
+        funImageView?.isHidden = true
+        self.view.addSubview(funImageView!)
+        
         registerCells()
 
         busyboardService.busyboards{ boardsGroups in
             self.tableView.reloadData()
         }
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        funImageView?.center = CGPoint(x: self.view.center.x, y: 80)
     }
     
     private func registerCells() {
@@ -40,6 +53,7 @@ class BusyboardLevelsListViewController: UIViewController {
         
     }
     
+    // MARK: Actions
     @IBAction func infoTouchUpInside(sender: UIButton) {
         let infoPopUp = InfoPopUpViewController()
         self.present(infoPopUp, animated: true, completion: nil)
@@ -95,5 +109,28 @@ extension BusyboardLevelsListViewController: UITableViewDelegate {
         }
         let vc = BusyboardLevelViewController(board: board)
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension BusyboardLevelsListViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+       
+        
+        if scrollView.contentOffset.y < -20 {
+
+            funImageView?.isHidden = false
+    }
+        
+        if scrollView.contentOffset.y >= -20 {
+            self.funImageView?.isHidden = true
+
+        }
+        
+        
+    }
+    
+    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+//        self.funImageView?.removeFromSuperview()
     }
 }
