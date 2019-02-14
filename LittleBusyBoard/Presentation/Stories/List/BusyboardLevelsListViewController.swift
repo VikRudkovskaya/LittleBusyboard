@@ -11,6 +11,7 @@ import UIKit
 class BusyboardLevelsListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var funImageView: UIImageView?
     
     var busyboardService: BusyboardService!
@@ -27,12 +28,7 @@ class BusyboardLevelsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        funImageView = UIImageView()
-        funImageView?.center = CGPoint(x: self.view.center.x, y: 0)
-        funImageView?.frame.size = CGSize(width: 32, height: 32)
-        funImageView?.image = UIImage(named: "invader")
-        funImageView?.isHidden = true
-        self.view.addSubview(funImageView!)
+        setupFunImageView()
         
         registerCells()
 
@@ -43,7 +39,23 @@ class BusyboardLevelsListViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        funImageView?.center = CGPoint(x: self.view.center.x, y: 80)
+        funImageView?.center = CGPoint(x: self.view.center.x, y: 84)
+    }
+    
+    private func setupFunImageView() {
+        funImageView = UIImageView()
+       
+        funImageView?.frame.size = CGSize(width: 32, height: 32)
+//        let img1 = UIImage(named: "invader")
+//        let imag2 = UIImage(named: "round_robot")
+//        funImageView?.animationImages = [img1, imag2] as? [UIImage]
+//         funImageView?.startAnimating()
+//        funImageView?.animationDuration = 0.1
+//        funImageView?.animationRepeatCount = 20
+        funImageView?.image = UIImage(named: "round_robot")
+ 
+        funImageView?.isHidden = true
+        self.view.addSubview(funImageView!)
     }
     
     private func registerCells() {
@@ -117,12 +129,12 @@ extension BusyboardLevelsListViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
        
         
-        if scrollView.contentOffset.y < -20 {
+        if scrollView.contentOffset.y < -32 {
 
             funImageView?.isHidden = false
     }
         
-        if scrollView.contentOffset.y >= -20 {
+        if scrollView.contentOffset.y >= -32 {
             self.funImageView?.isHidden = true
 
         }

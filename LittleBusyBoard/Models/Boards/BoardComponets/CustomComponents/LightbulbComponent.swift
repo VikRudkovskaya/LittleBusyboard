@@ -12,7 +12,10 @@ class LightbulbComponent: NSObject, BoardComponent  {
     var perfomMode: ActionPerformMode = .inSeries
     
     func view() -> UIView {
-        return UIView()
+        let imageView = UIImageView()
+        
+        imageView.animationImages = []
+        return imageView
     }
     
     var coordinates: CGPoint = CGPoint(x: 0, y: 0)
