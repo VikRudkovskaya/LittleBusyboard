@@ -6,7 +6,7 @@
 //  Copyright © 2019 VR/RN. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class Utils: NSObject {
     

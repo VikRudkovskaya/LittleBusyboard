@@ -60,9 +60,9 @@ class Busyboard: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         self.name = try container.decode(String.self, forKey: .name)
-        self.boardDescription = try container.decode(String.self, forKey: .boardDescription)
+        self.boardDescription = try container.decodeIfPresent(String.self, forKey: .boardDescription)
         self.isRandom = try container.decode(Bool.self, forKey: .isRandom)
-        self._miniatureName = try container.decode(String.self, forKey: ._miniatureName)
+        self._miniatureName = try container.decodeIfPresent(String.self, forKey: ._miniatureName)
         self.background = try container.decode(Background.self, forKey: .background)
         
         let components = try BoardComponents(from: decoder)

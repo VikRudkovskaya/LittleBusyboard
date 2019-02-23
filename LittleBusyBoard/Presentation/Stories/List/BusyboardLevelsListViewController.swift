@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class BusyboardLevelsListViewController: UIViewController {
 
@@ -39,21 +40,15 @@ class BusyboardLevelsListViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        funImageView?.center = CGPoint(x: self.view.center.x, y: 84)
+        funImageView?.center = CGPoint(x: self.view.center.x, y: 88)
     }
     
     private func setupFunImageView() {
         funImageView = UIImageView()
        
-        funImageView?.frame.size = CGSize(width: 32, height: 32)
-//        let img1 = UIImage(named: "invader")
-//        let imag2 = UIImage(named: "round_robot")
-//        funImageView?.animationImages = [img1, imag2] as? [UIImage]
-//         funImageView?.startAnimating()
-//        funImageView?.animationDuration = 0.1
-//        funImageView?.animationRepeatCount = 20
-        funImageView?.image = UIImage(named: "round_robot")
- 
+        funImageView?.frame.size = CGSize(width: 64, height: 64)
+        funImageView?.image = UIImage(named: "castle_v1")
+        funImageView?.alpha = 0
         funImageView?.isHidden = true
         self.view.addSubview(funImageView!)
     }
@@ -62,7 +57,6 @@ class BusyboardLevelsListViewController: UIViewController {
         
         let nib = UINib(nibName: "BusyboardTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: BusyboardTableViewCell.reuseID())
-        
     }
     
     // MARK: Actions
@@ -79,6 +73,10 @@ class BusyboardLevelsListViewController: UIViewController {
 
 extension BusyboardLevelsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let group = busyboardService.busyboardsGroups?[section]
+        if let shown = group?.isShown, shown == false {
+            return 0
+        }
         return busyboardService.busyboardsGroups?[section].boards?.count ?? 0
     }
     
@@ -108,6 +106,21 @@ extension BusyboardLevelsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view: BusyboardsGroupHeader = .fromNib()
         let group = busyboardService.busyboardsGroups![section]
+        
+        view.groupDidChanged = { group in
+            guard let boards = group.boards else {
+                return
+            }
+            let indecies = (0...boards.count - 1).map({ (index) -> IndexPath in
+                return IndexPath(row: index, section: section)
+            })
+            if group.isShown == false {
+                tableView.deleteRows(at: indecies, with: .fade)
+            } else {
+                tableView.insertRows(at: indecies, with: .fade)
+            }
+        }
+            
         view.setup(with: group)
         return view
     }
@@ -127,22 +140,25 @@ extension BusyboardLevelsListViewController: UITableViewDelegate {
 extension BusyboardLevelsListViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-       
-        
-        if scrollView.contentOffset.y < -32 {
-
+        guard let funImageHeight = funImageView?.frame.size.height else {
+            return
+        }
+        let funImageHeightNegative = -1 * funImageHeight
+        if scrollView.contentOffset.y < funImageHeightNegative && self.funImageView?.isHidden == true {
+//            AudioServicesPlaySystemSound(1330)
             funImageView?.isHidden = false
-    }
-        
-        if scrollView.contentOffset.y >= -32 {
-            self.funImageView?.isHidden = true
-
+            UIView.animate(withDuration: 1) {
+                self.funImageView?.alpha = 1
+            }
         }
         
-        
-    }
-    
-    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-//        self.funImageView?.removeFromSuperview()
+        if scrollView.contentOffset.y >= funImageHeightNegative && self.funImageView?.isHidden == false  {
+            
+            UIView.animate(withDuration: 1, animations: {
+                self.funImageView?.alpha = 0
+            }, completion: { (value: Bool) in
+                self.funImageView?.isHidden = true
+            })
+        }
     }
 }

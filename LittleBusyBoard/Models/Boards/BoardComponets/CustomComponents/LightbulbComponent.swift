@@ -14,7 +14,16 @@ class LightbulbComponent: NSObject, BoardComponent  {
     func view() -> UIView {
         let imageView = UIImageView()
         
-        imageView.animationImages = []
+        let imagesNames = ["bulb_on_1", "bulb_on_2", "bulb_on_3", "bulb_off"];
+        var images = [UIImage]()
+        for imageName in imagesNames {
+            guard let image = UIImage(named: imageName) else {
+                continue
+            }
+            images.append(image)
+        }
+        
+        imageView.animationImages = images
         return imageView
     }
     

@@ -30,6 +30,7 @@ class ButtonComponent: BoardComponent {
     
     private enum CodingKeys: String, CodingKey {
         case textureName
+        case actions
     }
     
     

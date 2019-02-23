@@ -22,12 +22,17 @@ class BusyboardsGroup: Decodable {
     
     var headerHeight: CGFloat {
         get {
-            let labelWidth = UIScreen.main.bounds.size.width - 16 - 16 // см. BusyboardsGroupHeader.xib
-            let headerHeight = headerName?.height(withConstrainedWidth: labelWidth, font: UIFont.menlo15!)
-            let descriptionHeight = groupDescription?.height(withConstrainedWidth: labelWidth, font: UIFont.menlo13!)
+            let screenWidth = UIScreen.main.bounds.size.width
+            // см. BusyboardsGroupHeader.xib
+            let headerLabelWidth = screenWidth - 16 - 16
+            let descriptionLabelWidth = screenWidth - 16 - 8 - 44
+            let headerHeight = headerName?.height(withConstrainedWidth: headerLabelWidth, font: UIFont.menlo15!)
+            let descriptionHeight = groupDescription?.height(withConstrainedWidth: descriptionLabelWidth, font: UIFont.menlo13!)
             return descriptionHeight! + headerHeight! + 8 + 4 + 6
         }
     }
+    
+    var isShown: Bool = true
     
     init(identifier: String) {
         self.identifier = identifier
