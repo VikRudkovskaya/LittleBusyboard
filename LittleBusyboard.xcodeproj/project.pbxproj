@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E6212E222207E0000629F7D /* MixedArrayDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6212E122207E0000629F7D /* MixedArrayDecoder.swift */; };
 		F21F2D562210546F000B1EB1 /* BusyboardsGroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D542210546F000B1EB1 /* BusyboardsGroupHeader.swift */; };
 		F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */; };
 		F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D582210586A000B1EB1 /* UIUtils.swift */; };
@@ -20,7 +21,6 @@
 		F272D98422099BF90067B7DD /* Actions.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D98322099BF90067B7DD /* Actions.json */; };
 		F272D988220AA84B0067B7DD /* BusyboardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D987220AA84B0067B7DD /* BusyboardGroup.swift */; };
 		F272D98A220AD1F30067B7DD /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D989220AD1F30067B7DD /* Board.json */; };
-		F272D98C220AF0760067B7DD /* BoardComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D98B220AF0760067B7DD /* BoardComponents.swift */; };
 		F272D98E220B10590067B7DD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D98D220B10590067B7DD /* Settings.swift */; };
 		F272D992220B2D860067B7DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D990220B2D860067B7DD /* SettingsViewController.swift */; };
 		F272D993220B2D860067B7DD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F272D991220B2D860067B7DD /* SettingsViewController.xib */; };
@@ -63,6 +63,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E6212E122207E0000629F7D /* MixedArrayDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MixedArrayDecoder.swift; path = LittleBusyBoard/Services/MixedArrayDecoder.swift; sourceTree = SOURCE_ROOT; };
 		F21F2D542210546F000B1EB1 /* BusyboardsGroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardsGroupHeader.swift; sourceTree = "<group>"; };
 		F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyboardsGroupHeader.xib; sourceTree = "<group>"; };
 		F21F2D582210586A000B1EB1 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		F272D98322099BF90067B7DD /* Actions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Actions.json; sourceTree = "<group>"; };
 		F272D987220AA84B0067B7DD /* BusyboardGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusyboardGroup.swift; sourceTree = "<group>"; };
 		F272D989220AD1F30067B7DD /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
-		F272D98B220AF0760067B7DD /* BoardComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardComponents.swift; sourceTree = "<group>"; };
 		F272D98D220B10590067B7DD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F272D990220B2D860067B7DD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F272D991220B2D860067B7DD /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -358,6 +358,7 @@
 				F2D026C521FC686500DCA09A /* BusyboardService.swift */,
 				F2D026DC21FDB5E400DCA09A /* ComponetsLayouter.swift */,
 				F2D026E021FDD5F300DCA09A /* Utils.swift */,
+				8E6212E122207E0000629F7D /* MixedArrayDecoder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -375,7 +376,6 @@
 			isa = PBXGroup;
 			children = (
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
-				F272D98B220AF0760067B7DD /* BoardComponents.swift */,
 				F2D026E721FDEBC900DCA09A /* CustomComponents */,
 			);
 			path = BoardComponets;
@@ -496,7 +496,6 @@
 				F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */,
 				F21F2D562210546F000B1EB1 /* BusyboardsGroupHeader.swift in Sources */,
 				F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */,
-				F272D98C220AF0760067B7DD /* BoardComponents.swift in Sources */,
 				F272D98E220B10590067B7DD /* Settings.swift in Sources */,
 				F2D026DF21FDD42C00DCA09A /* ComponentAction.swift in Sources */,
 				F2D026B721FC397F00DCA09A /* AppDelegate.swift in Sources */,
@@ -517,6 +516,7 @@
 				F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */,
 				F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */,
 				F2D026BD21FC397F00DCA09A /* BusyboardTableViewCell.swift in Sources */,
+				8E6212E222207E0000629F7D /* MixedArrayDecoder.swift in Sources */,
 				F2D026E921FDEE5A00DCA09A /* SwitchComponent.swift in Sources */,
 				F2D026BA21FC397F00DCA09A /* BusyboardLevelViewController.swift in Sources */,
 				F2D026BC21FC397F00DCA09A /* BusyboardLevelsListViewController.swift in Sources */,

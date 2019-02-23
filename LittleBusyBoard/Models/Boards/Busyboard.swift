@@ -65,7 +65,6 @@ class Busyboard: Decodable {
         self._miniatureName = try container.decodeIfPresent(String.self, forKey: ._miniatureName)
         self.background = try container.decode(Background.self, forKey: .background)
         
-        let components = try BoardComponents(from: decoder)
-        self.boardComponents = components.components
+        self.boardComponents = try container.decode(BoardComponentFamily.self, forKey: .boardComponents)
     }
 }

@@ -9,29 +9,54 @@
 import UIKit
 
 enum ActionPerformMode: String, Decodable {
-    case oneByOne // оно за другим при каждом нажатии
-    case inSeries // друг за другом за одно нажатие. Наприемер, сначала проиграть один звук, затем включить лампочки,
-    case simultaneously // Все одновременно сразу. Например, воспроизвести одновременно несколько звуков, включить лампочки и переместиться в пространстве
+    case oneByOne = "OneByOne" // оно за другим при каждом нажатии
+    case inSeries = "InSeries" // друг за другом за одно нажатие. Наприемер, сначала проиграть один звук, затем включить лампочки,
+    case simultaneously = "Simultaneously" // Все одновременно сразу. Например, воспроизвести одновременно несколько звуков, включить лампочки и переместиться в пространстве
 }
 
-protocol BoardComponent: Decodable {
+class BoardComponent: Decodable {
     
-    func view() -> UIView
+    func view() -> UIView {
+        return UIView(frame: .zero)
+    }
     
     // Каждый компонент должен знать координаты, где он находится на борде
     // Координаты центра
-    var coordinates: CGPoint {get set}
+    var coordinates: CGPoint = .zero
     
     // Размер элемента
     
     // Есть своя зона влиянияния (зона в которой элелемент может аффектить другие), в которой может перемещаться
-    var affectZone: CGRect? {get set}
+    var affectZone: CGRect?
     
     // У элемента может быть последовательность действий
-    var actions: [ComponentAction]? {get set}
+    var actions: [ComponentAction]?
     
     // Одновременно или последовательно сразу воспроизводить действия, или последовательно при каждом нажатии
     // Компонент должен знать в каком моде ему воспроизводить action'ы
-    var perfomMode: ActionPerformMode {get set}
+    var perfomMode: ActionPerformMode
+    
+    private enum CodingKeys: String, CodingKey {
+        case perfomMode = "actionMode"
+    }
+}
+
+enum BoardComponentFamily: String, ClassFamily {
+    case buttonType = "Button"
+    case switchType = "Switch"
+    case bulbType = "LightBulb"
+    
+    static var discriminator: Discriminator = .type
+    
+    func getType() -> AnyObject.Type {
+        switch self {
+        case .buttonType:
+            return ButtonComponent.self
+        case .switchType:
+            return SwitchComponent.self
+        case .bulbType:
+            return LightbulbComponent.self
+        }
+    }
 }
 

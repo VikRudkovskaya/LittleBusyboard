@@ -9,18 +9,11 @@
 import UIKit
 
 class SwitchComponent: BoardComponent {
-    var perfomMode: ActionPerformMode = .simultaneously
     
-    
-    func view() -> UIView {
+    override func view() -> UIView {
         return UIButton()
     }
     
-    var coordinates: CGPoint = CGPoint(x: 0, y: 0)
-    
-    var affectZone: CGRect?
-    
-    var actions: [ComponentAction]?
         
     var onTextureName: String = "button_red"
     

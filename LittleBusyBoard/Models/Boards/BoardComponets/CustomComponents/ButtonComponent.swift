@@ -10,30 +10,26 @@ import UIKit
 
 class ButtonComponent: BoardComponent {
     
-    var perfomMode: ActionPerformMode = .oneByOne
+    var textureName: String = "button_red"
     
-    func view() -> UIView {
+    private enum CodingKeys: String, CodingKey {
+        case textureName
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        textureName = try container.decode(String.self, forKey: .textureName)
+        try super.init(from: decoder)
+    }
+    
+    override func view() -> UIView {
         
         let size = CGSize(width: 200, height: 200)
         let button = self.button(size: size, textureName: textureName, text: "")
         
         return button
     }
-    
-    var coordinates: CGPoint = CGPoint(x: 0, y: 0)
-    
-    var affectZone: CGRect?
-    
-    var actions: [ComponentAction]?
-    
-    var textureName: String = "button_red"
-    
-    private enum CodingKeys: String, CodingKey {
-        case textureName
-        case actions
-    }
-    
-    
+        
     var availableTextures: [String] {
         get {
             guard let json = Utils.unarchiveJSON(from: "ButtonTextures") else {

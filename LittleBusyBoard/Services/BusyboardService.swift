@@ -59,7 +59,7 @@ class BusyboardService: NSObject {
             let busyboardsGroup = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData)
             boardsGroups = [busyboardsGroup]
         } catch  {
-            print("Decode Error: ", error)
+            print("Decode Error:\n", error)
         }
         self.busyboardsGroups = boardsGroups
         completion(boardsGroups)

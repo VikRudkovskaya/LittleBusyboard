@@ -8,10 +8,9 @@
 
 import UIKit
 
-class LightbulbComponent: NSObject, BoardComponent  {
-    var perfomMode: ActionPerformMode = .inSeries
+class LightbulbComponent: BoardComponent  {
     
-    func view() -> UIView {
+    override func view() -> UIView {
         let imageView = UIImageView()
         
         let imagesNames = ["bulb_on_1", "bulb_on_2", "bulb_on_3", "bulb_off"];
@@ -26,13 +25,7 @@ class LightbulbComponent: NSObject, BoardComponent  {
         imageView.animationImages = images
         return imageView
     }
-    
-    var coordinates: CGPoint = CGPoint(x: 0, y: 0)
-    
-    var affectZone: CGRect?
-    
-    var actions: [ComponentAction]?
-    
+        
     var onTextureName: String = "button_bulb_1"
     
     var offTextureName: String = "button_bulb_1"
