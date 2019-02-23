@@ -26,6 +26,8 @@
 		F272D993220B2D860067B7DD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F272D991220B2D860067B7DD /* SettingsViewController.xib */; };
 		F272D995220B70A60067B7DD /* Blanka-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F272D994220B70A60067B7DD /* Blanka-Regular.otf */; };
 		F272D997220B74A80067B7DD /* Elianto-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F272D996220B74A80067B7DD /* Elianto-Regular.otf */; };
+		F27FCAEB22217E8F00A4090C /* BoardsGroup_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F27FCAEA22217E8F00A4090C /* BoardsGroup_2.json */; };
+		F27FCAED22217EE800A4090C /* BulbTextures.json in Resources */ = {isa = PBXBuildFile; fileRef = F27FCAEC22217EE800A4090C /* BulbTextures.json */; };
 		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
 		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
 		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
@@ -82,6 +84,8 @@
 		F272D991220B2D860067B7DD /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		F272D994220B70A60067B7DD /* Blanka-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blanka-Regular.otf"; sourceTree = "<group>"; };
 		F272D996220B74A80067B7DD /* Elianto-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Elianto-Regular.otf"; sourceTree = "<group>"; };
+		F27FCAEA22217E8F00A4090C /* BoardsGroup_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BoardsGroup_2.json; path = ../../../../../../../Dropbox/LittleBusyBoard/BoardsGroup_2.json; sourceTree = "<group>"; };
+		F27FCAEC22217EE800A4090C /* BulbTextures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BulbTextures.json; path = ../../../../../../../Dropbox/LittleBusyBoard/BulbTextures.json; sourceTree = "<group>"; };
 		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
 		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
 		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
@@ -165,9 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				F272D98322099BF90067B7DD /* Actions.json */,
+				F27FCAEC22217EE800A4090C /* BulbTextures.json */,
 				F272D976220996650067B7DD /* ButtonTextures.json */,
 				F272D989220AD1F30067B7DD /* Board.json */,
 				F272D977220996650067B7DD /* BoardsGroup_1.json */,
+				F27FCAEA22217E8F00A4090C /* BoardsGroup_2.json */,
 				F272D978220996650067B7DD /* BoardComponents.json */,
 				F272D979220996650067B7DD /* Backgrounds.json */,
 			);
@@ -466,6 +472,7 @@
 				F272D97C220996650067B7DD /* BoardComponents.json in Resources */,
 				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
 				F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */,
+				F27FCAED22217EE800A4090C /* BulbTextures.json in Resources */,
 				F2D7ADAA221953860012125E /* Arrows.xcassets in Resources */,
 				F272D98422099BF90067B7DD /* Actions.json in Resources */,
 				F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */,
@@ -479,6 +486,7 @@
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
 				F272D97A220996650067B7DD /* ButtonTextures.json in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
+				F27FCAEB22217E8F00A4090C /* BoardsGroup_2.json in Resources */,
 				F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */,
 				F2D7ADA8221938E60012125E /* Fun.xcassets in Resources */,
 				F272D97B220996650067B7DD /* BoardsGroup_1.json in Resources */,
