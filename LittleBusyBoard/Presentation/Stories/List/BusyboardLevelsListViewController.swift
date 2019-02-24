@@ -114,10 +114,10 @@ extension BusyboardLevelsListViewController: UITableViewDataSource {
             let indecies = (0...boards.count - 1).map({ (index) -> IndexPath in
                 return IndexPath(row: index, section: section)
             })
-            if group.isShown == false {
-                tableView.deleteRows(at: indecies, with: .fade)
-            } else {
+            if group.isShown {
                 tableView.insertRows(at: indecies, with: .fade)
+            } else {
+                tableView.deleteRows(at: indecies, with: .fade)
             }
         }
             

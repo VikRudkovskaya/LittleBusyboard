@@ -23,13 +23,7 @@
                         <rect key="frame" x="16" y="8" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="84c-rz-nCS"/>
-                            <constraint firstAttribute="height" constant="50" id="ayp-TB-oV3">
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </constraint>
+                            <constraint firstAttribute="height" constant="50" id="ayp-TB-oV3"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Однокнопочный" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWg-3c-2q9">

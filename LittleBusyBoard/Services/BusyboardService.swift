@@ -51,13 +51,19 @@ class BusyboardService: NSObject {
     // Получить доступные доски
     func busyboards(completion:@escaping ([BusyboardsGroup]?) -> () ) -> () {
         
-        guard let jsonData = Utils.unarchiveJSON(from: "BoardsGroup_1") else {
-            fatalError("Файл с указанным именем не найден")
-        }
         var boardsGroups: [BusyboardsGroup]? = nil
         do {
-            let busyboardsGroup = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData)
-            boardsGroups = [busyboardsGroup]
+            guard let jsonData1 = Utils.unarchiveJSON(from: "BoardsGroup_1") else {
+                fatalError("Файл с указанным именем не найден")
+            }
+            let busyboardsGroup1 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData1)
+            
+            guard let jsonData2 = Utils.unarchiveJSON(from: "BoardsGroup_2") else {
+                fatalError("Файл с указанным именем не найден")
+            }
+            let busyboardsGroup2 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData2)
+            
+            boardsGroups = [busyboardsGroup1, busyboardsGroup2]
         } catch  {
             print("Decode Error:\n", error)
         }

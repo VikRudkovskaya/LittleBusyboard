@@ -20,7 +20,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="427" height="95"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бизиборды" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-4e-3Ih">
-                    <rect key="frame" x="16" y="29.5" width="359" height="15.5"/>
+                    <rect key="frame" x="16" y="29.5" width="365" height="15.5"/>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                     <color key="textColor" red="0.0" green="0.14705925919999999" blue="0.24208788910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -40,18 +40,19 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Однокнопочные - однозадачные" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaM-YL-vvo">
-                    <rect key="frame" x="16" y="8" width="395" height="17.5"/>
+                    <rect key="frame" x="16" y="8" width="365" height="17.5"/>
                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                     <color key="textColor" red="0.0" green="0.14705925919999999" blue="0.24208788910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx2-sb-uET">
-                    <rect key="frame" x="383" y="29.5" width="44" height="22"/>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx2-sb-uET">
+                    <rect key="frame" x="383" y="22.5" width="44" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="P2Q-Hc-hHw"/>
+                        <constraint firstAttribute="height" constant="50" id="www-GM-kKd"/>
                     </constraints>
                     <color key="tintColor" red="0.73775660669999998" green="0.1525792014" blue="0.2733258469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="16" minY="21" maxX="16" maxY="21"/>
                     <state key="normal" image="triangle_arrow_up"/>
                     <connections>
                         <action selector="disclosureIndicatorTouchUpInsideSender:" destination="EE5-AA-euy" eventType="touchUpInside" id="DRc-Uz-JLH"/>
@@ -66,17 +67,17 @@
                 <constraint firstItem="vb7-w1-069" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bl2-4e-3Ih" secondAttribute="bottom" constant="4" id="2nz-CU-xD9"/>
                 <constraint firstItem="Bm3-QI-rqb" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" id="Aq1-GD-fAt"/>
                 <constraint firstItem="Bm3-QI-rqb" firstAttribute="top" secondItem="vb7-w1-069" secondAttribute="top" id="B47-WK-fyF"/>
-                <constraint firstItem="Rx2-sb-uET" firstAttribute="leading" secondItem="bl2-4e-3Ih" secondAttribute="trailing" constant="8" id="DGe-Kq-Xhh"/>
                 <constraint firstItem="MBu-da-fG1" firstAttribute="top" secondItem="vb7-w1-069" secondAttribute="top" id="Emt-Cx-J6V"/>
                 <constraint firstAttribute="trailing" secondItem="Xc7-jy-gFq" secondAttribute="trailing" id="GnS-sZ-FAG"/>
+                <constraint firstItem="Rx2-sb-uET" firstAttribute="leading" secondItem="UaM-YL-vvo" secondAttribute="trailing" constant="2" id="HI6-Tc-fJW"/>
                 <constraint firstItem="bl2-4e-3Ih" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" constant="16" id="Has-dJ-j4F"/>
                 <constraint firstItem="UaM-YL-vvo" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" constant="16" id="c4x-Ea-6NP"/>
                 <constraint firstItem="vb7-w1-069" firstAttribute="trailing" secondItem="MBu-da-fG1" secondAttribute="trailing" id="gv6-2C-Lnj"/>
+                <constraint firstItem="Rx2-sb-uET" firstAttribute="centerY" secondItem="vb7-w1-069" secondAttribute="centerY" id="jsp-UK-en9"/>
                 <constraint firstItem="vb7-w1-069" firstAttribute="trailing" secondItem="Rx2-sb-uET" secondAttribute="trailing" id="mOg-tu-Z5a"/>
                 <constraint firstItem="Xc7-jy-gFq" firstAttribute="leading" secondItem="vb7-w1-069" secondAttribute="leading" id="nHe-x6-CWO"/>
                 <constraint firstItem="vb7-w1-069" firstAttribute="bottom" secondItem="MBu-da-fG1" secondAttribute="bottom" id="okl-wr-O8P"/>
-                <constraint firstItem="vb7-w1-069" firstAttribute="trailing" secondItem="UaM-YL-vvo" secondAttribute="trailing" constant="16" id="soa-tR-9e4"/>
-                <constraint firstItem="Rx2-sb-uET" firstAttribute="top" secondItem="bl2-4e-3Ih" secondAttribute="top" id="t6b-z6-mfj"/>
+                <constraint firstItem="Rx2-sb-uET" firstAttribute="leading" secondItem="bl2-4e-3Ih" secondAttribute="trailing" constant="2" id="sL4-en-Ocm"/>
                 <constraint firstItem="MBu-da-fG1" firstAttribute="leading" secondItem="EE5-AA-euy" secondAttribute="leading" id="zVX-Rw-grF"/>
                 <constraint firstItem="UaM-YL-vvo" firstAttribute="top" secondItem="vb7-w1-069" secondAttribute="top" constant="8" id="zsh-PE-dDJ"/>
             </constraints>

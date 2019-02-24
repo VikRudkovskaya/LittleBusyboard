@@ -44,10 +44,13 @@ class BusyboardsGroupHeader: UIView {
     
     func disclosureIndicatorSetup(with group:BusyboardsGroup) {
         var tintColor = UIColor.darkGrayBlue
-        if group.isShown == true {
+        var transf = CGAffineTransform.init(rotationAngle: .pi / 2)
+        if group.isShown {
             tintColor = UIColor.coolPurpleRed
+            transf = CGAffineTransform.identity
         }
         disclosureIndicator.imageView?.tintColor = tintColor
+        disclosureIndicator.transform = transf
         
     }
     
