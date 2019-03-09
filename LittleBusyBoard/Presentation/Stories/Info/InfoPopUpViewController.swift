@@ -17,6 +17,9 @@ class InfoPopUpViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet weak var backImageView: UIImageView!
+    
+    @IBOutlet weak var cloudImageView: UIImageView!
     convenience init() {
         self.init(nibName: nil, bundle: nil)
         
@@ -29,9 +32,27 @@ class InfoPopUpViewController: UIViewController {
         scrollView.delegate = self
         
         containerView.layer.cornerRadius = 7
+        
+        backImageView.tintColor = UIColor.coolPurpleRed
+        
+
     }
     
-    @IBAction func closeTouchUpInside(_ sender: Any) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 5, animations: {
+            self.cloudImageView.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width, y: 0)
+        }) { (completion) in
+            UIView.animate(withDuration: 5, animations: {
+                 self.cloudImageView.transform = CGAffineTransform.identity
+            })
+           
+            
+        }
+    }
+    
+    @IBAction func closeAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
 
