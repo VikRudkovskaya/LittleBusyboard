@@ -18,6 +18,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoPopUpViewController" customModule="LittleBusyboard" customModuleProvider="target">
             <connections>
                 <outlet property="backImageView" destination="BbS-F1-Yrx" id="HoE-i4-Cn9"/>
+                <outlet property="cloud2ImageView" destination="4Y9-zd-SpZ" id="mgn-GZ-zWs"/>
+                <outlet property="cloud3ImageView" destination="HMo-bP-YCt" id="Tic-p3-fMC"/>
                 <outlet property="cloudImageView" destination="JPY-vM-Frb" id="80q-qe-TrH"/>
                 <outlet property="containerView" destination="2ex-6a-mXI" id="cya-B8-VWF"/>
                 <outlet property="scrollView" destination="HIB-9o-WLO" id="N9I-89-SnY"/>
@@ -29,14 +31,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sky_v2" translatesAutoresizingMaskIntoConstraints="NO" id="FCp-qJ-Jv3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="JPY-vM-Frb">
-                    <rect key="frame" x="2" y="782" width="286" height="80"/>
+                    <rect key="frame" x="16" y="776" width="130" height="70"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="xhw-10-QNn"/>
+                        <constraint firstAttribute="width" constant="130" id="Fs3-eF-f5h"/>
+                        <constraint firstAttribute="height" constant="70" id="xhw-10-QNn"/>
                     </constraints>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-9o-WLO">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_3" translatesAutoresizingMaskIntoConstraints="NO" id="HMo-bP-YCt">
+                    <rect key="frame" x="256" y="820" width="180" height="108"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="joc-La-yxM"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_2" translatesAutoresizingMaskIntoConstraints="NO" id="4Y9-zd-SpZ">
+                    <rect key="frame" x="114" y="768" width="110" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="P6v-Sb-fqM"/>
+                        <constraint firstAttribute="width" constant="110" id="Rsq-zt-05E"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-9o-WLO">
+                    <rect key="frame" x="0.0" y="20" width="375" height="435"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ex-6a-mXI">
                             <rect key="frame" x="0.0" y="16" width="414" height="700"/>
@@ -218,7 +237,7 @@
                                     <rect key="frame" x="0.0" y="658" width="414" height="42"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Просто выбирайте любую доску и покажите ребенку как нажимать на кнопки" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1k9-bE-SvW">
-                                            <rect key="frame" x="57" y="0.0" width="320" height="26"/>
+                                            <rect key="frame" x="58" y="0.0" width="320" height="26"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="320" id="IQK-kS-1wv"/>
                                             </constraints>
@@ -227,17 +246,17 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="BbS-F1-Yrx">
-                                            <rect key="frame" x="383" y="0.0" width="15" height="26"/>
+                                            <rect key="frame" x="386" y="0.0" width="12" height="26"/>
                                             <color key="tintColor" red="0.73775660669999998" green="0.1525792014" blue="0.2733258469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="15" id="3Cg-AE-oe1"/>
+                                                <constraint firstAttribute="width" constant="12" id="3Cg-AE-oe1"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <gestureRecognizers/>
                                     <constraints>
-                                        <constraint firstItem="BbS-F1-Yrx" firstAttribute="leading" secondItem="1k9-bE-SvW" secondAttribute="trailing" constant="6" id="7ar-II-isY"/>
+                                        <constraint firstItem="BbS-F1-Yrx" firstAttribute="leading" secondItem="1k9-bE-SvW" secondAttribute="trailing" constant="8" id="7ar-II-isY"/>
                                         <constraint firstItem="BbS-F1-Yrx" firstAttribute="centerY" secondItem="1k9-bE-SvW" secondAttribute="centerY" id="UcR-Id-AdE"/>
                                         <constraint firstItem="1k9-bE-SvW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bUI-rs-GE1" secondAttribute="leading" id="aOo-oz-MlP"/>
                                         <constraint firstAttribute="trailing" secondItem="BbS-F1-Yrx" secondAttribute="trailing" constant="16" id="fpF-2N-MsA"/>
@@ -297,15 +316,23 @@
             </subviews>
             <color key="backgroundColor" red="0.57981845087713657" green="0.75176121482253522" blue="0.81745717005076146" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="HMo-bP-YCt" secondAttribute="bottom" constant="-32" id="4Ed-1K-jeB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HIB-9o-WLO" secondAttribute="trailing" id="7NN-AX-JZo"/>
                 <constraint firstItem="HIB-9o-WLO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Am3-dh-w7o"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JPY-vM-Frb" secondAttribute="bottom" id="DS9-in-N51"/>
+                <constraint firstItem="4Y9-zd-SpZ" firstAttribute="leading" secondItem="JPY-vM-Frb" secondAttribute="trailing" constant="-32" id="JZF-pV-EOO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4Y9-zd-SpZ" secondAttribute="bottom" constant="38" id="XD9-cW-XCI"/>
+                <constraint firstItem="HMo-bP-YCt" firstAttribute="leading" secondItem="4Y9-zd-SpZ" secondAttribute="trailing" constant="32" id="Yzy-Rg-9jI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FCp-qJ-Jv3" secondAttribute="trailing" id="afQ-mz-Yl2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HIB-9o-WLO" secondAttribute="bottom" id="eLM-jq-QqM"/>
-                <constraint firstItem="JPY-vM-Frb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" multiplier="0.7" id="rss-T2-z8Y"/>
+                <constraint firstItem="FCp-qJ-Jv3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fy0-Kt-xZJ"/>
+                <constraint firstItem="FCp-qJ-Jv3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kgg-oV-XuF"/>
+                <constraint firstAttribute="bottom" secondItem="FCp-qJ-Jv3" secondAttribute="bottom" id="moU-zV-69c"/>
+                <constraint firstItem="JPY-vM-Frb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="q1D-G3-r0x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JPY-vM-Frb" secondAttribute="bottom" constant="16" id="zMc-Og-fhb"/>
                 <constraint firstItem="HIB-9o-WLO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zrY-hV-4ZQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="0.0" y="576.5625"/>
+            <point key="canvasLocation" x="-0.80000000000000004" y="575.26236881559225"/>
         </view>
         <tapGestureRecognizer id="A3v-Pg-jDO">
             <connections>
@@ -315,8 +342,11 @@
     </objects>
     <resources>
         <image name="bg_little_suns" width="400" height="700"/>
+        <image name="bg_sky_v2" width="400" height="700"/>
         <image name="close" width="15" height="15"/>
         <image name="cloud" width="286" height="157"/>
+        <image name="cloud_2" width="247" height="127"/>
+        <image name="cloud_3" width="208" height="108"/>
         <image name="double_arrow_right" width="20" height="26"/>
         <image name="round_candy" width="98" height="98"/>
         <image name="round_cloud" width="98" height="98"/>

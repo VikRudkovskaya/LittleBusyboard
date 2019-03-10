@@ -20,6 +20,9 @@ class InfoPopUpViewController: UIViewController {
     @IBOutlet weak var backImageView: UIImageView!
     
     @IBOutlet weak var cloudImageView: UIImageView!
+    @IBOutlet weak var cloud2ImageView: UIImageView!
+    @IBOutlet weak var cloud3ImageView: UIImageView!
+    
     convenience init() {
         self.init(nibName: nil, bundle: nil)
         
@@ -31,29 +34,36 @@ class InfoPopUpViewController: UIViewController {
         
         scrollView.delegate = self
         
-        containerView.layer.cornerRadius = 7
+        containerView.layer.cornerRadius = 16
         
         backImageView.tintColor = UIColor.coolPurpleRed
-        
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animate(withDuration: 5, animations: {
-            self.cloudImageView.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width, y: 0)
-        }) { (completion) in
-            UIView.animate(withDuration: 5, animations: {
-                 self.cloudImageView.transform = CGAffineTransform.identity
-            })
-           
-            
-        }
+        cloudsAnimate()
+
     }
     
     @IBAction func closeAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func cloudsAnimate() {
+        UIView.animate(withDuration: 10, animations: {
+            self.cloudImageView.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width - self.cloudImageView.bounds.size.width, y: 0)
+            self.cloud2ImageView.transform = CGAffineTransform(translationX: -UIScreen.main.bounds.width + self.cloud2ImageView.bounds.size.width, y: 0)
+            self.cloud3ImageView.transform = CGAffineTransform(translationX: -UIScreen.main.bounds.width , y: 0)
+        }) { (completion) in
+            UIView.animate(withDuration: 10, animations: {
+                self.cloudImageView.transform = CGAffineTransform.identity
+                self.cloud2ImageView.transform = CGAffineTransform.identity
+                self.cloud3ImageView.transform = CGAffineTransform.identity
+            })
+            
+            
+        }
     }
 
 }
