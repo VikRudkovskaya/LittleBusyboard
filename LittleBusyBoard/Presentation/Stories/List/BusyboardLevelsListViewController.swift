@@ -125,6 +125,15 @@ extension BusyboardLevelsListViewController: UITableViewDataSource {
         return view
     }
     
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view: BusyboardsGroupFooter = .fromNib()
+        return view
+    }
+    
 }
 
 extension BusyboardLevelsListViewController: UITableViewDelegate {

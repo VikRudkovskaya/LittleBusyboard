@@ -32,7 +32,7 @@
                         <constraint firstAttribute="height" constant="1" id="ItT-vG-BEK"/>
                     </constraints>
                 </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-QI-rqb">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-QI-rqb">
                     <rect key="frame" x="0.0" y="0.0" width="427" height="1"/>
                     <color key="backgroundColor" red="0.46122815280000001" green="0.57268042100000005" blue="0.66732108160000003" alpha="0.3492242518" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>

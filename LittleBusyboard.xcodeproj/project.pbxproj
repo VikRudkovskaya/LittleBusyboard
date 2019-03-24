@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8E6212E222207E0000629F7D /* MixedArrayDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6212E122207E0000629F7D /* MixedArrayDecoder.swift */; };
+		F20A3FE022353E0C00A01DAF /* BusyboardsGroupFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20A3FDF22353E0C00A01DAF /* BusyboardsGroupFooter.swift */; };
+		F20A3FE222353E2000A01DAF /* BusyboardsGroupFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20A3FE122353E2000A01DAF /* BusyboardsGroupFooter.xib */; };
 		F21F2D562210546F000B1EB1 /* BusyboardsGroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D542210546F000B1EB1 /* BusyboardsGroupHeader.swift */; };
 		F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */; };
 		F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D582210586A000B1EB1 /* UIUtils.swift */; };
@@ -66,6 +68,8 @@
 
 /* Begin PBXFileReference section */
 		8E6212E122207E0000629F7D /* MixedArrayDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MixedArrayDecoder.swift; path = LittleBusyBoard/Services/MixedArrayDecoder.swift; sourceTree = SOURCE_ROOT; };
+		F20A3FDF22353E0C00A01DAF /* BusyboardsGroupFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardsGroupFooter.swift; sourceTree = "<group>"; };
+		F20A3FE122353E2000A01DAF /* BusyboardsGroupFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyboardsGroupFooter.xib; sourceTree = "<group>"; };
 		F21F2D542210546F000B1EB1 /* BusyboardsGroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardsGroupHeader.swift; sourceTree = "<group>"; };
 		F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyboardsGroupHeader.xib; sourceTree = "<group>"; };
 		F21F2D582210586A000B1EB1 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F20A3FDE22353DD400A01DAF /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				F20A3FDF22353E0C00A01DAF /* BusyboardsGroupFooter.swift */,
+				F20A3FE122353E2000A01DAF /* BusyboardsGroupFooter.xib */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
 		F21F2D5C2210BD36000B1EB1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +344,7 @@
 		F2D026AD21FC397F00DCA09A /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				F20A3FDE22353DD400A01DAF /* Footer */,
 				F21F2D5C2210BD36000B1EB1 /* Cell */,
 				F21F2D5D2210BD3E000B1EB1 /* Header */,
 			);
@@ -486,6 +500,7 @@
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
 				F272D97A220996650067B7DD /* ButtonTextures.json in Resources */,
 				F27FCAF0222193E400A4090C /* BoardsGroup_2.json in Resources */,
+				F20A3FE222353E2000A01DAF /* BusyboardsGroupFooter.xib in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
 				F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */,
 				F27FCAF1222193E400A4090C /* BoardsGroup_1.json in Resources */,
@@ -517,6 +532,7 @@
 				F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */,
 				F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */,
 				F21F2D5B2210BB04000B1EB1 /* Fonts.swift in Sources */,
+				F20A3FE022353E0C00A01DAF /* BusyboardsGroupFooter.swift in Sources */,
 				F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */,
 				F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */,
 				F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */,

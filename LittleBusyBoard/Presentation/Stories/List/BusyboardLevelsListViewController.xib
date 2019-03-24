@@ -82,7 +82,7 @@
                         <constraint firstItem="j6D-Gy-Mfe" firstAttribute="leading" secondItem="tzO-tP-uKb" secondAttribute="trailing" id="zyp-MI-nGx"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-er-dGC">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-er-dGC">
                     <rect key="frame" x="0.0" y="80" width="375" height="1"/>
                     <color key="backgroundColor" red="0.46122815279863921" green="0.57268042102739902" blue="0.66732108160621761" alpha="0.34922425176056338" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>

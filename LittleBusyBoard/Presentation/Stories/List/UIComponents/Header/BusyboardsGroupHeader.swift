@@ -27,6 +27,7 @@ class BusyboardsGroupHeader: UIView {
         headerLabel.text = group.headerName
         descriptionLabel.text = group.groupDescription
         disclosureIndicatorSetup(with: group)
+        backgorundImageView.image = UIImage(named: group.headerBgName ?? "")
     }
     
     @IBAction func disclosureIndicatorTouchUpInside(sender: UIButton) {

@@ -63,7 +63,7 @@ class BusyboardService: NSObject {
             }
             let busyboardsGroup2 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData2)
             
-            boardsGroups = [busyboardsGroup1]
+            boardsGroups = [busyboardsGroup1, busyboardsGroup2]
         } catch  {
             print("Decode Error:\n", error)
         }
