@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="427" height="95"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_narrow_tiny_rounds" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-da-fG1">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_narrow_tiny_rounds" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-da-fG1">
                     <rect key="frame" x="0.0" y="0.0" width="427" height="95"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бизиборды" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-4e-3Ih">

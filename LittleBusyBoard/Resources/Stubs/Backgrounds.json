@@ -95,6 +95,20 @@
         "name": "Лес",
         "description": "🌲🌳🌲🌲",
         "fileName": "",
+    },
+    
+    {
+        "identifier": 15,
+        "name": "Розовый рассвет",
+        "description": "",
+        "fileName": "bg_pink"
+    },
+    
+    {
+        "identifier": 16,
+        "name": "Глубина",
+        "description": "",
+        "fileName": "bg_ocean"
     }
     
 ]
