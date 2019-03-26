@@ -35,9 +35,9 @@ class BusyboardsGroupHeader: UIView {
         group.isShown = !group.isShown
         groupDidChanged?(group)
         
-        let trasf = group.isShown ? CGAffineTransform.identity : CGAffineTransform.init(rotationAngle: .pi / 2)
+        let trasf = group.isShown ? CGAffineTransform.identity : CGAffineTransform.init(rotationAngle: .pi)
         UIView.animate(withDuration: 0.3, animations: {
-            sender.transform = trasf
+            sender.imageView?.transform = trasf
         }) { (complete) in
             self.disclosureIndicatorSetup(with: group)
         }
@@ -45,13 +45,13 @@ class BusyboardsGroupHeader: UIView {
     
     func disclosureIndicatorSetup(with group:BusyboardsGroup) {
         var tintColor = UIColor.darkGrayBlue
-        var transf = CGAffineTransform.init(rotationAngle: .pi / 2)
+        var transf = CGAffineTransform.init(rotationAngle: .pi)
         if group.isShown {
             tintColor = UIColor.coolPurpleRed
             transf = CGAffineTransform.identity
         }
         disclosureIndicator.imageView?.tintColor = tintColor
-        disclosureIndicator.transform = transf
+        disclosureIndicator.imageView?.transform = transf
         
     }
     

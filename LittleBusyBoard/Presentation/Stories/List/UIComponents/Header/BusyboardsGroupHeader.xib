@@ -52,8 +52,8 @@
                         <constraint firstAttribute="height" constant="50" id="www-GM-kKd"/>
                     </constraints>
                     <color key="tintColor" red="0.73775660669999998" green="0.1525792014" blue="0.2733258469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <inset key="imageEdgeInsets" minX="16" minY="21" maxX="16" maxY="21"/>
-                    <state key="normal" image="triangle_arrow_up"/>
+                    <inset key="imageEdgeInsets" minX="11" minY="20" maxX="16" maxY="23"/>
+                    <state key="normal" image="arrow_up"/>
                     <connections>
                         <action selector="disclosureIndicatorTouchUpInsideSender:" destination="EE5-AA-euy" eventType="touchUpInside" id="DRc-Uz-JLH"/>
                     </connections>
@@ -93,7 +93,7 @@
         </view>
     </objects>
     <resources>
+        <image name="arrow_up" width="25" height="14"/>
         <image name="bg_narrow_tiny_rounds" width="400" height="80"/>
-        <image name="triangle_arrow_up" width="16" height="9"/>
     </resources>
 </document>
