@@ -11,30 +11,35 @@ import AVFoundation
 
 class PlaySoundAction: ComponentAction {
     
-    let systemSound: SystemSound
+    var soundPlayer: SoundPlayer = SoundPlayer()
+
+    let soundFileName: String?
     
-    init(systemSound: SystemSound) {
-        self.systemSound = systemSound
+    init(soundFileName: String) {
+        self.soundFileName = soundFileName
         super.init()
     }
     
     private enum CodingKeys: String, CodingKey {
-        case systemSound
+        case soundFileName
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.systemSound = try container.decode(SystemSound.self, forKey: .systemSound)
+        self.soundFileName = try container.decode(String.self, forKey: .soundFileName)
         try super.init(from: decoder)
     }
     
     override func perform() {
         super.perform()
         
-        self.playSound(soundID: self.systemSound.soundID)
+        self.playSound(soundFileName: self.soundFileName ?? "")
     }
     
-    func playSound(soundID: Int) {
-        AudioServicesPlaySystemSound(SystemSoundID(soundID))
+    func playSound(soundFileName: String) {
+        DispatchQueue.main.async {
+            self.soundPlayer.playSound(soundName: soundFileName)
+        }
+        
     }
 }

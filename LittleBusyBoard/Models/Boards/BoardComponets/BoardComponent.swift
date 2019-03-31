@@ -38,7 +38,17 @@ class BoardComponent: Decodable {
     
     private enum CodingKeys: String, CodingKey {
         case perfomMode = "actionMode"
+        case actions
     }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        self.perfomMode = try container.decode(ActionPerformMode.self, forKey: .perfomMode)
+        self.actions = try container.decode(ComponentActionFamily.self, forKey: .actions)
+    }
+    
+
 }
 
 enum BoardComponentFamily: String, ClassFamily {

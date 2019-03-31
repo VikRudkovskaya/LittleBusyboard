@@ -15,4 +15,24 @@ class ComponentAction: Decodable {
     }
 }
 
-
+enum ComponentActionFamily: String, ClassFamily {
+    case switchLightType = "SwitchLight"
+    case playSoundType = "PlaySound"
+    case backgroundChange = "BackgroundChange"
+    case resizeElement = "ResizeElement"
+    
+    static var discriminator: Discriminator = .type
+    
+    func getType() -> AnyObject.Type {
+        switch self {
+        case .switchLightType:
+            return SwitchLightAction.self
+        case .playSoundType:
+            return PlaySoundAction.self
+        case .backgroundChange:
+            return BackgroundChangeAction.self
+        case .resizeElement:
+            return ResizeElementAction.self
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "identifier": "OneButtonBoards",
+    "headerName": "Простые круглые кнопки",
+    "description": "Однокнопочные однозадачные. Один элемент - одно действие.",
+    "headerBgName": "bg_narrow_gradient_v2",
+    "openSoundID": 1000,
+    "closeSoundID": 1200,
+    "boards": [
+        {
+            "identifier": 3,
+            "name": "Небесный механизм",
+            "isRandom": false,
+            "boardDescription": "Воспроизводит звук одновинтового самолета в полете",
+            "miniatureName": "miniature_v6",
+            "background":    {
+                "identifier": 17,
+                "name": "Голубое небо v3",
+                "description": "",
+                "fileName": "bg_sky_v3",
+            },
+            "components": [
+                {
+                    "identifier": 3,
+                    "type": "Button",
+                    "textureName": "button_blue_sky",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_plane_v1"
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 4,
+            "name": "Болотистая Таталия",
+            "isRandom": false,
+            "boardDescription": "Серо-зеленая кнопка -> звуки болота",
+            "miniatureName": "miniature_v5",
+            "background": {
+                "identifier": 13,
+                "name": "Болото",
+                "description": "",
+                "fileName": "bg_swamp_v1",
+            },
+            "components": [
+                {
+                    "identifier": 3,
+                    "type": "Button",
+                    "textureName": "button_dusty-green",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": ""
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 5,
+            "name": "Маленькое горячее солнце",
+            "isRandom": false,
+            "boardDescription": "А может быть поле из одуванчиков",
+            "miniatureName": "miniature_v7",
+            "background":     {
+                "identifier": 7,
+                "name": "Маленькие солнца",
+                "description": "Яркие и теплые маленькие солнца",
+                "fileName": "bg_little_suns",
+            },
+            "components": [
+                {
+                    "identifier": 3,
+                    "type": "Button",
+                    "textureName": "button_red-yellow_sun",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_fire"
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 1,
+            "name": "Стекло на глубине",
+            "isRandom": false,
+            "boardDescription": "Звуки бескрайнего океана",
+            "miniatureName": "miniature_v13",
+            "background": {
+                "identifier": 16,
+                "name": "Глубина",
+                "description": "",
+                "fileName": "bg_ocean"
+            },
+            "components": [
+                {
+                    "identifier": 1,
+                    "type": "Button",
+                    "textureName": "button_blue_ocean",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 1,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_rock_drop_in_water"
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 6,
+            "name": "Антропоморфная жвачка",
+            "isRandom": false,
+            "boardDescription": "Цвет для маленькой принцессы Бубльгум",
+            "miniatureName": "miniature_v10",
+            "background": {
+                "identifier": 15,
+                "name": "Розовый рассвет",
+                "description": "",
+                "fileName": "bg_pink"
+            },
+            "components": [
+                {
+                    "identifier": 3,
+                    "type": "Button",
+                    "textureName": "button_red-pink",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_chpok"
+                        }]
+                }]
+        }
+    ]
+}
+
+

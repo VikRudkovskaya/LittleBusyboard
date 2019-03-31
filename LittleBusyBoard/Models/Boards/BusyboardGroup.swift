@@ -32,6 +32,21 @@ class BusyboardsGroup: Decodable {
         }
     }
     
+    private var _footerImageName: String?
+    var footerImageName: String {
+        get {
+            guard let value = _footerImageName else {
+                // Рандомный выбор значения по-умолчанию
+                let availibleFooters = ["castle_v1", "castle_v2", "castle_v4", "castle_v5", "castle_v6", "castle_v7", "castle_v8", "castle_v9", "sword_v1", "sword_v2", "sword_v3", "sword_v4", "sword_v5", "swords_v2", "swords_v3", "swords_v4", "shield_v1", "shield_v2", "shield_swords"]
+                return availibleFooters[Utils.random(availibleFooters.count)]
+            }
+            return value
+        }
+        set(value) {
+            _footerImageName = value
+        }
+    }
+    
     var isShown: Bool = true
     
     init(identifier: String) {

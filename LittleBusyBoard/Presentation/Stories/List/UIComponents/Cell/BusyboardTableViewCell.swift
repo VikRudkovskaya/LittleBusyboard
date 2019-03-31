@@ -8,12 +8,16 @@
 
 import UIKit
 
-class BusyboardTableViewCell: BaseTableViewCell {
+class BusyboardTableViewCell: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var boardDescription: UILabel!
     @IBOutlet weak var boardMiniatureImageView: UIImageView!
     @IBOutlet weak var arrowImageView: UIImageView!
+    
+    static func reuseID() -> String {
+        return "BusyboardTableViewCell_ID"
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

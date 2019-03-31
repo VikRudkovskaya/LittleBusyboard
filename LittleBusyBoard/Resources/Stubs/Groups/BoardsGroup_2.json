@@ -1,0 +1,146 @@
+{
+    "identifier": "ButtonWithFlowerBoards",
+    "headerName": "Кнопки в виде цветочков",
+    "description": "Однозадачные борды\nс кнопками-цветами",
+    "headerBgName": "bg_narrow_gradient_v4",
+    "openSoundID": 1000,
+    "closeSoundID": 1200,
+    "boards": [
+        {
+            "identifier": 10,
+            "name": "Астра",
+            "isRandom": false,
+            "boardDescription": "Пушисто-колючая яркая кнопка-цветочек",
+            "miniatureName": "miniature_v16",
+            "background": {
+                "identifier": 22,
+                "name": "Зеленый v2",
+                "description": "",
+                "fileName": "bg_green_v2"
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureName": "button_flower_astra",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": ""
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 11,
+            "name": "Ромашка",
+            "isRandom": false,
+            "boardDescription": "Пушисто-колючая яркая кнопка-цветочек",
+            "miniatureName": "miniature_v14",
+            "background": {
+                "identifier": 21,
+                "name": "Желтый v3",
+                "description": "",
+                "fileName": "bg_yellow_v3"
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureName": "button_flower_chamomile",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": ""
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 12,
+            "name": "Хризантема",
+            "isRandom": false,
+            "boardDescription": "Немного хаотичная яркая кнопка-цветочек",
+            "miniatureName": "miniature_v15",
+            "background": {
+                "identifier": 18,
+                "name": "Зеленый v1",
+                "description": "",
+                "fileName": "bg_green_v1"
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureName": "button_flower_chrysanthemum",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": ""
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 13,
+            "name": "Василёк",
+            "isRandom": false,
+            "boardDescription": "Поле колосящейся ржи с вкраплением этого цветочка",
+            "miniatureName": "miniature_v18",
+            "background": {
+                "identifier": 19,
+                "name": "Желтый v1",
+                "description": "",
+                "fileName": "bg_yellow_v1"
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureName": "button_flower_knapweed",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": ""
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 14,
+            "name": "Одуванчик",
+            "isRandom": false,
+            "boardDescription": "Cолнечнo-желтый - значит скоро станет совсем тепло",
+            "miniatureName": "miniature_v17",
+            "background": {
+                "identifier": 20,
+                "name": "Желтый v2",
+                "description": "",
+                "fileName": "bg_yellow_v2"
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureName": "button_flower_dandelion",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": ""
+                        }]
+                }]
+        }
+    ]
+}
+
+

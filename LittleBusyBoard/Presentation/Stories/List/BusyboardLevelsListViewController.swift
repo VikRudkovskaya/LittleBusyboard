@@ -12,10 +12,13 @@ import AVFoundation
 class BusyboardLevelsListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var separatorView: UIView!
     
     var funImageView: UIImageView?
     
     var busyboardService: BusyboardService!
+    
+    var isSoundPlaying: Bool = false
     
     convenience init(service: BusyboardService) {
         
@@ -28,28 +31,31 @@ class BusyboardLevelsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupFunImageView()
-        
+
         registerCells()
 
         busyboardService.busyboards{ boardsGroups in
             self.tableView.reloadData()
+            self.setupFunImageView()
         }
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        funImageView?.center = CGPoint(x: self.view.center.x, y: 88)
+        funImageView?.center = CGPoint(x: self.view.center.x, y: 90)
     }
     
     private func setupFunImageView() {
+        guard let groups = busyboardService.busyboardsGroups else {
+            return
+        }
+        let group = groups[Utils.random(groups.count)]
         funImageView = UIImageView()
-       
-        funImageView?.frame.size = CGSize(width: 64, height: 64)
-        funImageView?.image = UIImage(named: "castle_v1")
+        funImageView?.frame.size = CGSize(width: 32, height: 32)
+        funImageView?.image = UIImage(named: group.footerImageName)
         funImageView?.alpha = 0
         funImageView?.isHidden = true
+        funImageView?.contentMode = .scaleAspectFit
         self.view.addSubview(funImageView!)
     }
     
@@ -130,7 +136,12 @@ extension BusyboardLevelsListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        guard let groups = busyboardService.busyboardsGroups else {
+            return nil
+        }
+        let group = groups[section]
         let view: BusyboardsGroupFooter = .fromNib()
+        view.centralImageView.image = UIImage(named: group.footerImageName)
         return view
     }
     
@@ -149,25 +160,37 @@ extension BusyboardLevelsListViewController: UITableViewDelegate {
 extension BusyboardLevelsListViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let offsetY = scrollView.contentOffset.y
+        if offsetY < 0 {
+            separatorView.isHidden = false
+        } else {
+            separatorView.isHidden = true
+        }
+        
         guard let funImageHeight = funImageView?.frame.size.height else {
             return
         }
-        let funImageHeightNegative = -1 * funImageHeight
-        if scrollView.contentOffset.y < funImageHeightNegative && self.funImageView?.isHidden == true {
-//            AudioServicesPlaySystemSound(1330)
+        let height = -1 * funImageHeight - 16
+        if offsetY < height && self.funImageView?.isHidden == true {
             funImageView?.isHidden = false
             UIView.animate(withDuration: 1) {
-                self.funImageView?.alpha = 1
+                self.funImageView?.alpha = 0.85
             }
         }
         
-        if scrollView.contentOffset.y >= funImageHeightNegative && self.funImageView?.isHidden == false  {
+        if offsetY >= height && self.funImageView?.isHidden == false  {
             
             UIView.animate(withDuration: 1, animations: {
                 self.funImageView?.alpha = 0
             }, completion: { (value: Bool) in
                 self.funImageView?.isHidden = true
             })
+        }
+        
+        if offsetY < -150 && isSoundPlaying == false {
+            AudioServicesPlaySystemSound(1330)
+            isSoundPlaying = true
         }
     }
 }

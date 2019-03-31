@@ -109,7 +109,50 @@
         "name": "Глубина",
         "description": "",
         "fileName": "bg_ocean"
+    },
+    
+    {
+        "identifier": 17,
+        "name": "Голубое небо v3",
+        "description": "",
+        "fileName": "bg_sky_v3"
+    },
+    
+    {
+        "identifier": 18,
+        "name": "Зеленый v1",
+        "description": "",
+        "fileName": "bg_green_v1"
+    },
+    
+    {
+        "identifier": 19,
+        "name": "Желтый v1",
+        "description": "",
+        "fileName": "bg_yellow_v1"
+    },
+    
+    {
+        "identifier": 20,
+        "name": "Желтый v2",
+        "description": "",
+        "fileName": "bg_yellow_v2"
+    },
+    
+    {
+        "identifier": 21,
+        "name": "Желтый v3",
+        "description": "",
+        "fileName": "bg_yellow_v3"
+    },
+    
+    {
+        "identifier": 22,
+        "name": "Зеленый v2",
+        "description": "",
+        "fileName": "bg_green_v2"
     }
+    
     
 ]
 

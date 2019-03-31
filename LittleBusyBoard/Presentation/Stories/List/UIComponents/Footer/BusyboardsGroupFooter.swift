@@ -11,5 +11,6 @@ import UIKit
 
 class BusyboardsGroupFooter: UIView {
 
-
+    @IBOutlet weak var centralImageView: UIImageView!
+    
 }

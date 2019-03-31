@@ -15,21 +15,25 @@
 		F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D582210586A000B1EB1 /* UIUtils.swift */; };
 		F21F2D5B2210BB04000B1EB1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D5A2210BB04000B1EB1 /* Fonts.swift */; };
 		F272D97322087BAC0067B7DD /* SystemSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D97222087BAC0067B7DD /* SystemSound.swift */; };
-		F272D97A220996650067B7DD /* ButtonTextures.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D976220996650067B7DD /* ButtonTextures.json */; };
-		F272D97C220996650067B7DD /* BoardComponents.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D978220996650067B7DD /* BoardComponents.json */; };
-		F272D97D220996650067B7DD /* Backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D979220996650067B7DD /* Backgrounds.json */; };
 		F272D98122099BC00067B7DD /* SystemSoundsIDs.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D98022099BC00067B7DD /* SystemSoundsIDs.json */; };
-		F272D98422099BF90067B7DD /* Actions.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D98322099BF90067B7DD /* Actions.json */; };
 		F272D988220AA84B0067B7DD /* BusyboardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D987220AA84B0067B7DD /* BusyboardGroup.swift */; };
-		F272D98A220AD1F30067B7DD /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F272D989220AD1F30067B7DD /* Board.json */; };
 		F272D98E220B10590067B7DD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D98D220B10590067B7DD /* Settings.swift */; };
 		F272D992220B2D860067B7DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D990220B2D860067B7DD /* SettingsViewController.swift */; };
 		F272D993220B2D860067B7DD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F272D991220B2D860067B7DD /* SettingsViewController.xib */; };
 		F272D995220B70A60067B7DD /* Blanka-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F272D994220B70A60067B7DD /* Blanka-Regular.otf */; };
 		F272D997220B74A80067B7DD /* Elianto-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F272D996220B74A80067B7DD /* Elianto-Regular.otf */; };
-		F27FCAED22217EE800A4090C /* BulbTextures.json in Resources */ = {isa = PBXBuildFile; fileRef = F27FCAEC22217EE800A4090C /* BulbTextures.json */; };
-		F27FCAF0222193E400A4090C /* BoardsGroup_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F27FCAEE222193E400A4090C /* BoardsGroup_2.json */; };
-		F27FCAF1222193E400A4090C /* BoardsGroup_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F27FCAEF222193E400A4090C /* BoardsGroup_1.json */; };
+		F2738EEC224F7231005FE787 /* ButtonTextures.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE5224F7231005FE787 /* ButtonTextures.json */; };
+		F2738EED224F7231005FE787 /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE6224F7231005FE787 /* Board.json */; };
+		F2738EEE224F7231005FE787 /* BoardComponents.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE7224F7231005FE787 /* BoardComponents.json */; };
+		F2738EEF224F7231005FE787 /* Backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE8224F7231005FE787 /* Backgrounds.json */; };
+		F2738EF0224F7231005FE787 /* BoardsGroup_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE9224F7231005FE787 /* BoardsGroup_1.json */; };
+		F2738EF1224F7231005FE787 /* BoardsGroup_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EEA224F7231005FE787 /* BoardsGroup_2.json */; };
+		F2738EF2224F7231005FE787 /* Actions.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EEB224F7231005FE787 /* Actions.json */; };
+		F2738EF5224F7260005FE787 /* BoardsGroup_3.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EF4224F7260005FE787 /* BoardsGroup_3.json */; };
+		F2738EF9225128FB005FE787 /* sound_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2738EF6225128FB005FE787 /* sound_fire.mp3 */; };
+		F2738EFA225128FB005FE787 /* sound_rock_drop_in_water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2738EF7225128FB005FE787 /* sound_rock_drop_in_water.mp3 */; };
+		F2738EFB225128FB005FE787 /* sound_plane_v1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2738EF8225128FB005FE787 /* sound_plane_v1.mp3 */; };
+		F2738EFD22513F8F005FE787 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2738EFC22513F8F005FE787 /* SoundPlayer.swift */; };
 		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
 		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
 		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
@@ -47,7 +51,6 @@
 		F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D026B121FC397F00DCA09A /* ProgressViewController.xib */; };
 		F2D026C021FC397F00DCA09A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026B221FC397F00DCA09A /* ProgressViewController.swift */; };
 		F2D026C221FC476300DCA09A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C121FC476300DCA09A /* Background.swift */; };
-		F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */; };
 		F2D026C621FC686500DCA09A /* BusyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026C521FC686500DCA09A /* BusyboardService.swift */; };
 		F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */; };
 		F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */; };
@@ -75,21 +78,25 @@
 		F21F2D582210586A000B1EB1 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		F21F2D5A2210BB04000B1EB1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F272D97222087BAC0067B7DD /* SystemSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSound.swift; sourceTree = "<group>"; };
-		F272D976220996650067B7DD /* ButtonTextures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ButtonTextures.json; sourceTree = "<group>"; };
-		F272D978220996650067B7DD /* BoardComponents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardComponents.json; sourceTree = "<group>"; };
-		F272D979220996650067B7DD /* Backgrounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Backgrounds.json; sourceTree = "<group>"; };
 		F272D98022099BC00067B7DD /* SystemSoundsIDs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemSoundsIDs.json; sourceTree = "<group>"; };
-		F272D98322099BF90067B7DD /* Actions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Actions.json; sourceTree = "<group>"; };
 		F272D987220AA84B0067B7DD /* BusyboardGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusyboardGroup.swift; sourceTree = "<group>"; };
-		F272D989220AD1F30067B7DD /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
 		F272D98D220B10590067B7DD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F272D990220B2D860067B7DD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F272D991220B2D860067B7DD /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		F272D994220B70A60067B7DD /* Blanka-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blanka-Regular.otf"; sourceTree = "<group>"; };
 		F272D996220B74A80067B7DD /* Elianto-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Elianto-Regular.otf"; sourceTree = "<group>"; };
-		F27FCAEC22217EE800A4090C /* BulbTextures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BulbTextures.json; path = ../../../../../../../Dropbox/LittleBusyBoard/BulbTextures.json; sourceTree = "<group>"; };
-		F27FCAEE222193E400A4090C /* BoardsGroup_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BoardsGroup_2.json; path = ../../../../../../../Dropbox/LittleBusyBoard/BoardsGroup_2.json; sourceTree = "<group>"; };
-		F27FCAEF222193E400A4090C /* BoardsGroup_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BoardsGroup_1.json; path = ../../../../../../../Dropbox/LittleBusyBoard/BoardsGroup_1.json; sourceTree = "<group>"; };
+		F2738EE5224F7231005FE787 /* ButtonTextures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ButtonTextures.json; sourceTree = "<group>"; };
+		F2738EE6224F7231005FE787 /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
+		F2738EE7224F7231005FE787 /* BoardComponents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardComponents.json; sourceTree = "<group>"; };
+		F2738EE8224F7231005FE787 /* Backgrounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Backgrounds.json; sourceTree = "<group>"; };
+		F2738EE9224F7231005FE787 /* BoardsGroup_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_1.json; sourceTree = "<group>"; };
+		F2738EEA224F7231005FE787 /* BoardsGroup_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_2.json; sourceTree = "<group>"; };
+		F2738EEB224F7231005FE787 /* Actions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Actions.json; sourceTree = "<group>"; };
+		F2738EF4224F7260005FE787 /* BoardsGroup_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_3.json; sourceTree = "<group>"; };
+		F2738EF6225128FB005FE787 /* sound_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_fire.mp3; sourceTree = "<group>"; };
+		F2738EF7225128FB005FE787 /* sound_rock_drop_in_water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_rock_drop_in_water.mp3; sourceTree = "<group>"; };
+		F2738EF8225128FB005FE787 /* sound_plane_v1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_plane_v1.mp3; sourceTree = "<group>"; };
+		F2738EFC22513F8F005FE787 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
 		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
 		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
@@ -109,7 +116,6 @@
 		F2D026B121FC397F00DCA09A /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 		F2D026B221FC397F00DCA09A /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		F2D026C121FC476300DCA09A /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		F2D026C521FC686500DCA09A /* BusyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyboardService.swift; sourceTree = "<group>"; };
 		F2D026C721FCAA1E00DCA09A /* Backgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Backgrounds.xcassets; sourceTree = "<group>"; };
 		F2D026C921FCAF7A00DCA09A /* Miniatures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Miniatures.xcassets; sourceTree = "<group>"; };
@@ -170,27 +176,12 @@
 		F21F2D5E22116DD9000B1EB1 /* Boards */ = {
 			isa = PBXGroup;
 			children = (
-				F2B1A13622073D17007952CC /* ComponentActions */,
-				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
-				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
 				F272D987220AA84B0067B7DD /* BusyboardGroup.swift */,
+				F2D026A221FC397F00DCA09A /* Busyboard.swift */,
+				F2D026E621FDEB9A00DCA09A /* BoardComponets */,
+				F2B1A13622073D17007952CC /* ComponentActions */,
 			);
 			path = Boards;
-			sourceTree = "<group>";
-		};
-		F272D975220996650067B7DD /* Stubs */ = {
-			isa = PBXGroup;
-			children = (
-				F27FCAEF222193E400A4090C /* BoardsGroup_1.json */,
-				F27FCAEE222193E400A4090C /* BoardsGroup_2.json */,
-				F272D98322099BF90067B7DD /* Actions.json */,
-				F27FCAEC22217EE800A4090C /* BulbTextures.json */,
-				F272D976220996650067B7DD /* ButtonTextures.json */,
-				F272D989220AD1F30067B7DD /* Board.json */,
-				F272D978220996650067B7DD /* BoardComponents.json */,
-				F272D979220996650067B7DD /* Backgrounds.json */,
-			);
-			path = Stubs;
 			sourceTree = "<group>";
 		};
 		F272D97E220996770067B7DD /* Images */ = {
@@ -218,6 +209,9 @@
 		F272D98222099BCE0067B7DD /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F2738EF6225128FB005FE787 /* sound_fire.mp3 */,
+				F2738EF8225128FB005FE787 /* sound_plane_v1.mp3 */,
+				F2738EF7225128FB005FE787 /* sound_rock_drop_in_water.mp3 */,
 				F272D98022099BC00067B7DD /* SystemSoundsIDs.json */,
 			);
 			path = Sounds;
@@ -230,6 +224,29 @@
 				F272D991220B2D860067B7DD /* SettingsViewController.xib */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		F2738EE4224F7231005FE787 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				F2738EF3224F7237005FE787 /* Groups */,
+				F2738EE5224F7231005FE787 /* ButtonTextures.json */,
+				F2738EE6224F7231005FE787 /* Board.json */,
+				F2738EE7224F7231005FE787 /* BoardComponents.json */,
+				F2738EE8224F7231005FE787 /* Backgrounds.json */,
+				F2738EEB224F7231005FE787 /* Actions.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		F2738EF3224F7237005FE787 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				F2738EE9224F7231005FE787 /* BoardsGroup_1.json */,
+				F2738EEA224F7231005FE787 /* BoardsGroup_2.json */,
+				F2738EF4224F7260005FE787 /* BoardsGroup_3.json */,
+			);
+			path = Groups;
 			sourceTree = "<group>";
 		};
 		F2B1A12F220479F4007952CC /* Stories */ = {
@@ -283,10 +300,10 @@
 		F2D0269D21FC397F00DCA09A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F2738EE4224F7231005FE787 /* Stubs */,
 				F272D97F2209968D0067B7DD /* Fonts */,
 				F272D98222099BCE0067B7DD /* Sounds */,
 				F272D97E220996770067B7DD /* Images */,
-				F272D975220996650067B7DD /* Stubs */,
 				F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */,
 			);
 			path = Resources;
@@ -344,9 +361,9 @@
 		F2D026AD21FC397F00DCA09A /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				F20A3FDE22353DD400A01DAF /* Footer */,
 				F21F2D5C2210BD36000B1EB1 /* Cell */,
 				F21F2D5D2210BD3E000B1EB1 /* Header */,
+				F20A3FDE22353DD400A01DAF /* Footer */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -363,7 +380,7 @@
 		F2D026CB21FCB38600DCA09A /* UIInfrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026C321FC581E00DCA09A /* BaseTableViewCell.swift */,
+				F2738EFC22513F8F005FE787 /* SoundPlayer.swift */,
 				F2D026CF21FCD1C300DCA09A /* Colors.swift */,
 				F21F2D5A2210BB04000B1EB1 /* Fonts.swift */,
 				F21F2D582210586A000B1EB1 /* UIUtils.swift */,
@@ -483,28 +500,31 @@
 				F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */,
 				F272D993220B2D860067B7DD /* SettingsViewController.xib in Resources */,
 				F272D98122099BC00067B7DD /* SystemSoundsIDs.json in Resources */,
-				F272D97C220996650067B7DD /* BoardComponents.json in Resources */,
 				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
 				F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */,
-				F27FCAED22217EE800A4090C /* BulbTextures.json in Resources */,
 				F2D7ADAA221953860012125E /* Arrows.xcassets in Resources */,
-				F272D98422099BF90067B7DD /* Actions.json in Resources */,
+				F2738EEE224F7231005FE787 /* BoardComponents.json in Resources */,
+				F2738EF9225128FB005FE787 /* sound_fire.mp3 in Resources */,
+				F2738EEC224F7231005FE787 /* ButtonTextures.json in Resources */,
 				F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */,
 				F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */,
 				F272D995220B70A60067B7DD /* Blanka-Regular.otf in Resources */,
 				F2D026B421FC397F00DCA09A /* Other.xcassets in Resources */,
-				F272D97D220996650067B7DD /* Backgrounds.json in Resources */,
+				F2738EFB225128FB005FE787 /* sound_plane_v1.mp3 in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,
+				F2738EEF224F7231005FE787 /* Backgrounds.json in Resources */,
+				F2738EF0224F7231005FE787 /* BoardsGroup_1.json in Resources */,
 				F272D997220B74A80067B7DD /* Elianto-Regular.otf in Resources */,
-				F272D98A220AD1F30067B7DD /* Board.json in Resources */,
+				F2738EFA225128FB005FE787 /* sound_rock_drop_in_water.mp3 in Resources */,
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
-				F272D97A220996650067B7DD /* ButtonTextures.json in Resources */,
-				F27FCAF0222193E400A4090C /* BoardsGroup_2.json in Resources */,
+				F2738EED224F7231005FE787 /* Board.json in Resources */,
 				F20A3FE222353E2000A01DAF /* BusyboardsGroupFooter.xib in Resources */,
+				F2738EF2224F7231005FE787 /* Actions.json in Resources */,
+				F2738EF1224F7231005FE787 /* BoardsGroup_2.json in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
 				F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */,
-				F27FCAF1222193E400A4090C /* BoardsGroup_1.json in Resources */,
 				F2D7ADA8221938E60012125E /* Fun.xcassets in Resources */,
+				F2738EF5224F7260005FE787 /* BoardsGroup_3.json in Resources */,
 				F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +538,7 @@
 			files = (
 				F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */,
 				F21F2D562210546F000B1EB1 /* BusyboardsGroupHeader.swift in Sources */,
+				F2738EFD22513F8F005FE787 /* SoundPlayer.swift in Sources */,
 				F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */,
 				F272D98E220B10590067B7DD /* Settings.swift in Sources */,
 				F2D026DF21FDD42C00DCA09A /* ComponentAction.swift in Sources */,
@@ -533,7 +554,6 @@
 				F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */,
 				F21F2D5B2210BB04000B1EB1 /* Fonts.swift in Sources */,
 				F20A3FE022353E0C00A01DAF /* BusyboardsGroupFooter.swift in Sources */,
-				F2D026C421FC581E00DCA09A /* BaseTableViewCell.swift in Sources */,
 				F2D026E121FDD5F300DCA09A /* Utils.swift in Sources */,
 				F2D026D721FDAD8F00DCA09A /* InfoPopUpViewController.swift in Sources */,
 				F272D988220AA84B0067B7DD /* BusyboardGroup.swift in Sources */,
