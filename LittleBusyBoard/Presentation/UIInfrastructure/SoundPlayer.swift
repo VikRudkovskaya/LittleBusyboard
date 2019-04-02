@@ -27,7 +27,7 @@ class SoundPlayer: NSObject {
             player.numberOfLoops = 0
             var bool = player.prepareToPlay()
             print(bool)
-             bool = player.play()
+            bool = player.play()
           print(bool)
         
         } catch {

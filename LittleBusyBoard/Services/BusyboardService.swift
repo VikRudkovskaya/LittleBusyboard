@@ -64,6 +64,11 @@ class BusyboardService: NSObject {
             let busyboardsGroup2 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData2)
             
             boardsGroups = [busyboardsGroup1, busyboardsGroup2]
+            f(busyboardGroup: busyboardsGroup2)
+            
+            
+
+            
         } catch  {
             print("Decode Error:\n", error)
         }
@@ -72,4 +77,19 @@ class BusyboardService: NSObject {
         
         // Лес, единороги, замки, облака, квадраты, рубчик, звезды
     }
+    
+    func f(busyboardGroup: BusyboardsGroup) {
+        for board in busyboardGroup.boards! {
+            for component in board.boardComponents! {
+                for action in component.actions! {
+                    if action is RotateAction {
+                        let rotateAction = action as! RotateAction
+                        rotateAction.affectedBoardComponent = component
+                    }
+                }
+            }
+        }
+    }
+    
+    
 }

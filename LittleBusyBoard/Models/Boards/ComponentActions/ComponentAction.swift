@@ -20,6 +20,7 @@ enum ComponentActionFamily: String, ClassFamily {
     case playSoundType = "PlaySound"
     case backgroundChange = "BackgroundChange"
     case resizeElement = "ResizeElement"
+    case rotate = "Rotate"
     
     static var discriminator: Discriminator = .type
     
@@ -33,6 +34,8 @@ enum ComponentActionFamily: String, ClassFamily {
             return BackgroundChangeAction.self
         case .resizeElement:
             return ResizeElementAction.self
+        case .rotate:
+            return RotateAction.self
         }
     }
 }

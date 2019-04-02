@@ -20,14 +20,14 @@ class PlaySoundAction: ComponentAction {
         super.init()
     }
     
-    private enum CodingKeys: String, CodingKey {
-        case soundFileName
-    }
-    
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.soundFileName = try container.decode(String.self, forKey: .soundFileName)
         try super.init(from: decoder)
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case soundFileName
     }
     
     override func perform() {

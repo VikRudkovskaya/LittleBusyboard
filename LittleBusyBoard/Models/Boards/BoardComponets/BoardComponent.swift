@@ -16,9 +16,17 @@ enum ActionPerformMode: String, Decodable {
 
 class BoardComponent: Decodable {
     
+    var _view: UIView?
     func view() -> UIView {
-        return UIView(frame: .zero)
+        guard let value = _view else {
+            _view = UIView(frame: .zero)
+            return UIView(frame: .zero)
+        }
+        return value
     }
+    
+    var identifier: Int
+    
     
     // Каждый компонент должен знать координаты, где он находится на борде
     // Координаты центра
@@ -39,6 +47,7 @@ class BoardComponent: Decodable {
     private enum CodingKeys: String, CodingKey {
         case perfomMode = "actionMode"
         case actions
+        case identifier
     }
     
     required init(from decoder: Decoder) throws {
@@ -46,6 +55,7 @@ class BoardComponent: Decodable {
 
         self.perfomMode = try container.decode(ActionPerformMode.self, forKey: .perfomMode)
         self.actions = try container.decode(ComponentActionFamily.self, forKey: .actions)
+        self.identifier = try container.decode(Int.self, forKey: .identifier)
     }
     
 

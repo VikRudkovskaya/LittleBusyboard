@@ -35,9 +35,9 @@
         
         {
             "identifier": 4,
-            "name": "Болотистая Таталия",
+            "name": "Болота Таталии",
             "isRandom": false,
-            "boardDescription": "Серо-зеленая кнопка -> звуки болота",
+            "boardDescription": "Серо-зеленые оттенки труднопроходимой местности",
             "miniatureName": "miniature_v5",
             "background": {
                 "identifier": 13,
@@ -55,7 +55,7 @@
                         {
                             "identifier": 6,
                             "type": "PlaySound",
-                            "soundFileName": ""
+                            "soundFileName": "sound_swamp_heroes3"
                         }]
                 }]
         },
@@ -64,7 +64,7 @@
             "identifier": 5,
             "name": "Маленькое горячее солнце",
             "isRandom": false,
-            "boardDescription": "А может быть поле из одуванчиков",
+            "boardDescription": "Раскалённое небесное тело. Звук огня",
             "miniatureName": "miniature_v7",
             "background":     {
                 "identifier": 7,
@@ -91,7 +91,7 @@
             "identifier": 1,
             "name": "Стекло на глубине",
             "isRandom": false,
-            "boardDescription": "Звуки бескрайнего океана",
+            "boardDescription": "Высокохудожественный плюх. Всплеск. Погружение на дно",
             "miniatureName": "miniature_v13",
             "background": {
                 "identifier": 16,
@@ -118,7 +118,7 @@
             "identifier": 6,
             "name": "Антропоморфная жвачка",
             "isRandom": false,
-            "boardDescription": "Цвет для маленькой принцессы Бубльгум",
+            "boardDescription": "Цвет для маленькой принцессы",
             "miniatureName": "miniature_v10",
             "background": {
                 "identifier": 15,
@@ -142,5 +142,3 @@
         }
     ]
 }
-
-

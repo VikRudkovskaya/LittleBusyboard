@@ -22,12 +22,19 @@ class ButtonComponent: BoardComponent {
         try super.init(from: decoder)
     }
     
+    private var _button: UIButton?
     override func view() -> UIView {
         
-        let size = CGSize(width: 200, height: 200)
-        let button = self.button(size: size, textureName: textureName, text: "")
-        
-        return button
+        guard let value = _button else {
+            let size = CGSize(width: 220, height: 220)
+            let button = self.button(size: size, textureName: textureName, text: "")
+            
+            _button = button
+            
+            return button
+        }
+        return value
+
     }
         
     var availableTextures: [String] {
