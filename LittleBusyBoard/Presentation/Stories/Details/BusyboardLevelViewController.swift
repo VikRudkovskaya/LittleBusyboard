@@ -42,6 +42,17 @@ class BusyboardLevelViewController: UIViewController {
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        do {
+            try AVAudioSession.sharedInstance().setActive(false, options: [])
+        }
+        catch {
+            print("Can't deactivate")
+        }
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -53,7 +64,5 @@ class BusyboardLevelViewController: UIViewController {
     @IBAction func backTpuchUpInside(sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
-
-        
 }
+

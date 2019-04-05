@@ -27,7 +27,6 @@ class BoardComponent: Decodable {
     
     var identifier: Int
     
-    
     // Каждый компонент должен знать координаты, где он находится на борде
     // Координаты центра
     var coordinates: CGPoint = .zero

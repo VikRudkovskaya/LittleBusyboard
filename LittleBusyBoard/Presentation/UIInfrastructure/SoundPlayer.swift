@@ -22,13 +22,11 @@ class SoundPlayer: NSObject {
             if #available(iOS 10.0, *) {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
             }
-            try AVAudioSession.sharedInstance().setActive(true, options: [])
+            try AVAudioSession.sharedInstance().setActive(false, options: [])
             player = try AVAudioPlayer(contentsOf: url)
             player.numberOfLoops = 0
-            var bool = player.prepareToPlay()
-            print(bool)
-            bool = player.play()
-          print(bool)
+            player.prepareToPlay()
+            player.play()
         
         } catch {
             print("Can't play sound")

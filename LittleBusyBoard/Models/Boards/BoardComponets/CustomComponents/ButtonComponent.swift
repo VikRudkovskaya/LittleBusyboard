@@ -24,9 +24,8 @@ class ButtonComponent: BoardComponent {
     
     private var _button: UIButton?
     override func view() -> UIView {
-        
         guard let value = _button else {
-            let size = CGSize(width: 220, height: 220)
+            let size = CGSize(width: 240, height: 240)
             let button = self.button(size: size, textureName: textureName, text: "")
             
             _button = button
@@ -51,7 +50,7 @@ class ButtonComponent: BoardComponent {
     
     func randomSingleButton() -> UIButton {
         let button = UIButton()
-        button.frame.size = CGSize(width: 200, height: 200)
+        button.frame.size = CGSize(width: 240, height: 240)
         let textureName = availableTextures[Utils.random(availableTextures.count)]
         
         let bgImage = UIImage(named: textureName)
