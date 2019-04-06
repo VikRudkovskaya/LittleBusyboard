@@ -151,6 +151,13 @@
         "name": "Зеленый v2",
         "description": "",
         "fileName": "bg_green_v2"
+    },
+    
+    {
+        "identifier": 23,
+        "name": "Космик",
+        "description": "",
+        "fileName": "bg_cosmic_v1"
     }
     
     

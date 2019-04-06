@@ -43,10 +43,13 @@ class BoardComponent: Decodable {
     // Компонент должен знать в каком моде ему воспроизводить action'ы
     var perfomMode: ActionPerformMode
     
+    var size: ComponentSize?
+    
     private enum CodingKeys: String, CodingKey {
         case perfomMode = "actionMode"
         case actions
         case identifier
+        case size
     }
     
     required init(from decoder: Decoder) throws {
@@ -55,6 +58,7 @@ class BoardComponent: Decodable {
         self.perfomMode = try container.decode(ActionPerformMode.self, forKey: .perfomMode)
         self.actions = try container.decode(ComponentActionFamily.self, forKey: .actions)
         self.identifier = try container.decode(Int.self, forKey: .identifier)
+        self.size = try? container.decode(ComponentSize.self, forKey: .size)
     }
     
 

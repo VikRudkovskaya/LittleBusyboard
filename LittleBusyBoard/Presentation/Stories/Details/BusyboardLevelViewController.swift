@@ -46,7 +46,7 @@ class BusyboardLevelViewController: UIViewController {
         super.viewDidDisappear(animated)
         
         do {
-            try AVAudioSession.sharedInstance().setActive(false, options: [])
+            try AVAudioSession.sharedInstance().setActive(false, options: [.notifyOthersOnDeactivation])
         }
         catch {
             print("Can't deactivate")

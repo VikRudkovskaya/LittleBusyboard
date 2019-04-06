@@ -42,6 +42,10 @@
 		F2B1A12A22035CE8007952CC /* PlaySoundAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12922035CE8007952CC /* PlaySoundAction.swift */; };
 		F2B1A12C22035D58007952CC /* BackgroundChangeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */; };
 		F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1A12D22035D72007952CC /* ResizeElementAction.swift */; };
+		F2CBBD8022579EB20037D116 /* sound_xylophone_v2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBD7E22579EB20037D116 /* sound_xylophone_v2.mp3 */; };
+		F2CBBD8122579EB20037D116 /* sound_xylophone_v1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBD7F22579EB20037D116 /* sound_xylophone_v1.mp3 */; };
+		F2CBBD832257B0E30037D116 /* ComponentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBBD822257B0E30037D116 /* ComponentSize.swift */; };
+		F2CBBD852257CD000037D116 /* sound_piu-piu_v1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBD842257CD000037D116 /* sound_piu-piu_v1.mp3 */; };
 		F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */; };
 		F2D026B421FC397F00DCA09A /* Other.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269F21FC397F00DCA09A /* Other.xcassets */; };
 		F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A121FC397F00DCA09A /* BoardComponent.swift */; };
@@ -110,6 +114,10 @@
 		F2B1A12922035CE8007952CC /* PlaySoundAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundAction.swift; sourceTree = "<group>"; };
 		F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChangeAction.swift; sourceTree = "<group>"; };
 		F2B1A12D22035D72007952CC /* ResizeElementAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeElementAction.swift; sourceTree = "<group>"; };
+		F2CBBD7E22579EB20037D116 /* sound_xylophone_v2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_xylophone_v2.mp3; sourceTree = "<group>"; };
+		F2CBBD7F22579EB20037D116 /* sound_xylophone_v1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_xylophone_v1.mp3; sourceTree = "<group>"; };
+		F2CBBD822257B0E30037D116 /* ComponentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSize.swift; sourceTree = "<group>"; };
+		F2CBBD842257CD000037D116 /* sound_piu-piu_v1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound_piu-piu_v1.mp3"; sourceTree = "<group>"; };
 		F2D0264321FC335000DCA09A /* LittleBusyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBusyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F2D0269F21FC397F00DCA09A /* Other.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Other.xcassets; sourceTree = "<group>"; };
@@ -219,6 +227,9 @@
 		F272D98222099BCE0067B7DD /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F2CBBD842257CD000037D116 /* sound_piu-piu_v1.mp3 */,
+				F2CBBD7F22579EB20037D116 /* sound_xylophone_v1.mp3 */,
+				F2CBBD7E22579EB20037D116 /* sound_xylophone_v2.mp3 */,
 				F27223522254068D00A6330D /* sound_rotate_v2.mp3 */,
 				F272234C2253DAD500A6330D /* sound_swamp_heroes3.mp3 */,
 				F2738F07225260E2005FE787 /* sound_swamp.mp3 */,
@@ -427,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				F2D026A121FC397F00DCA09A /* BoardComponent.swift */,
+				F2CBBD822257B0E30037D116 /* ComponentSize.swift */,
 				F2D026E721FDEBC900DCA09A /* CustomComponents */,
 			);
 			path = BoardComponets;
@@ -537,11 +549,14 @@
 				F2738EED224F7231005FE787 /* Board.json in Resources */,
 				F20A3FE222353E2000A01DAF /* BusyboardsGroupFooter.xib in Resources */,
 				F2738EF2224F7231005FE787 /* Actions.json in Resources */,
+				F2CBBD852257CD000037D116 /* sound_piu-piu_v1.mp3 in Resources */,
 				F2738F08225260E2005FE787 /* sound_swamp.mp3 in Resources */,
 				F2738EF1224F7231005FE787 /* BoardsGroup_2.json in Resources */,
+				F2CBBD8022579EB20037D116 /* sound_xylophone_v2.mp3 in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
 				F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */,
 				F2D7ADA8221938E60012125E /* Fun.xcassets in Resources */,
+				F2CBBD8122579EB20037D116 /* sound_xylophone_v1.mp3 in Resources */,
 				F272234D2253DAD500A6330D /* sound_swamp_heroes3.mp3 in Resources */,
 				F2738EF5224F7260005FE787 /* BoardsGroup_3.json in Resources */,
 				F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */,
@@ -560,6 +575,7 @@
 				F2738EFD22513F8F005FE787 /* SoundPlayer.swift in Sources */,
 				F2D026DD21FDB5E400DCA09A /* ComponetsLayouter.swift in Sources */,
 				F272D98E220B10590067B7DD /* Settings.swift in Sources */,
+				F2CBBD832257B0E30037D116 /* ComponentSize.swift in Sources */,
 				F2D026DF21FDD42C00DCA09A /* ComponentAction.swift in Sources */,
 				F2D026B721FC397F00DCA09A /* AppDelegate.swift in Sources */,
 				F2D026D021FCD1C300DCA09A /* Colors.swift in Sources */,

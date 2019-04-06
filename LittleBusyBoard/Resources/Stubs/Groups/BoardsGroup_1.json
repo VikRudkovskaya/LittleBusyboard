@@ -51,6 +51,10 @@
                     "type": "Button",
                     "textureName": "button_dusty-green",
                     "actionMode": "OneByOne",
+                    "size": {
+                        "width" : 280,
+                        "height": 280
+                    },
                     "actions": [
                         {
                             "identifier": 6,
@@ -61,7 +65,7 @@
         },
         
         {
-            "identifier": 5,
+            "identifier": 6,
             "name": "Маленькое горячее солнце",
             "isRandom": false,
             "boardDescription": "Раскалённое небесное тело. Звук огня",
@@ -78,6 +82,10 @@
                     "type": "Button",
                     "textureName": "button_red-yellow_sun",
                     "actionMode": "OneByOne",
+                    "size": {
+                        "width" : 320,
+                        "height": 320
+                    },
                     "actions": [
                         {
                             "identifier": 6,
@@ -105,6 +113,10 @@
                     "type": "Button",
                     "textureName": "button_blue_ocean",
                     "actionMode": "OneByOne",
+                    "size": {
+                        "width" : 220,
+                        "height": 220
+                    },
                     "actions": [
                         {
                             "identifier": 1,
@@ -137,6 +149,37 @@
                             "identifier": 6,
                             "type": "PlaySound",
                             "soundFileName": "sound_chpok"
+                        }]
+                }]
+        },
+        
+        {
+            "identifier": 5,
+            "name": "Спейсдива",
+            "isRandom": false,
+            "boardDescription": "В космосе не распространяется звук",
+            "miniatureName": "miniature_v18",
+            "background":    {
+                "identifier": 23,
+                "name": "Космик",
+                "description": "",
+                "fileName": "bg_cosmic_v1"
+            },
+            "components": [
+                {
+                    "identifier": 3,
+                    "type": "Button",
+                    "textureName": "button_blue_cosmic",
+                    "actionMode": "OneByOne",
+                    "size": {
+                        "width" : 300,
+                        "height": 300
+                    },
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_piu-piu_v1"
                         }]
                 }]
         }
