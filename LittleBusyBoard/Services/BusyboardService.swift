@@ -53,12 +53,12 @@ class BusyboardService: NSObject {
         
         var boardsGroups: [BusyboardsGroup]? = nil
         do {
-            guard let jsonData1 = Utils.unarchiveJSON(from: "BoardsGroup_1") else {
+            guard let jsonData1 = Utils.unarchiveJSON(from: "RU_BoardsGroup_1") else {
                 fatalError("Файл с указанным именем не найден")
             }
             let busyboardsGroup1 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData1)
             
-            guard let jsonData2 = Utils.unarchiveJSON(from: "BoardsGroup_2") else {
+            guard let jsonData2 = Utils.unarchiveJSON(from: "RU_BoardsGroup_2") else {
                 fatalError("Файл с указанным именем не найден")
             }
             let busyboardsGroup2 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData2)

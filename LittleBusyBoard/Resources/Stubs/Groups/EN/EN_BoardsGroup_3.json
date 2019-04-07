@@ -1,0 +1,38 @@
+{
+    "identifier": "ButtonWithBulbsBoards",
+    "headerName": "Кнопка, включающая свет",
+    "description": "По нажатию на кнопку загораются лампочки",
+    "headerBgName": "bg_narrow_tiny_rounds",
+    "openSoundID": 1000,
+    "closeSoundID": 1200,
+    "boards": [
+        {
+            "identifier": 7,
+            "name": "",
+            "isRandom": false,
+            "boardDescription": "Пушисто-колючая яркая кнопка-цветочек",
+            "miniatureName": "miniature_v4",
+            "background": {
+                "identifier": 5,
+                "name": "Нежные пончики V1",
+                "description": "Расскажите ребенку, что такое тор",
+                "fileName": "bg_tiny_donuts_v1",
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureName": "button_star_purple",
+                    "actionMode": "OneByOne",
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundID": 1254
+                        }]
+                }]
+        }
+    ]
+}
+
+
