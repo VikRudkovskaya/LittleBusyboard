@@ -1,7 +1,7 @@
 {
     "identifier": "OneButtonBoards",
     "headerName": "Simple round buttons",
-    "description": "One element to one action. This group play sounds",
+    "description": "One element to one action.\nThis group play sounds",
     "headerBgName": "bg_narrow_gradient_v2",
     "openSoundID": 1000,
     "closeSoundID": 1200,

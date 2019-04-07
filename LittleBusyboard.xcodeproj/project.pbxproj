@@ -28,10 +28,7 @@
 		F2738EED224F7231005FE787 /* Board.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE6224F7231005FE787 /* Board.json */; };
 		F2738EEE224F7231005FE787 /* BoardComponents.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE7224F7231005FE787 /* BoardComponents.json */; };
 		F2738EEF224F7231005FE787 /* Backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE8224F7231005FE787 /* Backgrounds.json */; };
-		F2738EF0224F7231005FE787 /* BoardsGroup_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EE9224F7231005FE787 /* BoardsGroup_1.json */; };
-		F2738EF1224F7231005FE787 /* BoardsGroup_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EEA224F7231005FE787 /* BoardsGroup_2.json */; };
 		F2738EF2224F7231005FE787 /* Actions.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EEB224F7231005FE787 /* Actions.json */; };
-		F2738EF5224F7260005FE787 /* BoardsGroup_3.json in Resources */ = {isa = PBXBuildFile; fileRef = F2738EF4224F7260005FE787 /* BoardsGroup_3.json */; };
 		F2738EFA225128FB005FE787 /* sound_rock_drop_in_water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2738EF7225128FB005FE787 /* sound_rock_drop_in_water.mp3 */; };
 		F2738EFB225128FB005FE787 /* sound_plane_v1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2738EF8225128FB005FE787 /* sound_plane_v1.mp3 */; };
 		F2738EFD22513F8F005FE787 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2738EFC22513F8F005FE787 /* SoundPlayer.swift */; };
@@ -46,6 +43,12 @@
 		F2CBBD8122579EB20037D116 /* sound_xylophone_v1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBD7F22579EB20037D116 /* sound_xylophone_v1.mp3 */; };
 		F2CBBD832257B0E30037D116 /* ComponentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBBD822257B0E30037D116 /* ComponentSize.swift */; };
 		F2CBBD852257CD000037D116 /* sound_piu-piu_v1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBD842257CD000037D116 /* sound_piu-piu_v1.mp3 */; };
+		F2CBBDBF2259F2330037D116 /* ru_BoardsGroup_3.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBDB82259F2330037D116 /* ru_BoardsGroup_3.json */; };
+		F2CBBDC02259F2330037D116 /* ru_BoardsGroup_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBDB92259F2330037D116 /* ru_BoardsGroup_2.json */; };
+		F2CBBDC12259F2330037D116 /* ru_BoardsGroup_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBDBA2259F2330037D116 /* ru_BoardsGroup_1.json */; };
+		F2CBBDC22259F2330037D116 /* en_BoardsGroup_1.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBDBC2259F2330037D116 /* en_BoardsGroup_1.json */; };
+		F2CBBDC32259F2330037D116 /* en_BoardsGroup_3.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBDBD2259F2330037D116 /* en_BoardsGroup_3.json */; };
+		F2CBBDC42259F2330037D116 /* en_BoardsGroup_2.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CBBDBE2259F2330037D116 /* en_BoardsGroup_2.json */; };
 		F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */; };
 		F2D026B421FC397F00DCA09A /* Other.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D0269F21FC397F00DCA09A /* Other.xcassets */; };
 		F2D026B521FC397F00DCA09A /* BoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026A121FC397F00DCA09A /* BoardComponent.swift */; };
@@ -100,10 +103,7 @@
 		F2738EE6224F7231005FE787 /* Board.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Board.json; sourceTree = "<group>"; };
 		F2738EE7224F7231005FE787 /* BoardComponents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardComponents.json; sourceTree = "<group>"; };
 		F2738EE8224F7231005FE787 /* Backgrounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Backgrounds.json; sourceTree = "<group>"; };
-		F2738EE9224F7231005FE787 /* BoardsGroup_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_1.json; sourceTree = "<group>"; };
-		F2738EEA224F7231005FE787 /* BoardsGroup_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_2.json; sourceTree = "<group>"; };
 		F2738EEB224F7231005FE787 /* Actions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Actions.json; sourceTree = "<group>"; };
-		F2738EF4224F7260005FE787 /* BoardsGroup_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BoardsGroup_3.json; sourceTree = "<group>"; };
 		F2738EF7225128FB005FE787 /* sound_rock_drop_in_water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_rock_drop_in_water.mp3; sourceTree = "<group>"; };
 		F2738EF8225128FB005FE787 /* sound_plane_v1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_plane_v1.mp3; sourceTree = "<group>"; };
 		F2738EFC22513F8F005FE787 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
@@ -118,6 +118,12 @@
 		F2CBBD7F22579EB20037D116 /* sound_xylophone_v1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_xylophone_v1.mp3; sourceTree = "<group>"; };
 		F2CBBD822257B0E30037D116 /* ComponentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSize.swift; sourceTree = "<group>"; };
 		F2CBBD842257CD000037D116 /* sound_piu-piu_v1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound_piu-piu_v1.mp3"; sourceTree = "<group>"; };
+		F2CBBDB82259F2330037D116 /* ru_BoardsGroup_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru_BoardsGroup_3.json; sourceTree = "<group>"; };
+		F2CBBDB92259F2330037D116 /* ru_BoardsGroup_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru_BoardsGroup_2.json; sourceTree = "<group>"; };
+		F2CBBDBA2259F2330037D116 /* ru_BoardsGroup_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru_BoardsGroup_1.json; sourceTree = "<group>"; };
+		F2CBBDBC2259F2330037D116 /* en_BoardsGroup_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en_BoardsGroup_1.json; sourceTree = "<group>"; };
+		F2CBBDBD2259F2330037D116 /* en_BoardsGroup_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en_BoardsGroup_3.json; sourceTree = "<group>"; };
+		F2CBBDBE2259F2330037D116 /* en_BoardsGroup_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en_BoardsGroup_2.json; sourceTree = "<group>"; };
 		F2D0264321FC335000DCA09A /* LittleBusyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBusyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D0269E21FC397F00DCA09A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F2D0269F21FC397F00DCA09A /* Other.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Other.xcassets; sourceTree = "<group>"; };
@@ -267,9 +273,8 @@
 		F2738EF3224F7237005FE787 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
-				F2738EE9224F7231005FE787 /* BoardsGroup_1.json */,
-				F2738EEA224F7231005FE787 /* BoardsGroup_2.json */,
-				F2738EF4224F7260005FE787 /* BoardsGroup_3.json */,
+				F2CBBDBB2259F2330037D116 /* EN */,
+				F2CBBDB72259F2330037D116 /* RU */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
@@ -292,6 +297,26 @@
 				F2D026EA21FE268300DCA09A /* CustomActions */,
 			);
 			path = ComponentActions;
+			sourceTree = "<group>";
+		};
+		F2CBBDB72259F2330037D116 /* RU */ = {
+			isa = PBXGroup;
+			children = (
+				F2CBBDBA2259F2330037D116 /* ru_BoardsGroup_1.json */,
+				F2CBBDB92259F2330037D116 /* ru_BoardsGroup_2.json */,
+				F2CBBDB82259F2330037D116 /* ru_BoardsGroup_3.json */,
+			);
+			path = RU;
+			sourceTree = "<group>";
+		};
+		F2CBBDBB2259F2330037D116 /* EN */ = {
+			isa = PBXGroup;
+			children = (
+				F2CBBDBC2259F2330037D116 /* en_BoardsGroup_1.json */,
+				F2CBBDBE2259F2330037D116 /* en_BoardsGroup_2.json */,
+				F2CBBDBD2259F2330037D116 /* en_BoardsGroup_3.json */,
+			);
+			path = EN;
 			sourceTree = "<group>";
 		};
 		F2D0263A21FC335000DCA09A = {
@@ -525,8 +550,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D026CA21FCAF7A00DCA09A /* Miniatures.xcassets in Resources */,
+				F2CBBDC42259F2330037D116 /* en_BoardsGroup_2.json in Resources */,
 				F272D993220B2D860067B7DD /* SettingsViewController.xib in Resources */,
+				F2CBBDC02259F2330037D116 /* ru_BoardsGroup_2.json in Resources */,
+				F2CBBDC22259F2330037D116 /* en_BoardsGroup_1.json in Resources */,
 				F272D98122099BC00067B7DD /* SystemSoundsIDs.json in Resources */,
+				F2CBBDC32259F2330037D116 /* en_BoardsGroup_3.json in Resources */,
 				F2738EFF2251E8E0005FE787 /* sound_fire.mp3 in Resources */,
 				F2D026C821FCAA1E00DCA09A /* Backgrounds.xcassets in Resources */,
 				F2D026CE21FCC98200DCA09A /* BoardComponents.xcassets in Resources */,
@@ -535,13 +564,13 @@
 				F2738EEE224F7231005FE787 /* BoardComponents.json in Resources */,
 				F2738EEC224F7231005FE787 /* ButtonTextures.json in Resources */,
 				F2D026D821FDAD8F00DCA09A /* InfoPopUpViewController.xib in Resources */,
+				F2CBBDBF2259F2330037D116 /* ru_BoardsGroup_3.json in Resources */,
 				F2D026BF21FC397F00DCA09A /* ProgressViewController.xib in Resources */,
 				F272D995220B70A60067B7DD /* Blanka-Regular.otf in Resources */,
 				F2D026B421FC397F00DCA09A /* Other.xcassets in Resources */,
 				F2738EFB225128FB005FE787 /* sound_plane_v1.mp3 in Resources */,
 				F2D026BE21FC397F00DCA09A /* BusyboardTableViewCell.xib in Resources */,
 				F2738EEF224F7231005FE787 /* Backgrounds.json in Resources */,
-				F2738EF0224F7231005FE787 /* BoardsGroup_1.json in Resources */,
 				F272D997220B74A80067B7DD /* Elianto-Regular.otf in Resources */,
 				F2738EFA225128FB005FE787 /* sound_rock_drop_in_water.mp3 in Resources */,
 				F2D026B321FC397F00DCA09A /* LaunchScreen.xib in Resources */,
@@ -551,15 +580,14 @@
 				F2738EF2224F7231005FE787 /* Actions.json in Resources */,
 				F2CBBD852257CD000037D116 /* sound_piu-piu_v1.mp3 in Resources */,
 				F2738F08225260E2005FE787 /* sound_swamp.mp3 in Resources */,
-				F2738EF1224F7231005FE787 /* BoardsGroup_2.json in Resources */,
 				F2CBBD8022579EB20037D116 /* sound_xylophone_v2.mp3 in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
 				F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */,
 				F2D7ADA8221938E60012125E /* Fun.xcassets in Resources */,
 				F2CBBD8122579EB20037D116 /* sound_xylophone_v1.mp3 in Resources */,
 				F272234D2253DAD500A6330D /* sound_swamp_heroes3.mp3 in Resources */,
-				F2738EF5224F7260005FE787 /* BoardsGroup_3.json in Resources */,
 				F2D026BB21FC397F00DCA09A /* BusyboardLevelsListViewController.xib in Resources */,
+				F2CBBDC12259F2330037D116 /* ru_BoardsGroup_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
