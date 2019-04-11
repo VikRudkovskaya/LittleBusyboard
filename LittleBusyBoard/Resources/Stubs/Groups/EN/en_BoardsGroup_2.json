@@ -1,16 +1,16 @@
 {
     "identifier": "ButtonWithFlowerBoards",
     "headerName": "Dancing flowers",
-    "description": "Однозадачные с поворачивающимися кнопками в виде цветочков",
+    "description": "With rotating buttons in the form of flowers\nShort sounds & rotations",
     "headerBgName": "bg_narrow_gradient_v4",
     "openSoundID": 1000,
     "closeSoundID": 1200,
     "boards": [
         {
             "identifier": 10,
-            "name": "Астра",
+            "name": "Aster",
             "isRandom": false,
-            "boardDescription": "Очень схематичная кнопка-цветочек похожая на шестеренку",
+            "boardDescription": "Very schematic button-flower like a gear",
             "miniatureName": "miniature_v16",
             "background": {
                 "identifier": 22,
@@ -41,9 +41,9 @@
         
         {
             "identifier": 11,
-            "name": "Ромашка",
+            "name": "Chamomile",
             "isRandom": false,
-            "boardDescription": "Белые лепестки и желтый центр",
+            "boardDescription": "White petals and yellow center",
             "miniatureName": "miniature_v14",
             "background": {
                 "identifier": 21,
@@ -79,9 +79,9 @@
         
         {
             "identifier": 12,
-            "name": "Клевер",
+            "name": "Clover",
             "isRandom": false,
-            "boardDescription": "Немного хаотичная кнопка-цветочек с тонким нежным ароматом",
+            "boardDescription": "A little chaotic flower button with a delicate flavor",
             "miniatureName": "miniature_v15",
             "background": {
                 "identifier": 18,
@@ -96,8 +96,8 @@
                     "textureName": "button_flower_clover",
                     "actionMode": "OneByOne",
                     "size": {
-                        "width" : 230,
-                        "height": 230
+                        "width" : 350,
+                        "height": 350
                     },
                     "actions": [
                         {
@@ -105,15 +105,21 @@
                             "type": "Rotate",
                             "affectedBoardComponentID": 2,
                             "duration" : 0.6
+                        },
+                        
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_rich_bitch_v1"
                         }]
                 }]
         },
         
         {
             "identifier": 14,
-            "name": "Одуванчик",
+            "name": "Dandelion",
             "isRandom": false,
-            "boardDescription": "Cолнечнo-желтый - значит скоро станет совсем тепло",
+            "boardDescription": "Spring yellow flower - it will soon be quite warm",
             "miniatureName": "miniature_v17",
             "background": {
                 "identifier": 20,

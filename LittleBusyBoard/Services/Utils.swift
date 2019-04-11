@@ -8,6 +8,12 @@
 
 import Foundation
 
+enum Language: String {
+    case EN = "en"
+    case RU = "ru"
+    case Other
+}
+
 class Utils: NSObject {
     
     static func random(_ n:Int) -> Int {
@@ -29,5 +35,25 @@ class Utils: NSObject {
             return nil
         }
     }
+    
+    static func languageCode() -> String {
+        guard let code = Bundle.main.preferredLocalizations.first?.prefix(2) else {
+            return ""
+        }
+        return String("\(code)")
+    }
+    
+    static func language() -> Language {
+        switch Utils.languageCode() {
+        case "en":
+            return .EN
+        case "ru":
+            return .RU
+        default:
+            return .Other
+        }
+    }
+    
+    
     
 }

@@ -37,7 +37,7 @@
             "identifier": 4,
             "name": "Swamps of Tatalia",
             "isRandom": false,
-            "boardDescription": "Gray-green shades of difficult terrain",
+            "boardDescription": "Gray-green shades of difficult terrain and sound of Fortress",
             "miniatureName": "miniature_v5",
             "background": {
                 "identifier": 13,
@@ -66,9 +66,9 @@
         
         {
             "identifier": 6,
-            "name": "Little red-hot sun",
+            "name": "Red Hot Chili Sun",
             "isRandom": false,
-            "boardDescription": "Sound of fire",
+            "boardDescription": "Sound of fire on the background of a field of dandelions",
             "miniatureName": "miniature_v7",
             "background":     {
                 "identifier": 7,
@@ -83,8 +83,8 @@
                     "textureName": "button_red-yellow_sun",
                     "actionMode": "OneByOne",
                     "size": {
-                        "width" : 320,
-                        "height": 320
+                        "width" : 350,
+                        "height": 350
                     },
                     "actions": [
                         {

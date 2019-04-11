@@ -17,6 +17,14 @@ class InfoPopUpViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet weak var infoTitle: UILabel!
+    @IBOutlet weak var infoGroup1: UILabel!
+    @IBOutlet weak var infoGroup2: UILabel!
+    @IBOutlet weak var infoGroup3: UILabel!
+    @IBOutlet weak var infoGroup4: UILabel!
+    @IBOutlet weak var infoGroup5: UILabel!
+    @IBOutlet weak var closeInfo: UILabel!
+    
     @IBOutlet weak var backImageView: UIImageView!
     
     @IBOutlet weak var cloudImageView: UIImageView!
@@ -37,6 +45,14 @@ class InfoPopUpViewController: UIViewController {
         containerView.layer.cornerRadius = 16
         
         backImageView.tintColor = UIColor.coolPurpleRed
+        
+        infoTitle.text = NSLocalizedString("Info title", comment: "")
+        infoGroup1.text = NSLocalizedString("Testing", comment: "")
+        infoGroup2.text = NSLocalizedString("Mom and dad attantion", comment: "")
+        infoGroup3.text = NSLocalizedString("3D toys exchange", comment: "")
+        infoGroup4.text = NSLocalizedString("Age", comment: "")
+        infoGroup5.text = NSLocalizedString("Safe", comment: "")
+        closeInfo.text = NSLocalizedString("Select board action", comment: "")
     }
     
     override func viewDidAppear(_ animated: Bool) {

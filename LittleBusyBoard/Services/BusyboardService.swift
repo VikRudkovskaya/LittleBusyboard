@@ -53,9 +53,7 @@ class BusyboardService: NSObject {
         
         var boardsGroups: [BusyboardsGroup]? = nil
         do {
-            guard let languageCode = Bundle.main.preferredLocalizations.first?.prefix(2) else {
-                return
-            }
+            let languageCode = Utils.languageCode()
             let fileName1 = languageCode.appendingFormat("_BoardsGroup_1")
             guard let jsonData1 = Utils.unarchiveJSON(from: fileName1) else {
                 fatalError("Файл с указанным именем не найден")
@@ -70,10 +68,7 @@ class BusyboardService: NSObject {
             
             boardsGroups = [busyboardsGroup1, busyboardsGroup2]
             f(busyboardGroup: busyboardsGroup2)
-            
-            
 
-            
         } catch  {
             print("Decode Error:\n", error)
         }

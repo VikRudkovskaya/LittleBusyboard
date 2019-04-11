@@ -24,6 +24,19 @@ class BusyboardTableViewCell: UITableViewCell {
         
         arrowImageView.tintColor = UIColor.darkGrayBlue
         boardMiniatureImageView.layer.cornerRadius = 25
+        
+        switch Utils.language() {
+        case .EN:
+            name.font = UIFont(name: "Menlo-Regular", size: 15)
+            boardDescription.font = UIFont(name: "Menlo-Regular", size: 13)
+            break
+        case .RU:
+            name.font = UIFont(name: "Menlo-Regular", size: 15)
+            boardDescription.font = UIFont(name: "Menlo-Regular", size: 13)
+        default:
+            break
+        }
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

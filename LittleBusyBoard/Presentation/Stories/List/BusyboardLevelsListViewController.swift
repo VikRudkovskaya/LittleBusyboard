@@ -14,6 +14,7 @@ class BusyboardLevelsListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var separatorView: UIView!
     
+    @IBOutlet weak var boardsListTitle: UILabel!
     var funImageView: UIImageView?
     
     var busyboardService: BusyboardService!
@@ -31,6 +32,8 @@ class BusyboardLevelsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        boardsListTitle.text = NSLocalizedString("Boards", comment: "")
 
         registerCells()
 

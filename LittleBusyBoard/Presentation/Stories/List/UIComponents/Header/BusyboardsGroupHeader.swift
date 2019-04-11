@@ -20,6 +20,18 @@ class BusyboardsGroupHeader: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        switch Utils.language() {
+        case .EN:
+            headerLabel.font = UIFont(name: "Elianto-Regular", size: 17)
+            descriptionLabel.font = UIFont(name: "Menlo-Regular", size: 13)
+            break
+        case .RU:
+            headerLabel.font = UIFont(name: "Menlo-Regular", size: 15)
+            descriptionLabel.font = UIFont(name: "Menlo-Regular", size: 13)
+        default:
+            break
+        }
     }
     
     func setup(with group: BusyboardsGroup) {
