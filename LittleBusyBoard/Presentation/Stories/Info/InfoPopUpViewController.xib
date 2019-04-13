@@ -240,7 +240,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Просто выбирайте любую доску и покажите ребенку как нажимать на кнопки" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1k9-bE-SvW">
                                             <rect key="frame" x="4" y="0.0" width="280" height="30.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" priority="750" constant="320" id="IQK-kS-1wv"/>
+                                                <constraint firstAttribute="width" priority="999" constant="290" id="IQK-kS-1wv"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Elianto-Regular" family="Elianto" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.14705925919999999" blue="0.24208788910000001" alpha="0.79949700339999996" colorSpace="custom" customColorSpace="displayP3"/>
@@ -348,8 +348,8 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="bg_little_suns" width="400" height="700"/>
-        <image name="bg_sky_v2" width="400" height="700"/>
+        <image name="bg_little_suns" width="200" height="350"/>
+        <image name="bg_sky_v2" width="200" height="350"/>
         <image name="close" width="15" height="15"/>
         <image name="cloud" width="286" height="157"/>
         <image name="cloud_2" width="247" height="127"/>
