@@ -158,6 +158,13 @@
         "name": "Космик",
         "description": "",
         "fileName": "bg_cosmic_v1"
+    },
+    
+    {
+        "identifier": 2,
+        "name": "Коробка",
+        "description": "",
+        "fileName": "bg_light-brown"
     }
     
     

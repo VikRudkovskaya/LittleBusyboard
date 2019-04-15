@@ -66,8 +66,15 @@ class BusyboardService: NSObject {
             }
             let busyboardsGroup2 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData2)
             
-            boardsGroups = [busyboardsGroup1, busyboardsGroup2]
+            let fileName3 = languageCode.appendingFormat("_BoardsGroup_3")
+            guard let jsonData3 = Utils.unarchiveJSON(from: fileName3) else {
+                fatalError("Файл с указанным именем не найден")
+            }
+            let busyboardsGroup3 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData3)
+            
+            boardsGroups = [busyboardsGroup1, busyboardsGroup3, busyboardsGroup2]
             f(busyboardGroup: busyboardsGroup2)
+            f(busyboardGroup: busyboardsGroup3)
 
         } catch  {
             print("Decode Error:\n", error)
@@ -82,10 +89,18 @@ class BusyboardService: NSObject {
         for board in busyboardGroup.boards! {
             for component in board.boardComponents! {
                 for action in component.actions! {
-                    if action is RotateAction {
+                    
+                    switch action {
+                    case is RotateAction:
                         let rotateAction = action as! RotateAction
                         rotateAction.affectedBoardComponent = component
+                    case is ChangeTextureAction:
+                        let changeTextureAction = action as! ChangeTextureAction
+                        changeTextureAction.affectedBoardComponent = component
+                    default: break
                     }
+ 
+                    
                 }
             }
         }

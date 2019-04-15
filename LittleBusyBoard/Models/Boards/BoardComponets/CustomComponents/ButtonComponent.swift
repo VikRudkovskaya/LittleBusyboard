@@ -10,15 +10,17 @@ import UIKit
 
 class ButtonComponent: BoardComponent {
     
-    var textureName: String = "button_red"
+    var textureNames: Array<String>?
+    
+    var currentTextureIndex: Int = 0
     
     private enum CodingKeys: String, CodingKey {
-        case textureName
+        case textureNames
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        textureName = try container.decode(String.self, forKey: .textureName)
+        textureNames = try container.decode(Array.self, forKey: .textureNames)
         try super.init(from: decoder)
     }
     
@@ -26,7 +28,7 @@ class ButtonComponent: BoardComponent {
     override func view() -> UIView {
         guard let value = _button else {
             let size = CGSize(width: self.size?.width ?? 240, height: self.size?.height ?? 240)
-            let button = self.button(size: size, textureName: textureName, text: "")
+            let button = self.button(size: size, textureName: textureNames?.first ?? "button_red", text: "")
             
             _button = button
             

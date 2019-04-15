@@ -14,6 +14,7 @@
 		F21F2D572210546F000B1EB1 /* BusyboardsGroupHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */; };
 		F21F2D592210586A000B1EB1 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D582210586A000B1EB1 /* UIUtils.swift */; };
 		F21F2D5B2210BB04000B1EB1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F2D5A2210BB04000B1EB1 /* Fonts.swift */; };
+		F26FC31D226347EA0071F297 /* ChangeTextureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FC31C226347EA0071F297 /* ChangeTextureAction.swift */; };
 		F272234D2253DAD500A6330D /* sound_swamp_heroes3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F272234C2253DAD500A6330D /* sound_swamp_heroes3.mp3 */; };
 		F27223532254068D00A6330D /* sound_rotate_v2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F27223522254068D00A6330D /* sound_rotate_v2.mp3 */; };
 		F272D97322087BAC0067B7DD /* SystemSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272D97222087BAC0067B7DD /* SystemSound.swift */; };
@@ -91,6 +92,7 @@
 		F21F2D552210546F000B1EB1 /* BusyboardsGroupHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusyboardsGroupHeader.xib; sourceTree = "<group>"; };
 		F21F2D582210586A000B1EB1 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		F21F2D5A2210BB04000B1EB1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F26FC31C226347EA0071F297 /* ChangeTextureAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTextureAction.swift; sourceTree = "<group>"; };
 		F272234C2253DAD500A6330D /* sound_swamp_heroes3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_swamp_heroes3.mp3; sourceTree = "<group>"; };
 		F27223522254068D00A6330D /* sound_rotate_v2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_rotate_v2.mp3; sourceTree = "<group>"; };
 		F272D97222087BAC0067B7DD /* SystemSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSound.swift; sourceTree = "<group>"; };
@@ -499,11 +501,12 @@
 		F2D026EA21FE268300DCA09A /* CustomActions */ = {
 			isa = PBXGroup;
 			children = (
-				F2D026EB21FE26B400DCA09A /* SwitchLightAction.swift */,
 				F2B1A12922035CE8007952CC /* PlaySoundAction.swift */,
+				F26FC31C226347EA0071F297 /* ChangeTextureAction.swift */,
 				F2B1A12B22035D58007952CC /* BackgroundChangeAction.swift */,
-				F2B1A12D22035D72007952CC /* ResizeElementAction.swift */,
 				F2738F09225266B9005FE787 /* RotateAction.swift */,
+				F2D026EB21FE26B400DCA09A /* SwitchLightAction.swift */,
+				F2B1A12D22035D72007952CC /* ResizeElementAction.swift */,
 			);
 			path = CustomActions;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				F2D026EC21FE26B400DCA09A /* SwitchLightAction.swift in Sources */,
 				F2D026C221FC476300DCA09A /* Background.swift in Sources */,
 				F2D026E321FDE99600DCA09A /* ButtonComponent.swift in Sources */,
+				F26FC31D226347EA0071F297 /* ChangeTextureAction.swift in Sources */,
 				F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */,
 				F2B1A12E22035D72007952CC /* ResizeElementAction.swift in Sources */,
 				F21F2D5B2210BB04000B1EB1 /* Fonts.swift in Sources */,

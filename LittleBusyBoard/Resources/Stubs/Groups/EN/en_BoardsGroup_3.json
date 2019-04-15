@@ -1,38 +1,41 @@
 {
-    "identifier": "ButtonWithBulbsBoards",
-    "headerName": "Кнопка, включающая свет",
-    "description": "По нажатию на кнопку загораются лампочки",
-    "headerBgName": "bg_narrow_tiny_rounds",
+    "identifier": "ButtonWithDonutsBoards",
+    "headerName": "Donuts",
+    "description": "With incredible toppings\nYummy!",
+    "headerBgName": "bg_narrow_light-brown",
     "openSoundID": 1000,
     "closeSoundID": 1200,
     "boards": [
         {
-            "identifier": 7,
-            "name": "",
+            "identifier": 10,
+            "name": "Red Alert",
             "isRandom": false,
-            "boardDescription": "Пушисто-колючая яркая кнопка-цветочек",
-            "miniatureName": "miniature_v4",
+            "boardDescription": "",
+            "miniatureName": "miniature_donut_red",
             "background": {
-                "identifier": 5,
-                "name": "Нежные пончики V1",
-                "description": "Расскажите ребенку, что такое тор",
-                "fileName": "bg_tiny_donuts_v1",
+                "identifier": 2,
+                "name": "Коробка",
+                "description": "",
+                "fileName": "bg_light-brown"
             },
             "components": [
                 {
                     "identifier": 2,
                     "type": "Button",
-                    "textureName": "button_star_purple",
+                    "textureNames": ["donut_red_1", "donut_red_2", "donut_red_3", "donut_red_4", "donut_red_5", "donut_red_6", "donut_red_7", "donut_red_8"],
                     "actionMode": "OneByOne",
                     "actions": [
                         {
                             "identifier": 6,
+                            "type": "ChangeTexture",
+                            "affectedBoardComponentID": 2
+                        },
+                        {
+                            "identifier": 6,
                             "type": "PlaySound",
-                            "soundID": 1254
+                            "soundFileName": "sound_rotate_v2"
                         }]
                 }]
-        }
-    ]
+            }
+        ]
 }
-
-
