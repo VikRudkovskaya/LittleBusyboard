@@ -1,38 +1,121 @@
 {
-    "identifier": "ButtonWithBulbsBoards",
-    "headerName": "Кнопка, включающая свет",
-    "description": "По нажатию на кнопку загораются лампочки",
-    "headerBgName": "bg_narrow_tiny_rounds",
+    "identifier": "ButtonWithDonutsBoards",
+    "headerName": "Пончиковые кнопки",
+    "description": "С потрясающими топингами",
+    "headerBgName": "bg_narrow_light-brown",
     "openSoundID": 1000,
     "closeSoundID": 1200,
     "boards": [
         {
-            "identifier": 7,
-            "name": "",
+            "identifier": 10,
+            "name": "Красная угроза",
             "isRandom": false,
-            "boardDescription": "Пушисто-колючая яркая кнопка-цветочек",
-            "miniatureName": "miniature_v4",
+            "boardDescription": "фигуре",
+            "miniatureName": "miniature_donut_red",
             "background": {
-                "identifier": 5,
-                "name": "Нежные пончики V1",
-                "description": "Расскажите ребенку, что такое тор",
-                "fileName": "bg_tiny_donuts_v1",
+                "identifier": 2,
+                "name": "Коробка",
+                "description": "",
+                "fileName": "bg_light-brown"
             },
             "components": [
                 {
                     "identifier": 2,
                     "type": "Button",
-                    "textureName": "button_star_purple",
+                    "textureNames": ["donut_red_1", "donut_red_2", "donut_red_3", "donut_red_4", "donut_red_5", "donut_red_6", "donut_red_7", "donut_red_8"],
                     "actionMode": "OneByOne",
+                    "size": {
+                        "width" : 320,
+                        "height": 320
+                    },
                     "actions": [
                         {
                             "identifier": 6,
+                            "type": "ChangeTexture",
+                            "affectedBoardComponentID": 2
+                        },
+                        {
+                            "identifier": 7,
                             "type": "PlaySound",
-                            "soundID": 1254
+                            "soundFileName": "sound_crop"
+                        }]
+                }]
+        },
+        {
+            "identifier": 11,
+            "name": "Синее празднование",
+            "isRandom": false,
+            "boardDescription": "",
+            "miniatureName": "miniature_donut_blue",
+            "background": {
+                "identifier": 2,
+                "name": "Коробка",
+                "description": "",
+                "fileName": "bg_light-brown"
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureNames": ["donut_blue_1", "donut_blue_2", "donut_blue_2_2", "donut_blue_3", "donut_blue_4", "donut_blue_5", "donut_blue_5_2", "donut_blue_6", "donut_blue_8"],
+                    "actionMode": "OneByOne",
+                    "size": {
+                        "width" : 320,
+                        "height": 320
+                    },
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "ChangeTexture",
+                            "affectedBoardComponentID": 2
+                        },
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_rotate_v2"
+                        }]
+                }]
+        },
+        {
+            "identifier": 12,
+            "name": "Розовый единорог",
+            "isRandom": false,
+            "boardDescription": "и магия",
+            "miniatureName": "miniature_donut_rose",
+            "background": {
+                "identifier": 2,
+                "name": "Коробка",
+                "description": "",
+                "fileName": "bg_light-brown"
+            },
+            "components": [
+                {
+                    "identifier": 2,
+                    "type": "Button",
+                    "textureNames": ["donut_rose_magic", "donut_rose_magic_2"],
+                    "actionMode": "OneByOne",
+                    "size": {
+                        "width" : 320,
+                        "height": 320
+                    },
+                    "actions": [
+                        {
+                            "identifier": 6,
+                            "type": "Rotate",
+                            "affectedBoardComponentID": 2,
+                            "duration" : 0.7
+                        },
+                        {
+                            "identifier": 6,
+                            "type": "ChangeTexture",
+                            "affectedBoardComponentID": 2
+                        },
+                        {
+                            "identifier": 6,
+                            "type": "PlaySound",
+                            "soundFileName": "sound_rotate_v2"
                         }]
                 }]
         }
     ]
 }
-
-

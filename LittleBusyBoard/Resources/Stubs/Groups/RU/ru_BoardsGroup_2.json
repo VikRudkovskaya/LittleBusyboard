@@ -22,7 +22,7 @@
                 {
                     "identifier": 2,
                     "type": "Button",
-                    "textureName": "button_flower_astra",
+                    "textureNames": ["button_flower_astra"],
                     "actionMode": "OneByOne",
                     "actions": [
                         {
@@ -55,7 +55,7 @@
                 {
                     "identifier": 2,
                     "type": "Button",
-                    "textureName": "button_flower_chamomile",
+                    "textureNames": ["button_flower_chamomile"],
                     "actionMode": "OneByOne",
                     "size": {
                         "width" : 300,
@@ -93,7 +93,7 @@
                 {
                     "identifier": 2,
                     "type": "Button",
-                    "textureName": "button_flower_clover",
+                    "textureNames": ["button_flower_clover"],
                     "actionMode": "OneByOne",
                     "size": {
                         "width" : 350,
@@ -131,7 +131,7 @@
                 {
                     "identifier": 2,
                     "type": "Button",
-                    "textureName": "button_flower_dandelion",
+                    "textureNames": ["button_flower_dandelion"],
                     "actionMode": "OneByOne",
                     "actions": [
                         {

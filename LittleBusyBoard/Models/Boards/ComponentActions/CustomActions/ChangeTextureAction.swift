@@ -17,7 +17,7 @@ class ChangeTextureAction: ComponentAction {
         super.perform()
         
         let button = affectedBoardComponent.view() as? UIButton
-        button?.alpha = 0
+        button?.alpha = 0.6
         if  button != nil {
             let buttonComponent = self.affectedBoardComponent as! ButtonComponent
             var index = buttonComponent.currentTextureIndex
@@ -31,7 +31,7 @@ class ChangeTextureAction: ComponentAction {
             button?.setBackgroundImage(UIImage(named: newTextureName!), for: .normal)
         }
         
-        UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
             button?.alpha = 1
         }, completion: nil)
     }

@@ -80,6 +80,7 @@
 		F2D026E521FDEAF300DCA09A /* LightbulbComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */; };
 		F2D026E921FDEE5A00DCA09A /* SwitchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026E821FDEE5A00DCA09A /* SwitchComponent.swift */; };
 		F2D026EC21FE26B400DCA09A /* SwitchLightAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D026EB21FE26B400DCA09A /* SwitchLightAction.swift */; };
+		F2D5E1C6226A1C730072F81D /* sound_crop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2D5E1C5226A1C730072F81D /* sound_crop.mp3 */; };
 		F2D7ADA8221938E60012125E /* Fun.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D7ADA7221938E60012125E /* Fun.xcassets */; };
 		F2D7ADAA221953860012125E /* Arrows.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D7ADA9221953860012125E /* Arrows.xcassets */; };
 /* End PBXBuildFile section */
@@ -163,6 +164,7 @@
 		F2D026E421FDEAF300DCA09A /* LightbulbComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbComponent.swift; sourceTree = "<group>"; };
 		F2D026E821FDEE5A00DCA09A /* SwitchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchComponent.swift; sourceTree = "<group>"; };
 		F2D026EB21FE26B400DCA09A /* SwitchLightAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLightAction.swift; sourceTree = "<group>"; };
+		F2D5E1C5226A1C730072F81D /* sound_crop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound_crop.mp3; sourceTree = "<group>"; };
 		F2D7ADA52217BC5C0012125E /* BoardComponentsCopy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardComponentsCopy.swift; sourceTree = "<group>"; };
 		F2D7ADA7221938E60012125E /* Fun.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Fun.xcassets; sourceTree = "<group>"; };
 		F2D7ADA9221953860012125E /* Arrows.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Arrows.xcassets; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 		F272D98222099BCE0067B7DD /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F2D5E1C5226A1C730072F81D /* sound_crop.mp3 */,
 				F2CBBDD2225A52E50037D116 /* sound_rich_bitch_v1.mp3 */,
 				F2CBBD842257CD000037D116 /* sound_piu-piu_v1.mp3 */,
 				F2CBBD7F22579EB20037D116 /* sound_xylophone_v1.mp3 */,
@@ -602,6 +605,7 @@
 				F20A3FE222353E2000A01DAF /* BusyboardsGroupFooter.xib in Resources */,
 				F2738EF2224F7231005FE787 /* Actions.json in Resources */,
 				F2CBBD852257CD000037D116 /* sound_piu-piu_v1.mp3 in Resources */,
+				F2D5E1C6226A1C730072F81D /* sound_crop.mp3 in Resources */,
 				F2738F08225260E2005FE787 /* sound_swamp.mp3 in Resources */,
 				F2CBBD8022579EB20037D116 /* sound_xylophone_v2.mp3 in Resources */,
 				F2D026B921FC397F00DCA09A /* BusyboardLevelViewController.xib in Resources */,
