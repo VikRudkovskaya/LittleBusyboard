@@ -57,7 +57,7 @@
                 {
                     "identifier": 2,
                     "type": "Button",
-                    "textureNames": ["donut_blue_1", "donut_blue_2", "donut_blue_2_2", "donut_blue_3", "donut_blue_4", "donut_blue_5", "donut_blue_5_2", "donut_blue_6", "donut_blue_8"],
+                    "textureNames": ["donut_blue_1", "donut_blue_2", "donut_blue_2_2", "donut_blue_3", "donut_blue_4", "donut_blue_5", "donut_blue_5_2", "donut_blue_6_2", "donut_blue_8"],
                     "actionMode": "OneByOne",
                     "size": {
                         "width" : 320,
@@ -72,7 +72,7 @@
                         {
                             "identifier": 6,
                             "type": "PlaySound",
-                            "soundFileName": "sound_rotate_v2"
+                            "soundFileName": "sound_arpha"
                         }]
                 }]
         },
@@ -113,7 +113,7 @@
                         {
                             "identifier": 6,
                             "type": "PlaySound",
-                            "soundFileName": "sound_rotate_v2"
+                            "soundFileName": "sound_xylophone_v1"
                         }]
                 }]
         }
