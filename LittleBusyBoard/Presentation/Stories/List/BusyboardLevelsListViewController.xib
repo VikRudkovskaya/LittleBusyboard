@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +18,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusyboardLevelsListViewController" customModule="LittleBusyboard" customModuleProvider="target">
             <connections>
                 <outlet property="boardsListTitle" destination="tzO-tP-uKb" id="Mu1-Wh-rUP"/>
+                <outlet property="funImageView" destination="rgg-nM-eTI" id="RpA-ey-e1r"/>
                 <outlet property="separatorView" destination="3BJ-er-dGC" id="ANY-kf-Usy"/>
                 <outlet property="tableView" destination="qMt-MO-Abs" id="zNc-lQ-5hF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -99,6 +100,13 @@
                         <outlet property="delegate" destination="-1" id="XZh-0S-FbP"/>
                     </connections>
                 </tableView>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle_v1" translatesAutoresizingMaskIntoConstraints="NO" id="rgg-nM-eTI">
+                    <rect key="frame" x="171.5" y="73" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="CzT-4F-uk3"/>
+                        <constraint firstAttribute="width" constant="32" id="gC3-CK-yxt"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -110,15 +118,18 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qMt-MO-Abs" secondAttribute="bottom" id="Taw-CS-f9Y"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mjH-2e-4z4" secondAttribute="trailing" id="cw4-wR-dRH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3BJ-er-dGC" secondAttribute="trailing" id="cx9-yr-Dtn"/>
+                <constraint firstItem="rgg-nM-eTI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dPa-og-K7r"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qMt-MO-Abs" secondAttribute="trailing" id="mKb-oH-Xxy"/>
+                <constraint firstItem="rgg-nM-eTI" firstAttribute="top" secondItem="3BJ-er-dGC" secondAttribute="bottom" constant="8" id="qEw-5y-t6u"/>
                 <constraint firstItem="3BJ-er-dGC" firstAttribute="top" secondItem="mjH-2e-4z4" secondAttribute="bottom" id="s19-0d-3Sn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="39" y="41"/>
+            <point key="canvasLocation" x="37.600000000000001" y="40.929535232383813"/>
         </view>
     </objects>
     <resources>
         <image name="bg_narrow_gradient_v3" width="400" height="84"/>
+        <image name="castle_v1" width="32" height="32"/>
         <image name="information" width="19" height="19"/>
         <image name="settings" width="25" height="25"/>
     </resources>

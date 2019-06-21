@@ -15,6 +15,7 @@ class BusyboardLevelViewController: UIViewController {
     var board: Busyboard!
     
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var backButton: UIButton!
     
     var uiComponents: [UIView] = []
     
@@ -26,6 +27,8 @@ class BusyboardLevelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        view.bringSubviewToFront(backButton)
         
         if let bgFileName = board.background.fileName {
             background.image = UIImage(named: bgFileName)

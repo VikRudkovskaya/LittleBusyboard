@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BusyboardService: NSObject {
+class BusyboardService {
     
     var busyboardsGroups: [BusyboardsGroup]?
     
@@ -51,40 +51,27 @@ class BusyboardService: NSObject {
     // Получить доступные доски
     func busyboards(completion:@escaping ([BusyboardsGroup]?) -> () ) -> () {
         
-        var boardsGroups: [BusyboardsGroup]? = nil
+        busyboardsGroups = []
         do {
             let languageCode = Utils.languageCode()
-            let fileName1 = languageCode.appendingFormat("_BoardsGroup_1")
-            guard let jsonData1 = Utils.unarchiveJSON(from: fileName1) else {
-                fatalError("Файл с указанным именем не найден")
+            let indexes = ["1", "3", "2"]
+            for index in indexes {
+                let fileName = languageCode.appendingFormat("_BoardsGroup_\(index)") // Example - en_BoardsGroup_1
+                guard let jsonData = Utils.unarchiveJSON(from: fileName) else {
+                    fatalError("Файл с указанным именем не найден")
+                }
+                let busyboardsGroup = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData)
+                busyboardsGroups!.append(busyboardsGroup)
+                f(busyboardGroup: busyboardsGroup)
             }
-            let busyboardsGroup1 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData1)
-            
-            let fileName2 = languageCode.appendingFormat("_BoardsGroup_2")
-            guard let jsonData2 = Utils.unarchiveJSON(from: fileName2) else {
-                fatalError("Файл с указанным именем не найден")
-            }
-            let busyboardsGroup2 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData2)
-            
-            let fileName3 = languageCode.appendingFormat("_BoardsGroup_3")
-            guard let jsonData3 = Utils.unarchiveJSON(from: fileName3) else {
-                fatalError("Файл с указанным именем не найден")
-            }
-            let busyboardsGroup3 = try JSONDecoder().decode(BusyboardsGroup.self, from: jsonData3)
-            
-            boardsGroups = [busyboardsGroup1, busyboardsGroup3, busyboardsGroup2]
-            f(busyboardGroup: busyboardsGroup2)
-            f(busyboardGroup: busyboardsGroup3)
 
         } catch  {
             print("Decode Error:\n", error)
         }
-        self.busyboardsGroups = boardsGroups
-        completion(boardsGroups)
-        
-        // Лес, единороги, замки, облака, квадраты, рубчик, звезды
+        completion(busyboardsGroups)
     }
     
+    // т.к. хранится только id компонента, то необходимо запинить саму модель компонента по известному id
     func f(busyboardGroup: BusyboardsGroup) {
         for board in busyboardGroup.boards! {
             for component in board.boardComponents! {
@@ -99,8 +86,7 @@ class BusyboardService: NSObject {
                         changeTextureAction.affectedBoardComponent = component
                     default: break
                     }
- 
-                    
+  
                 }
             }
         }

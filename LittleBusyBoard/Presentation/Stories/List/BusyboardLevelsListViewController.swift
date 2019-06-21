@@ -15,19 +15,23 @@ class BusyboardLevelsListViewController: UIViewController {
     @IBOutlet weak var separatorView: UIView!
     
     @IBOutlet weak var boardsListTitle: UILabel!
-    var funImageView: UIImageView?
+    @IBOutlet weak var funImageView: UIImageView!
     
     var busyboardService: BusyboardService!
     
     var isSoundPlaying: Bool = false
     
-    convenience init(service: BusyboardService) {
-        
-        self.init(nibName: nil, bundle: nil)
+    
+    init(service: BusyboardService) {
         self.busyboardService = service
+        super.init(nibName: nil, bundle: nil)
 
         modalTransitionStyle = .crossDissolve
         modalPresentationStyle = .overCurrentContext
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("Not implemented")
     }
     
     override func viewDidLoad() {
@@ -43,23 +47,15 @@ class BusyboardLevelsListViewController: UIViewController {
         }
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        funImageView?.center = CGPoint(x: self.view.center.x, y: 90)
-    }
-    
     private func setupFunImageView() {
         guard let groups = busyboardService.busyboardsGroups else {
             return
         }
         let group = groups[Utils.random(groups.count)]
-        funImageView = UIImageView()
-        funImageView?.frame.size = CGSize(width: 32, height: 32)
-        funImageView?.image = UIImage(named: group.footerImageName)
-        funImageView?.alpha = 0
-        funImageView?.isHidden = true
-        funImageView?.contentMode = .scaleAspectFit
-        self.view.addSubview(funImageView!)
+
+        funImageView.image = UIImage(named: group.footerImageName)
+        funImageView.alpha = 0
+        funImageView.isHidden = true
     }
     
     private func registerCells() {
@@ -165,15 +161,9 @@ extension BusyboardLevelsListViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offsetY = scrollView.contentOffset.y
-        if offsetY < 0 {
-            separatorView.isHidden = false
-        } else {
-            separatorView.isHidden = true
-        }
+        separatorView.isHidden = offsetY < 0 ? false : true
         
-        guard let funImageHeight = funImageView?.frame.size.height else {
-            return
-        }
+        let funImageHeight = funImageView.frame.size.height
         let height = -1 * funImageHeight - 16
         if offsetY < height && self.funImageView?.isHidden == true {
             funImageView?.isHidden = false
