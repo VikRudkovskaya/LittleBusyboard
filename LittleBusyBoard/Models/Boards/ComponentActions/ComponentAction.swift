@@ -8,8 +8,12 @@
 
 import UIKit
 
+protocol ComponetActionDelegate {
+    func actionDidPerformed()
+}
+
 class ComponentAction: Decodable {
-    // Исполнить
+    // Исполнить действие
     func perform() {
         
     }
@@ -22,6 +26,7 @@ enum ComponentActionFamily: String, ClassFamily {
     case resizeElement = "ResizeElement"
     case rotate = "Rotate"
     case changeTexture = "ChangeTexture"
+    case spawnOne = "SpawnOne"
     
     static var discriminator: Discriminator = .type
     
@@ -39,6 +44,8 @@ enum ComponentActionFamily: String, ClassFamily {
             return RotateAction.self
         case .changeTexture:
             return ChangeTextureAction.self
+        case .spawnOne:
+            return SpawnPlusOneTipAction.self
         }
     }
 }

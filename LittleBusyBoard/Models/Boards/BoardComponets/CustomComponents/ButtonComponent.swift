@@ -74,7 +74,6 @@ class ButtonComponent: BoardComponent {
     }
     
     @objc func buttonAction() -> Void {
-        
         actions?.forEach({ (action) in
             action.perform()
         })

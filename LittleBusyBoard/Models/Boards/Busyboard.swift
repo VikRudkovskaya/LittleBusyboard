@@ -10,11 +10,21 @@ import UIKit
 
 class Busyboard: Decodable {
     
+    var _view: UIView?
+    func view() -> UIView {
+        guard let value = _view else {
+            let view = UIView(frame: CGRect(origin: .zero, size: size))
+            _view = view
+            return view
+        }
+        return value
+    }
+    
     var name: String = "Бизиборд"
     
     var boardDescription: String?
     
-    var isRandom: Bool = false // какие именно парам рандомизируются
+    var isRandom: Bool = false // TODO: указать, какие именно парам рандомизируются
     
     private var _miniatureName: String?
     var miniatureName: String {
@@ -40,6 +50,7 @@ class Busyboard: Decodable {
     
     // Набор компонентов борды
     var boardComponents: [BoardComponent]?
+    var boardUIComponents: [UIView] = []
     
     // перемещение компонента с заданным id -> вызов лэйаутера
     

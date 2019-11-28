@@ -10,7 +10,7 @@ import AVFoundation
 
 class SoundPlayer: NSObject {
     
-    var player = AVAudioPlayer()
+    var player: AVAudioPlayer?
     
     func playSound(soundName: String) {
         guard let url = Bundle.main.url(forResource: soundName, withExtension: "mp3") else {
@@ -24,10 +24,10 @@ class SoundPlayer: NSObject {
             }
             try AVAudioSession.sharedInstance().setActive(true, options: [.notifyOthersOnDeactivation])
             player = try AVAudioPlayer(contentsOf: url)
-            player.numberOfLoops = 0
-            player.prepareToPlay()
-            player.play()
-        
+            player?.numberOfLoops = 0
+            player?.prepareToPlay()
+            player?.play()
+
         } catch {
             print("Can't play sound")
         }
