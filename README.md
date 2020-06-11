@@ -13,6 +13,6 @@
 ♥ С 6 месяцев, раньше вряд ли есть смысл ☁️ \
 \
 \
-![Иллюстрация к проекту](https://github.com/VikRudkovskaya/LittleBusyboard/blob/master/Screenshots%20%26%20Art/iTunes_screen_2.png)
+![Иллюстрация к проекту](https://github.com/VikRudkovskaya/LittleBusyboard/blob/master/Screenshots%20%26%20Art/LBB-Artwork.png)
 
 

@@ -16,6 +16,8 @@ class BusyboardLevelViewController: UIViewController {
     
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var previousButton: UIButton!
     
     var uiComponents: [UIView] = []
     
@@ -64,7 +66,15 @@ class BusyboardLevelViewController: UIViewController {
         }
     }
     
-    @IBAction func backTpuchUpInside(sender: UIButton) {
+    @IBAction func backTouchUpInside(sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func nextTouchUpInside(sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func previousTouchUpInside(sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
 }

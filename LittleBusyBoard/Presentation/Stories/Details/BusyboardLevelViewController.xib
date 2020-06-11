@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,6 +12,8 @@
             <connections>
                 <outlet property="backButton" destination="TTv-Va-wDn" id="nPa-jl-Hfz"/>
                 <outlet property="background" destination="icz-IO-rJn" id="Dbe-ah-iSb"/>
+                <outlet property="nextButton" destination="Yby-zT-n3T" id="MjR-Hb-4js"/>
+                <outlet property="previousButton" destination="LpR-LW-34o" id="OoT-VA-Heb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,6 +25,19 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tiny_donuts_v2" translatesAutoresizingMaskIntoConstraints="NO" id="icz-IO-rJn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-zT-n3T">
+                    <rect key="frame" x="311" y="44" width="64" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="HgK-rB-vvQ"/>
+                        <constraint firstAttribute="width" constant="64" id="ebk-aM-kxg"/>
+                    </constraints>
+                    <color key="tintColor" red="0.73775660669999998" green="0.1525792014" blue="0.2733258469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="16" maxY="0.0"/>
+                    <state key="normal" image="arrow_down"/>
+                    <connections>
+                        <action selector="nextTouchUpInsideSender:" destination="-1" eventType="touchUpInside" id="UTI-AB-H0x"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTv-Va-wDn">
                     <rect key="frame" x="0.0" y="44" width="100" height="50"/>
                     <constraints>
@@ -35,14 +48,32 @@
                     <inset key="contentEdgeInsets" minX="16" minY="16" maxX="0.0" maxY="0.0"/>
                     <state key="normal" image="back"/>
                     <connections>
-                        <action selector="backTpuchUpInsideSender:" destination="-1" eventType="touchUpInside" id="DBf-y1-xPG"/>
+                        <action selector="backTouchUpInsideSender:" destination="-1" eventType="touchUpInside" id="JUn-90-hzy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpR-LW-34o">
+                    <rect key="frame" x="211" y="44" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="G80-01-vwP"/>
+                        <constraint firstAttribute="width" constant="100" id="OmA-7X-eEK"/>
+                    </constraints>
+                    <color key="tintColor" red="0.73775660669999998" green="0.1525792014" blue="0.2733258469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2" maxY="0.0"/>
+                    <state key="normal" image="arrow_up"/>
+                    <connections>
+                        <action selector="previousTouchUpInsideSender:" destination="-1" eventType="touchUpInside" id="JyE-3X-oCx"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Yby-zT-n3T" firstAttribute="centerY" secondItem="TTv-Va-wDn" secondAttribute="centerY" id="A6Y-nT-5sS"/>
                 <constraint firstAttribute="bottom" secondItem="icz-IO-rJn" secondAttribute="bottom" id="JhX-d0-7Er"/>
                 <constraint firstItem="TTv-Va-wDn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TDu-7c-DzT"/>
+                <constraint firstItem="Yby-zT-n3T" firstAttribute="leading" secondItem="LpR-LW-34o" secondAttribute="trailing" id="Tla-o5-w51"/>
+                <constraint firstAttribute="trailing" secondItem="Yby-zT-n3T" secondAttribute="trailing" id="W7D-i0-ovl"/>
+                <constraint firstItem="LpR-LW-34o" firstAttribute="centerY" secondItem="TTv-Va-wDn" secondAttribute="centerY" id="XGJ-Lc-A2I"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="icz-IO-rJn" secondAttribute="trailing" id="hP5-6c-p3v"/>
                 <constraint firstItem="TTv-Va-wDn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jvG-o0-QCt"/>
                 <constraint firstItem="icz-IO-rJn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nqQ-Sn-rHC"/>
@@ -53,6 +84,8 @@
         </view>
     </objects>
     <resources>
+        <image name="arrow_down" width="25" height="14"/>
+        <image name="arrow_up" width="25" height="14"/>
         <image name="back" width="10" height="16"/>
         <image name="bg_tiny_donuts_v2" width="133.33332824707031" height="233.33332824707031"/>
     </resources>
