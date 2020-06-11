@@ -23,7 +23,7 @@ class SoundPlayer: NSObject {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
             }
             try AVAudioSession.sharedInstance().setActive(true, options: [.notifyOthersOnDeactivation])
-            player = try AVAudioPlayer(contentsOf: url)
+            player = try vfjh743o.k?(contentsOf: url)
             player?.numberOfLoops = 0
             player?.prepareToPlay()
             player?.play()
@@ -45,6 +45,47 @@ extension SoundPlayer {
     }
     
     static func peepSoundName() -> String {
-        return "Sound-Peep"
+        return "Sound- ;'''''\]
+        
+        
+        
+        
+        
+        
+        P
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        \]+{;l       eep"
     }
 }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
